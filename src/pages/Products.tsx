@@ -23,26 +23,26 @@ const categories: Exclude<Category, 'All'>[] = [
 const categorySlides: Record<Category, { image: string }[]> = {
   'All': [
     { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" },
-    { image: "/images/Home Sliders/WEB BANNER PURE ESSENCE TWO_page-0001.jpg" }
+    { image: "/images/Home Sliders/NATURAL INGREDIENTS WEB BANNER.jpg" }
   ],
   'Skin Products': [
-    { image: "/images/Home Sliders/WEB BANNER PURE ESSENCE FOUR_page-0001.jpg" },
-    { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" }
+    { image: "/images/Home Sliders/SKIN PRODUCTS WEB PAGE.jpg" },
+    { image: "/images/Home Sliders/CHAT WITH US ON WHATSAPP BANNER.jpg" }
   ],
   'Lotions': [
-    { image: "/images/natural/24.jpg" },
-    { image: "/images/natural/31.jpg" }
+    { image: "/images/Home Sliders/SKIN PRODUCTS WEB PAGE.jpg" },
+    { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" }
   ],
   'Bedroom Products': [
-    { image: "/images/Home Sliders/WEB BANNER PURE ESSENCE 1_page-0001.jpg" },
+    { image: "/images/Home Sliders/BEDROOM PRODUCTS WEB BANNER.jpg" },
     { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" }
   ],
   'Tablets': [
-    { image: "/images/natural/16.jpg" },
+    { image: "/images/Home Sliders/NATURAL INGREDIENTS WEB BANNER.jpg" },
     { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" }
   ],
   'Health Products': [
-    { image: "/images/natural/15.jpg" },
+    { image: "/images/Home Sliders/NATURAL INGREDIENTS WEB BANNER.jpg" },
     { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" }
   ]
 };

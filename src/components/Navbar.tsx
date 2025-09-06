@@ -58,12 +58,12 @@ export default function Navbar() {
                   transition={{ duration: 0.5 }}
                 >
                   <img
-                    src="/images/logo.png"
+                    src="/images/Pure Essence logo.png"
                     alt="Logo"
-                    className="h-12 w-auto sm:h-10"
+                    className="h-12 w-auto sm:h-12"
                   />
                 </motion.div>
-                <span className="ml-2 text-lg sm:text-xl font-extrabold tracking-tight text-white group-hover:text-[#f98203] transition-colors select-none">Pure Essence</span>
+                <span className="ml-2 text-lg sm:text-xl font-extrabold tracking-tight text-white group-hover:text-[#f98203] transition-colors select-none"></span>
               </Link>
             </motion.div>
             
