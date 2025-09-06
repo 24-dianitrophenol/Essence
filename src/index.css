@@ -46,6 +46,12 @@
   .grid.grid-cols-2 > * {
     min-height: 320px;
   }
+  
+  /* Ensure ADD TO CART text fits on one line in mobile */
+  .grid.grid-cols-2 button span {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -77,14 +77,14 @@ export default function ProductCard({
         {/* Add to Cart Button */}
         <button
           onClick={onAddToCart}
-          className={`w-full flex items-center justify-center space-x-2 py-2.5 px-4 rounded-lg font-semibold text-sm transition-all duration-300 ${
+          className={`w-full flex items-center justify-center space-x-1 py-2.5 px-2 rounded-lg font-semibold text-xs sm:text-sm transition-all duration-300 ${
             isAddedToCart 
               ? 'bg-green-600 text-white' 
               : 'bg-[#dd2581] text-white hover:bg-[#f98203] hover:shadow-md'
           }`}
         >
-          <ShoppingCart className="w-4 h-4" />
-          <span>{isAddedToCart ? 'ADDED!' : 'ADD TO CART'}</span>
+          <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+          <span className="whitespace-nowrap">{isAddedToCart ? 'ADDED!' : 'ADD TO CART'}</span>
         </button>
       </div>
     </div>
