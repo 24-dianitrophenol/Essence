@@ -335,23 +335,22 @@ export default function Home() {
               product && (
               <div
                 key={product.id}
-                className="min-w-[140px] sm:min-w-[160px] lg:min-w-[200px] bg-white rounded-xl shadow-lg overflow-hidden snap-center hover:shadow-xl transition-all duration-300 flex-shrink-0 border border-gray-100 flex flex-col"
+                className="w-[180px] sm:w-[220px] lg:w-[260px] bg-white rounded-xl shadow-lg transition-all duration-300 flex-shrink-0 border border-gray-100 flex flex-col snap-center hover:shadow-xl"
               >
                 {/* Product Image Container */}
-                <div className="relative p-2 sm:p-3 pb-2">
-                  <div className="relative bg-gray-50 rounded-lg overflow-hidden">
-                    <Link to={`/shop-detail/${product.id}`} className="block">
+                <div className="relative p-2 sm:p-3 pb-0">
+                  <div className="relative bg-gray-50 rounded-lg overflow-hidden h-32 sm:h-40 lg:h-48 flex items-center justify-center">
+                    <Link to={`/shop-detail/${product.id}`} className="w-full h-full flex items-center justify-center">
                       <img 
                         src={product.image} 
                         alt={product.name} 
-                        className="w-full h-auto object-contain max-h-24 sm:max-h-28 lg:max-h-36 mx-auto block"
-                        style={{ aspectRatio: 'auto' }}
+                        className="max-w-full max-h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
                       />
                     </Link>
                     
                     {/* TRENDING Badge */}
                     <div className="absolute top-1 left-1 sm:top-2 sm:left-2">
-                      <span className="bg-[#f98203] text-white px-1 sm:px-2 py-0.5 rounded-full text-xs font-bold">
+                      <span className="bg-[#f98203] text-white px-1 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider">
                         NEW
                       </span>
                     </div>
@@ -359,7 +358,7 @@ export default function Home() {
                     {/* Wishlist Heart */}
                     <button
                       onClick={() => toggleWishlist(product.id)}
-                      className="absolute top-1 right-1 sm:top-2 sm:right-2 p-1 bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors"
+                      className="absolute top-1 right-1 sm:top-2 sm:right-2 p-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors z-10"
                     >
                       <Heart 
                         className={`w-3 h-3 sm:w-4 sm:h-4 ${
@@ -373,31 +372,32 @@ export default function Home() {
                 </div>
                 
                 {/* Product Info */}
-                <div className="px-2 sm:px-3 pb-2 sm:pb-3 flex-1 flex flex-col">
-                  <Link to={`/shop-detail/${product.id}`} className="block mb-2">
-                    <h3 className="text-xs sm:text-sm font-medium text-gray-800 hover:text-[#dd2581] transition-colors line-clamp-2 leading-tight text-center">
-                      {product.name}
-                    </h3>
-                  </Link>
-                  
-                  {/* Pricing Section */}
-                  <div className="mb-2 flex-1">
-                    <div className="text-sm sm:text-base font-bold text-[#dd2581] text-center">
-                      ${((product.price / 3600) * 1.55).toFixed(2)}
+                <div className="p-3 sm:p-4 flex-1 flex flex-col justify-between">
+                  <div className="mb-2">
+                    <Link to={`/shop-detail/${product.id}`} className="block">
+                      <h3 className="text-xs sm:text-sm font-semibold text-gray-800 hover:text-[#dd2581] transition-colors line-clamp-2 leading-tight text-center min-h-[32px] sm:min-h-[40px] flex items-center justify-center">
+                        {product.name}
+                      </h3>
+                    </Link>
+                    
+                    <div className="mt-2 text-center">
+                      <span className="text-sm sm:text-lg font-extrabold text-[#dd2581]">
+                        ${((product.price / 3600) * 1.55).toFixed(2)}
+                      </span>
                     </div>
                   </div>
                   
                   {/* Add to Cart Button */}
                   <button
                     onClick={() => handleAddToCart(product)}
-                    className={`w-full flex items-center justify-center space-x-1 py-1.5 sm:py-2 px-1 sm:px-2 rounded-lg font-semibold text-xs transition-all duration-300 ${
+                    className={`w-full flex items-center justify-center gap-2 py-2 sm:py-2.5 px-3 rounded-lg font-bold text-[10px] sm:text-xs tracking-wider transition-all duration-300 ${
                       addedToCart[product.id] 
-                        ? 'bg-green-600 text-white' 
-                        : 'bg-[#dd2581] text-white hover:bg-[#f98203] hover:shadow-md'
+                        ? 'bg-green-600 text-white shadow-inner scale-[0.98]' 
+                        : 'bg-[#dd2581] text-white hover:bg-[#f98203] hover:shadow-lg active:scale-95'
                     }`}
                   >
-                    <ShoppingCart className="w-3 h-3 flex-shrink-0" />
-                    <span className="whitespace-nowrap text-xs">{addedToCart[product.id] ? 'ADDED!' : 'ADD TO CART'}</span>
+                    <ShoppingCart className="w-3.5 h-3.5" />
+                    <span className="uppercase">{addedToCart[product.id] ? 'ADDED!' : 'ADD TO CART'}</span>
                   </button>
                 </div>
               </div>
