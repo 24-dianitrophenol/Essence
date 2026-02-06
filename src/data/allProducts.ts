@@ -3,10 +3,11 @@ import { supplements } from './categories/Supplements';
 import { bath } from './categories/Bath';
 import { beauty } from './categories/Beauty';
 import { bedroomProducts } from './categories/BedroomProducts';
-import { healthProducts } from './categories/HealthProducts';
-import { lotions } from './categories/Lotions';
-import { skinProducts } from './categories/SkinProducts';
-import { tablets } from './categories/Tablets';
+import { baby } from './categories/Baby';
+import { grocery } from './categories/Grocery';
+import { home } from './categories/Home';
+import { pets } from './categories/Pets';
+import { sports } from './categories/Sports';
 
 // Combine all products from different categories
 export const allProducts = [
@@ -14,10 +15,11 @@ export const allProducts = [
   ...bath,
   ...beauty,
   ...bedroomProducts,
-  ...healthProducts,
-  ...lotions,
-  ...skinProducts,
-  ...tablets
+  ...baby,
+  ...grocery,
+  ...home,
+  ...pets,
+  ...sports
 ];
 
 // Export individual categories for easy access
@@ -26,10 +28,11 @@ export {
   bath,
   beauty,
   bedroomProducts,
-  healthProducts,
-  lotions,
-  skinProducts,
-  tablets
+  baby,
+  grocery,
+  home,
+  pets,
+  sports
 };
 
 // Category mapping for filtering
@@ -38,10 +41,11 @@ export const categoryMapping = {
   'Bath': bath,
   'Beauty': beauty,
   'Bedroom Products': bedroomProducts,
-  'Health Products': healthProducts,
-  'Lotions': lotions,
-  'Skin Products': skinProducts,
-  'Tablets': tablets
+  'Baby': baby,
+  'Grocery': grocery,
+  'Home': home,
+  'Pets': pets,
+  'Sports': sports
 };
 
 // Get products by category
