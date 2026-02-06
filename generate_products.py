@@ -3,21 +3,41 @@ import re
 import random
 
 CATEGORIES = {
-    'BedroomProducts.ts': ('bedroomProducts', 'Bedroom Products', 'bedroom'),
-    'HealthProducts.ts': ('healthProducts', 'Health Products', 'health'),
-    'Lotions.ts': ('lotions', 'Lotions', 'lotion'),
-    'SkinProducts.ts': ('skinProducts', 'Skin Products', 'skin'),
-    'Tablets.ts': ('tablets', 'Tablets', 'tablet')
+    'Supplements.ts': ('supplements', 'Supplements', 'supplement'),
+    'Sports.ts': ('sports', 'Sports', 'sport'),
+    'Bath.ts': ('bath', 'Bath', 'bath'),
+    'Beauty.ts': ('beauty', 'Beauty', 'beauty'),
+    'Grocery.ts': ('grocery', 'Grocery', 'grocery'),
+    'Home.ts': ('home', 'Home', 'home'),
+    'Baby.ts': ('baby', 'Baby', 'baby'),
+    'Pets.ts': ('pets', 'Pets', 'pet'),
+    'BedroomProducts.ts': ('bedroomProducts', 'Bedroom Products', 'bedroom')
 }
 
 DATA_DIR = r'd:\ESSCENCE\src\data\categories'
+
+def initialize_file(filepath, var_name, cat_name, id_prefix):
+    """Creates a basic starting file if it doesn't exist."""
+    content = f"""export const {var_name} = [
+  {{
+    id: '{id_prefix}-1',
+    name: 'Standard {cat_name} 1',
+    price: 19.99,
+    image: '/images/placeholder.jpg',
+    category: '{cat_name}',
+    description: 'High quality {cat_name.lower()} product for your everyday needs.'
+  }}
+];
+"""
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
 
 def generate_products():
     for filename, (var_name, cat_name, id_prefix) in CATEGORIES.items():
         filepath = os.path.join(DATA_DIR, filename)
         if not os.path.exists(filepath):
-            print(f"File {filepath} not found, skipping.")
-            continue
+            print(f"File {filepath} not found, initializing.")
+            initialize_file(filepath, var_name, cat_name, id_prefix)
             
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()

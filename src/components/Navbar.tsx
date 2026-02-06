@@ -7,11 +7,15 @@ import { useCart } from '../context/CartContext';
 
 const categories = [
   'All Categories',
-  'Skin Products',
-  'Lotions', 
-  'Bedroom Products',
-  'Tablets',
-  'Health Products'
+  'Supplements',
+  'Sports',
+  'Bath',
+  'Beauty',
+  'Grocery',
+  'Home',
+  'Baby',
+  'Pets',
+  'Bedroom Products'
 ];
 
 export default function Navbar() {
@@ -30,7 +34,7 @@ export default function Navbar() {
   const handleSearch = (query: string) => {
     setSearchQuery(query);
     if (query.trim()) {
-      const results = allProducts.filter(product => 
+      const results = allProducts.filter(product =>
         product.name.toLowerCase().includes(query.toLowerCase()) ||
         product.description.toLowerCase().includes(query.toLowerCase()) ||
         product.category && product.category.toLowerCase().includes(query.toLowerCase())
@@ -66,7 +70,7 @@ export default function Navbar() {
                 <span className="ml-2 text-lg sm:text-xl font-extrabold tracking-tight text-white group-hover:text-[#f98203] transition-colors select-none"></span>
               </Link>
             </motion.div>
-            
+
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-2">
@@ -79,9 +83,8 @@ export default function Navbar() {
                   >
                     <Link
                       to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                      className={`text-white px-3 py-2 rounded-md text-sm transition-colors ${
-                        isActive(item) ? 'bg-[#f98203]' : 'hover:bg-[#f98203]'
-                      }`}
+                      className={`text-white px-3 py-2 rounded-md text-sm transition-colors ${isActive(item) ? 'bg-[#f98203]' : 'hover:bg-[#f98203]'
+                        }`}
                     >
                       {item}
                     </Link>
@@ -204,15 +207,14 @@ export default function Navbar() {
                   <Link
                     key={item}
                     to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                    className={`text-white block px-4 py-3 rounded-md text-lg transition-colors ${
-                      isActive(item) ? 'bg-[#f98203]' : 'hover:bg-[#f98203]'
-                    }`}
+                    className={`text-white block px-4 py-3 rounded-md text-lg transition-colors ${isActive(item) ? 'bg-[#f98203]' : 'hover:bg-[#f98203]'
+                      }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item}
                   </Link>
                 ))}
-                
+
                 {/* Mobile Categories */}
                 <div className="border-t border-white/20 pt-4 mt-4">
                   <h3 className="text-white font-semibold mb-2">Categories</h3>
@@ -220,9 +222,8 @@ export default function Navbar() {
                     <Link
                       key={category}
                       to="/products"
-                      className={`text-white block px-4 py-2 rounded-md transition-colors hover:bg-[#f98203] ${
-                        category === 'All Categories' ? 'text-[#f98203] font-semibold' : ''
-                      }`}
+                      className={`text-white block px-4 py-2 rounded-md transition-colors hover:bg-[#f98203] ${category === 'All Categories' ? 'text-[#f98203] font-semibold' : ''
+                        }`}
                       onClick={() => setIsOpen(false)}
                     >
                       {category}
@@ -249,7 +250,7 @@ export default function Navbar() {
                   All Categories
                   <ChevronDown className="ml-1 h-4 w-4 text-[#dd2581]" />
                 </button>
-                
+
                 {showCategoriesDropdown && (
                   <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-md shadow-lg z-50 min-w-[200px]">
                     {categories.slice(1).map((category) => (
@@ -265,7 +266,7 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              
+
               {/* Other Categories */}
               {categories.slice(1).map((category) => (
                 <Link
