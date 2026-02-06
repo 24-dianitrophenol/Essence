@@ -1,4005 +1,668 @@
-// Easy-to-edit Beauty data structure
-// To modify products: simply edit the id, name, price, image, category, and description fields below
-
 export const beauty = [
-{
-    id: 'skin-1',
-    name: 'Lanorient Rose Multi-Use Oil',
-    price: 44.86,
-    image: '/images/natural images/Lanorient Rose Multi-Use Oil.jpg',
-    category: 'Beauty',
-    description: 'Luxurious rose oil for face and body hydration'
-  },
-{
-    id: 'skin-2',
-    name: 'PCA Skin Rejuvenating Serum',
-    price: 242.76,
-    image: '/images/natural images/PCA Skin Rejuvenating Serum.jpg',
-    category: 'Beauty',
-    description: 'Professional-grade serum for skin renewal and anti-aging'
-  },
-{
-    id: 'skin-3',
-    name: 'Lipikar Baume AP+M',
-    price: 58.65,
-    image: '/images/natural images/Lipikar Baume AP+M (2).jpg',
-    category: 'Beauty',
-    description: 'Intensive moisturizing balm for dry and sensitive skin'
-  },
-{
-    id: 'skin-4',
-    name: 'Salicylic Acid Acne Cream',
-    price: 22.02,
-    image: '/images/natural images/Salicylic Acid Agne Cream.jpg',
-    category: 'Beauty',
-    description: 'Effective acne treatment with salicylic acid'
-  },
-{
-    id: 'skin-5',
-    name: 'Frozen Collagen',
-    price: 29.30,
-    image: '/images/natural images/Frozen Collagen Description.jpg',
-    category: 'Beauty',
-    description: 'Cooling collagen treatment for skin firming'
-  },
-{
-    id: 'skin-6',
-    name: 'Skin Whitening Gummies',
-    price: 49.44,
-    image: '/images/natural images/Skin Whitening Gummies.jpg',
-    category: 'Beauty',
-    description: 'Delicious gummies for skin brightening and radiance'
-  },
-{
-    id: 'skin-7',
-    name: 'Wins Town Skin Whitening',
-    price: 49.44,
-    image: '/images/natural images/Wins Town Skin Whitening.jpg',
-    category: 'Beauty',
-    description: 'Advanced skin whitening formula for even tone'
-  },
-{
-    id: 'skin-8',
-    name: 'Sadoer Collagen Face Serum',
-    price: 18.93,
-    image: '/images/natural images/Sadoer Collagen.jpg',
-    category: 'Beauty',
-    description: 'Anti-aging collagen serum for youthful skin'
-  },
-{
-    id: 'skin-9',
-    name: 'Daynee Skin Whitening',
-    price: 48.51,
-    image: '/images/natural images/Daynee Skin Whiening.jpg',
-    category: 'Beauty',
-    description: 'Gentle skin whitening cream for daily use'
-  },
-{
-    id: 'skin-10',
-    name: 'Cerave Diabetics Dry Skin Relief',
-    price: 29.22,
-    image: '/images/natural images/Cerave Diabetics Dry Skin Relief.jpg',
-    category: 'Beauty',
-    description: 'Specialized moisturizer for diabetic skin care'
-  },
-{
-    id: 'skin-11',
-    name: 'Garnier Skin Active Brightening Night Serum',
-    price: 42.13,
-    image: '/images/natural images/Garnier Brightening Serum.jpg',
-    category: 'Beauty',
-    description: 'Overnight brightening serum with vitamin C'
-  },
-{
-    id: 'skin-12',
-    name: 'Gluta Coco Whitening Skin',
-    price: 18.69,
-    image: '/images/natural images/Gluta Coco Whitening Skin.jpg',
-    category: 'Beauty',
-    description: 'Glutathione and coconut oil skin whitening cream'
-  },
-{
-    id: 'skin-13',
-    name: 'OEM Skin Whitening & Brightening Collagen +C',
-    price: 2.55,
-    image: '/images/natural images/OEM Skin Whitening And Brightening Collagen +C.jpg',
-    category: 'Beauty',
-    description: 'Premium collagen with vitamin C for skin brightening'
-  },
-{
-    id: 'skin-14',
-    name: 'Three Ships Salicylic Acid Foaming Cleanser',
-    price: 65.08,
-    image: '/images/natural images/Three Ships Salicylic Acid Foaming Cleanser.jpg',
-    category: 'Beauty',
-    description: 'Deep cleansing foam with salicylic acid for acne-prone skin'
-  },
-{
-    id: 'skin-15',
-    name: 'Cerave Moisturizing Cream',
-    price: 12.83,
-    image: '/images/natural images/Cerave Moisturizing Cream.jpg',
-    category: 'Beauty',
-    description: 'Rich moisturizing cream for dry to very dry skin'
-  },
-{
-    id: 'skin-16',
-    name: 'Stubborn Acne Tenance',
-    price: 6.78,
-    image: '/images/natural images/Stubbon Acne Tenance Description.jpg',
-    category: 'Beauty',
-    description: 'Rich moisturizing cream for dry to very dry skin'
-  },
-{
-    id: 'skin-17',
-    name: 'Best Kiss Darkspot Cream',
-    price: 7.54,
-    image: '/images/natural images/Best Kiss DarkSpot Cream.jpg',
-    category: 'Beauty',
-    description: 'Targeted treatment for stubborn acne'
-  },
-{
-    id: 'skin-18',
-    name: 'Age Perfect Cell Renewal Serum',
-    price: 18.86,
-    image: '/images/natural images/Age Perfect Cell Renewal.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-19',
-    name: 'Loreal Paris Vitamin C',
-    price: 22.98,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-20',
-    name: 'Rejuvenating Serum',
-    price: 8.99,
-    image: '/images/natural images/Rejuvenating Serum.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-21',
-    name: 'Advanced Scar Gel',
-    price: 9.99,
-    image: '/images/natural images/Advanced Scar Gel.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-22',
-    name: 'Gluta Diamond Facial Cream',
-    price: 8.29,
-    image: '/images/natural images/Gluta Diamond Facial Cream.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-23',
-    name: 'Mooyam Acne Scar Removal',
-    price: 6.78,
-    image: '/images/natural images/Mooyam Acne Scar Removal.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-24',
-    name: 'Sadoer Collagen Face Serum',
-    price: 5.73,
-    image: '/images/natural images/Sadoer Collagen Face Serum.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-25',
-    name: 'Whitening Skin',
-    price: 6.78,
-    image: '/images/natural images/Whitening Skin.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-26',
-    name: 'Dark Knees And Elbows Strong Whitening Cream',
-    price: 8.29,
-    image: '/images/natural images/Dark Knees And Elbows Strong Whitening Cream Description.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-27',
-    name: 'Garnier Brightening Serum',
-    price: 13.59,
-    image: '/images/natural images/Garnier Brightening Serum.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-28',
-    name: 'Skin Cleanse',
-    price: 5.28,
-    image: '/images/natural images/Skin Cleanse.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-29',
-    name: 'Mooyam Stretch Mark Removal Oil',
-    price: 7.54,
-    image: '/images/natural images/Mooyam Strectch Mark Removal Oil.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-30',
-    name: "L'Oreal Paris Midnight Serum",
-    price: 24.88,
-    image: '/images/natural images/Loreal Paris MidNight Serum.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-31',
-    name: "Garnier Skin Active Moisture Rescue",
-    price: 7.54,
-    image: '/images/natural images/Garnier Skin Active Moisture Rescue.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-32',
-    name: "Garnier Skin Active Hyaluronic Aloe",
-    price: 10.56,
-    image: '/images/natural images/Garnier Skin Active Hyaluronic Aloe.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-33',
-    name: "St Ive Gentle Smoothing Scrub And Mask",
-    price: 4.53,
-    image: '/images/natural images/St Ives Gentle Smoothing Scrub And Mask.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-34',
-    name: "L'Oreal Paris Wrinkle Expert",
-    price: 10.56,
-    image: '/images/natural images/Loreal Paris Wrinkle Expert.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-35',
-    name: "Skin Whitening Ant-Aging Drink",
-    price: 4.53,
-    image: '/images/natural images/Skin Whitening Anti-Aging Drink.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-36',
-    name: "Tumeric Curcumin",
-    price: 8.29,
-    image: '/images/natural images/Tumeric Curcumin.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-{
-    id: 'skin-37',
-    name: "Garnier Hyaluronic Acid",
-    price: 15.08,
-    image: '/images/natural images/Garnier Hyaluronic Aloe Description image.jpg',
-    category: 'Beauty',
-    description: 'Gentle cleanser for acne-prone skin'
-  },
-  {
-    id: 'beauty-38',
-    name: 'Beauty Item 38',
-    price: 50.07,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-39',
-    name: 'Beauty Item 39',
-    price: 59.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-40',
-    name: 'Beauty Item 40',
-    price: 18.37,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-41',
-    name: 'Beauty Item 41',
-    price: 79.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-42',
-    name: 'Beauty Item 42',
-    price: 13.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-43',
-    name: 'Beauty Item 43',
-    price: 96.54,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-44',
-    name: 'Beauty Item 44',
-    price: 30.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-45',
-    name: 'Beauty Item 45',
-    price: 72.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-46',
-    name: 'Beauty Item 46',
-    price: 24.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-47',
-    name: 'Beauty Item 47',
-    price: 34.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-48',
-    name: 'Beauty Item 48',
-    price: 21.42,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-49',
-    name: 'Beauty Item 49',
-    price: 51.96,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-50',
-    name: 'Beauty Item 50',
-    price: 75.48,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-51',
-    name: 'Beauty Item 51',
-    price: 91.48,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-52',
-    name: 'Beauty Item 52',
-    price: 76.88,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-53',
-    name: 'Beauty Item 53',
-    price: 28.24,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-54',
-    name: 'Beauty Item 54',
-    price: 73.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-55',
-    name: 'Beauty Item 55',
-    price: 87.79,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-56',
-    name: 'Beauty Item 56',
-    price: 16.18,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-57',
-    name: 'Beauty Item 57',
-    price: 84.07,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-58',
-    name: 'Beauty Item 58',
-    price: 71.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-59',
-    name: 'Beauty Item 59',
-    price: 39.94,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-60',
-    name: 'Beauty Item 60',
-    price: 67.61,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-61',
-    name: 'Beauty Item 61',
-    price: 63.84,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-62',
-    name: 'Beauty Item 62',
-    price: 60.83,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-63',
-    name: 'Beauty Item 63',
-    price: 39.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-64',
-    name: 'Beauty Item 64',
-    price: 76.54,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-65',
-    name: 'Beauty Item 65',
-    price: 16.87,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-66',
-    name: 'Beauty Item 66',
-    price: 73.39,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-67',
-    name: 'Beauty Item 67',
-    price: 10.37,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-68',
-    name: 'Beauty Item 68',
-    price: 12.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-69',
-    name: 'Beauty Item 69',
-    price: 66.83,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-70',
-    name: 'Beauty Item 70',
-    price: 93.73,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-71',
-    name: 'Beauty Item 71',
-    price: 28.8,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-72',
-    name: 'Beauty Item 72',
-    price: 75.69,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-73',
-    name: 'Beauty Item 73',
-    price: 79.13,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-74',
-    name: 'Beauty Item 74',
-    price: 29.31,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-75',
-    name: 'Beauty Item 75',
-    price: 73.0,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-76',
-    name: 'Beauty Item 76',
-    price: 42.86,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-77',
-    name: 'Beauty Item 77',
-    price: 63.97,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-78',
-    name: 'Beauty Item 78',
-    price: 30.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-79',
-    name: 'Beauty Item 79',
-    price: 92.15,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-80',
-    name: 'Beauty Item 80',
-    price: 66.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-81',
-    name: 'Beauty Item 81',
-    price: 80.77,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-82',
-    name: 'Beauty Item 82',
-    price: 35.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-83',
-    name: 'Beauty Item 83',
-    price: 22.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-84',
-    name: 'Beauty Item 84',
-    price: 54.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-85',
-    name: 'Beauty Item 85',
-    price: 63.74,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-86',
-    name: 'Beauty Item 86',
-    price: 25.27,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-87',
-    name: 'Beauty Item 87',
-    price: 17.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-88',
-    name: 'Beauty Item 88',
-    price: 64.37,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-89',
-    name: 'Beauty Item 89',
-    price: 48.41,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-90',
-    name: 'Beauty Item 90',
-    price: 50.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-91',
-    name: 'Beauty Item 91',
-    price: 13.96,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-92',
-    name: 'Beauty Item 92',
-    price: 44.98,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-93',
-    name: 'Beauty Item 93',
-    price: 75.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-94',
-    name: 'Beauty Item 94',
-    price: 54.65,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-95',
-    name: 'Beauty Item 95',
-    price: 78.06,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-96',
-    name: 'Beauty Item 96',
-    price: 87.35,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-97',
-    name: 'Beauty Item 97',
-    price: 81.77,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-98',
-    name: 'Beauty Item 98',
-    price: 69.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-99',
-    name: 'Beauty Item 99',
-    price: 19.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-100',
-    name: 'Beauty Item 100',
-    price: 23.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-101',
-    name: 'Beauty Item 101',
-    price: 53.7,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-102',
-    name: 'Beauty Item 102',
-    price: 73.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-103',
-    name: 'Beauty Item 103',
-    price: 35.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-104',
-    name: 'Beauty Item 104',
-    price: 58.3,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-105',
-    name: 'Beauty Item 105',
-    price: 40.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-106',
-    name: 'Beauty Item 106',
-    price: 91.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-107',
-    name: 'Beauty Item 107',
-    price: 23.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-108',
-    name: 'Beauty Item 108',
-    price: 81.45,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-109',
-    name: 'Beauty Item 109',
-    price: 16.61,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-110',
-    name: 'Beauty Item 110',
-    price: 47.07,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-111',
-    name: 'Beauty Item 111',
-    price: 87.89,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-112',
-    name: 'Beauty Item 112',
-    price: 17.38,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-113',
-    name: 'Beauty Item 113',
-    price: 19.66,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-114',
-    name: 'Beauty Item 114',
-    price: 57.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-115',
-    name: 'Beauty Item 115',
-    price: 71.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-116',
-    name: 'Beauty Item 116',
-    price: 24.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-117',
-    name: 'Beauty Item 117',
-    price: 83.97,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-118',
-    name: 'Beauty Item 118',
-    price: 98.29,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-119',
-    name: 'Beauty Item 119',
-    price: 45.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-120',
-    name: 'Beauty Item 120',
-    price: 77.69,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-121',
-    name: 'Beauty Item 121',
-    price: 81.3,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-122',
-    name: 'Beauty Item 122',
-    price: 89.35,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-123',
-    name: 'Beauty Item 123',
-    price: 56.37,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-124',
-    name: 'Beauty Item 124',
-    price: 91.04,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-125',
-    name: 'Beauty Item 125',
-    price: 38.27,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-126',
-    name: 'Beauty Item 126',
-    price: 34.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-127',
-    name: 'Beauty Item 127',
-    price: 88.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-128',
-    name: 'Beauty Item 128',
-    price: 18.58,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-129',
-    name: 'Beauty Item 129',
-    price: 88.75,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-130',
-    name: 'Beauty Item 130',
-    price: 19.01,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-131',
-    name: 'Beauty Item 131',
-    price: 95.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-132',
-    name: 'Beauty Item 132',
-    price: 56.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-133',
-    name: 'Beauty Item 133',
-    price: 15.54,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-134',
-    name: 'Beauty Item 134',
-    price: 92.11,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-135',
-    name: 'Beauty Item 135',
-    price: 49.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-136',
-    name: 'Beauty Item 136',
-    price: 77.7,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-137',
-    name: 'Beauty Item 137',
-    price: 67.46,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-138',
-    name: 'Beauty Item 138',
-    price: 20.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-139',
-    name: 'Beauty Item 139',
-    price: 73.7,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-140',
-    name: 'Beauty Item 140',
-    price: 22.77,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-141',
-    name: 'Beauty Item 141',
-    price: 96.06,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-142',
-    name: 'Beauty Item 142',
-    price: 61.14,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-143',
-    name: 'Beauty Item 143',
-    price: 34.51,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-144',
-    name: 'Beauty Item 144',
-    price: 72.08,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-145',
-    name: 'Beauty Item 145',
-    price: 17.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-146',
-    name: 'Beauty Item 146',
-    price: 55.39,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-147',
-    name: 'Beauty Item 147',
-    price: 94.53,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-148',
-    name: 'Beauty Item 148',
-    price: 25.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-149',
-    name: 'Beauty Item 149',
-    price: 51.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-150',
-    name: 'Beauty Item 150',
-    price: 93.17,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-151',
-    name: 'Beauty Item 151',
-    price: 68.79,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-152',
-    name: 'Beauty Item 152',
-    price: 36.65,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-153',
-    name: 'Beauty Item 153',
-    price: 96.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-154',
-    name: 'Beauty Item 154',
-    price: 16.48,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-155',
-    name: 'Beauty Item 155',
-    price: 60.61,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-156',
-    name: 'Beauty Item 156',
-    price: 18.6,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-157',
-    name: 'Beauty Item 157',
-    price: 82.14,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-158',
-    name: 'Beauty Item 158',
-    price: 88.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-159',
-    name: 'Beauty Item 159',
-    price: 97.8,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-160',
-    name: 'Beauty Item 160',
-    price: 43.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-161',
-    name: 'Beauty Item 161',
-    price: 22.87,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-162',
-    name: 'Beauty Item 162',
-    price: 21.94,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-163',
-    name: 'Beauty Item 163',
-    price: 46.69,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-164',
-    name: 'Beauty Item 164',
-    price: 30.76,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-165',
-    name: 'Beauty Item 165',
-    price: 93.09,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-166',
-    name: 'Beauty Item 166',
-    price: 72.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-167',
-    name: 'Beauty Item 167',
-    price: 39.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-168',
-    name: 'Beauty Item 168',
-    price: 22.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-169',
-    name: 'Beauty Item 169',
-    price: 44.88,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-170',
-    name: 'Beauty Item 170',
-    price: 36.13,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-171',
-    name: 'Beauty Item 171',
-    price: 64.71,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-172',
-    name: 'Beauty Item 172',
-    price: 36.96,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-173',
-    name: 'Beauty Item 173',
-    price: 16.02,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-174',
-    name: 'Beauty Item 174',
-    price: 50.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-175',
-    name: 'Beauty Item 175',
-    price: 70.4,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-176',
-    name: 'Beauty Item 176',
-    price: 30.78,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-177',
-    name: 'Beauty Item 177',
-    price: 73.38,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-178',
-    name: 'Beauty Item 178',
-    price: 61.5,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-179',
-    name: 'Beauty Item 179',
-    price: 58.77,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-180',
-    name: 'Beauty Item 180',
-    price: 18.98,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-181',
-    name: 'Beauty Item 181',
-    price: 50.9,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-182',
-    name: 'Beauty Item 182',
-    price: 51.13,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-183',
-    name: 'Beauty Item 183',
-    price: 28.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-184',
-    name: 'Beauty Item 184',
-    price: 38.6,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-185',
-    name: 'Beauty Item 185',
-    price: 93.55,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-186',
-    name: 'Beauty Item 186',
-    price: 83.48,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-187',
-    name: 'Beauty Item 187',
-    price: 40.09,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-188',
-    name: 'Beauty Item 188',
-    price: 77.67,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-189',
-    name: 'Beauty Item 189',
-    price: 71.42,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-190',
-    name: 'Beauty Item 190',
-    price: 12.49,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-191',
-    name: 'Beauty Item 191',
-    price: 94.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-192',
-    name: 'Beauty Item 192',
-    price: 66.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-193',
-    name: 'Beauty Item 193',
-    price: 76.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-194',
-    name: 'Beauty Item 194',
-    price: 19.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-195',
-    name: 'Beauty Item 195',
-    price: 80.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-196',
-    name: 'Beauty Item 196',
-    price: 36.5,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-197',
-    name: 'Beauty Item 197',
-    price: 90.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-198',
-    name: 'Beauty Item 198',
-    price: 58.31,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-199',
-    name: 'Beauty Item 199',
-    price: 61.69,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-200',
-    name: 'Beauty Item 200',
-    price: 46.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-201',
-    name: 'Beauty Item 201',
-    price: 26.62,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-202',
-    name: 'Beauty Item 202',
-    price: 80.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-203',
-    name: 'Beauty Item 203',
-    price: 16.17,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-204',
-    name: 'Beauty Item 204',
-    price: 91.82,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-205',
-    name: 'Beauty Item 205',
-    price: 40.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-206',
-    name: 'Beauty Item 206',
-    price: 89.09,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-207',
-    name: 'Beauty Item 207',
-    price: 66.35,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-208',
-    name: 'Beauty Item 208',
-    price: 65.51,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-209',
-    name: 'Beauty Item 209',
-    price: 67.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-210',
-    name: 'Beauty Item 210',
-    price: 47.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-211',
-    name: 'Beauty Item 211',
-    price: 99.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-212',
-    name: 'Beauty Item 212',
-    price: 51.15,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-213',
-    name: 'Beauty Item 213',
-    price: 66.4,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-214',
-    name: 'Beauty Item 214',
-    price: 68.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-215',
-    name: 'Beauty Item 215',
-    price: 33.36,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-216',
-    name: 'Beauty Item 216',
-    price: 72.38,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-217',
-    name: 'Beauty Item 217',
-    price: 56.67,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-218',
-    name: 'Beauty Item 218',
-    price: 63.67,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-219',
-    name: 'Beauty Item 219',
-    price: 86.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-220',
-    name: 'Beauty Item 220',
-    price: 15.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-221',
-    name: 'Beauty Item 221',
-    price: 47.74,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-222',
-    name: 'Beauty Item 222',
-    price: 83.51,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-223',
-    name: 'Beauty Item 223',
-    price: 30.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-224',
-    name: 'Beauty Item 224',
-    price: 91.17,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-225',
-    name: 'Beauty Item 225',
-    price: 59.3,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-226',
-    name: 'Beauty Item 226',
-    price: 32.37,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-227',
-    name: 'Beauty Item 227',
-    price: 32.8,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-228',
-    name: 'Beauty Item 228',
-    price: 31.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-229',
-    name: 'Beauty Item 229',
-    price: 23.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-230',
-    name: 'Beauty Item 230',
-    price: 69.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-231',
-    name: 'Beauty Item 231',
-    price: 25.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-232',
-    name: 'Beauty Item 232',
-    price: 67.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-233',
-    name: 'Beauty Item 233',
-    price: 41.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-234',
-    name: 'Beauty Item 234',
-    price: 95.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-235',
-    name: 'Beauty Item 235',
-    price: 84.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-236',
-    name: 'Beauty Item 236',
-    price: 28.6,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-237',
-    name: 'Beauty Item 237',
-    price: 68.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-238',
-    name: 'Beauty Item 238',
-    price: 57.83,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-239',
-    name: 'Beauty Item 239',
-    price: 72.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-240',
-    name: 'Beauty Item 240',
-    price: 28.82,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-241',
-    name: 'Beauty Item 241',
-    price: 85.83,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-242',
-    name: 'Beauty Item 242',
-    price: 75.08,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-243',
-    name: 'Beauty Item 243',
-    price: 42.03,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-244',
-    name: 'Beauty Item 244',
-    price: 56.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-245',
-    name: 'Beauty Item 245',
-    price: 63.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-246',
-    name: 'Beauty Item 246',
-    price: 63.79,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-247',
-    name: 'Beauty Item 247',
-    price: 14.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-248',
-    name: 'Beauty Item 248',
-    price: 35.71,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-249',
-    name: 'Beauty Item 249',
-    price: 91.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-250',
-    name: 'Beauty Item 250',
-    price: 56.54,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-251',
-    name: 'Beauty Item 251',
-    price: 23.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-252',
-    name: 'Beauty Item 252',
-    price: 39.28,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-253',
-    name: 'Beauty Item 253',
-    price: 37.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-254',
-    name: 'Beauty Item 254',
-    price: 61.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-255',
-    name: 'Beauty Item 255',
-    price: 21.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-256',
-    name: 'Beauty Item 256',
-    price: 62.09,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-257',
-    name: 'Beauty Item 257',
-    price: 97.75,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-258',
-    name: 'Beauty Item 258',
-    price: 17.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-259',
-    name: 'Beauty Item 259',
-    price: 59.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-260',
-    name: 'Beauty Item 260',
-    price: 37.01,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-261',
-    name: 'Beauty Item 261',
-    price: 39.11,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-262',
-    name: 'Beauty Item 262',
-    price: 46.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-263',
-    name: 'Beauty Item 263',
-    price: 42.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-264',
-    name: 'Beauty Item 264',
-    price: 33.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-265',
-    name: 'Beauty Item 265',
-    price: 24.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-266',
-    name: 'Beauty Item 266',
-    price: 58.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-267',
-    name: 'Beauty Item 267',
-    price: 61.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-268',
-    name: 'Beauty Item 268',
-    price: 39.14,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-269',
-    name: 'Beauty Item 269',
-    price: 47.6,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-270',
-    name: 'Beauty Item 270',
-    price: 22.28,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-271',
-    name: 'Beauty Item 271',
-    price: 58.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-272',
-    name: 'Beauty Item 272',
-    price: 38.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-273',
-    name: 'Beauty Item 273',
-    price: 86.62,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-274',
-    name: 'Beauty Item 274',
-    price: 65.59,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-275',
-    name: 'Beauty Item 275',
-    price: 38.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-276',
-    name: 'Beauty Item 276',
-    price: 21.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-277',
-    name: 'Beauty Item 277',
-    price: 59.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-278',
-    name: 'Beauty Item 278',
-    price: 45.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-279',
-    name: 'Beauty Item 279',
-    price: 35.75,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-280',
-    name: 'Beauty Item 280',
-    price: 68.45,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-281',
-    name: 'Beauty Item 281',
-    price: 29.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-282',
-    name: 'Beauty Item 282',
-    price: 25.94,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-283',
-    name: 'Beauty Item 283',
-    price: 23.46,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-284',
-    name: 'Beauty Item 284',
-    price: 29.02,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-285',
-    name: 'Beauty Item 285',
-    price: 24.38,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-286',
-    name: 'Beauty Item 286',
-    price: 80.86,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-287',
-    name: 'Beauty Item 287',
-    price: 58.83,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-288',
-    name: 'Beauty Item 288',
-    price: 78.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-289',
-    name: 'Beauty Item 289',
-    price: 31.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-290',
-    name: 'Beauty Item 290',
-    price: 54.74,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-291',
-    name: 'Beauty Item 291',
-    price: 43.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-292',
-    name: 'Beauty Item 292',
-    price: 83.53,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-293',
-    name: 'Beauty Item 293',
-    price: 86.98,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-294',
-    name: 'Beauty Item 294',
-    price: 21.94,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-295',
-    name: 'Beauty Item 295',
-    price: 77.69,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-296',
-    name: 'Beauty Item 296',
-    price: 17.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-297',
-    name: 'Beauty Item 297',
-    price: 36.18,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-298',
-    name: 'Beauty Item 298',
-    price: 16.23,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-299',
-    name: 'Beauty Item 299',
-    price: 51.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-300',
-    name: 'Beauty Item 300',
-    price: 19.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-301',
-    name: 'Beauty Item 301',
-    price: 82.72,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-302',
-    name: 'Beauty Item 302',
-    price: 68.42,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-303',
-    name: 'Beauty Item 303',
-    price: 16.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-304',
-    name: 'Beauty Item 304',
-    price: 35.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-305',
-    name: 'Beauty Item 305',
-    price: 14.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-306',
-    name: 'Beauty Item 306',
-    price: 71.24,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-307',
-    name: 'Beauty Item 307',
-    price: 81.9,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-308',
-    name: 'Beauty Item 308',
-    price: 82.87,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-309',
-    name: 'Beauty Item 309',
-    price: 11.86,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-310',
-    name: 'Beauty Item 310',
-    price: 43.97,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-311',
-    name: 'Beauty Item 311',
-    price: 49.28,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-312',
-    name: 'Beauty Item 312',
-    price: 20.57,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-313',
-    name: 'Beauty Item 313',
-    price: 81.6,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-314',
-    name: 'Beauty Item 314',
-    price: 29.57,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-315',
-    name: 'Beauty Item 315',
-    price: 24.27,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-316',
-    name: 'Beauty Item 316',
-    price: 83.37,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-317',
-    name: 'Beauty Item 317',
-    price: 52.78,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-318',
-    name: 'Beauty Item 318',
-    price: 55.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-319',
-    name: 'Beauty Item 319',
-    price: 34.59,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-320',
-    name: 'Beauty Item 320',
-    price: 99.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-321',
-    name: 'Beauty Item 321',
-    price: 32.03,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-322',
-    name: 'Beauty Item 322',
-    price: 53.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-323',
-    name: 'Beauty Item 323',
-    price: 30.84,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-324',
-    name: 'Beauty Item 324',
-    price: 67.34,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-325',
-    name: 'Beauty Item 325',
-    price: 87.26,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-326',
-    name: 'Beauty Item 326',
-    price: 48.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-327',
-    name: 'Beauty Item 327',
-    price: 98.95,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-328',
-    name: 'Beauty Item 328',
-    price: 11.64,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-329',
-    name: 'Beauty Item 329',
-    price: 85.71,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-330',
-    name: 'Beauty Item 330',
-    price: 24.76,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-331',
-    name: 'Beauty Item 331',
-    price: 89.24,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-332',
-    name: 'Beauty Item 332',
-    price: 47.24,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-333',
-    name: 'Beauty Item 333',
-    price: 99.67,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-334',
-    name: 'Beauty Item 334',
-    price: 30.8,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-335',
-    name: 'Beauty Item 335',
-    price: 16.73,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-336',
-    name: 'Beauty Item 336',
-    price: 66.0,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-337',
-    name: 'Beauty Item 337',
-    price: 97.15,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-338',
-    name: 'Beauty Item 338',
-    price: 30.77,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-339',
-    name: 'Beauty Item 339',
-    price: 83.46,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-340',
-    name: 'Beauty Item 340',
-    price: 50.69,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-341',
-    name: 'Beauty Item 341',
-    price: 70.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-342',
-    name: 'Beauty Item 342',
-    price: 22.79,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-343',
-    name: 'Beauty Item 343',
-    price: 89.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-344',
-    name: 'Beauty Item 344',
-    price: 28.97,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-345',
-    name: 'Beauty Item 345',
-    price: 17.5,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-346',
-    name: 'Beauty Item 346',
-    price: 78.06,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-347',
-    name: 'Beauty Item 347',
-    price: 85.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-348',
-    name: 'Beauty Item 348',
-    price: 37.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-349',
-    name: 'Beauty Item 349',
-    price: 65.06,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-350',
-    name: 'Beauty Item 350',
-    price: 95.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-351',
-    name: 'Beauty Item 351',
-    price: 33.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-352',
-    name: 'Beauty Item 352',
-    price: 15.64,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-353',
-    name: 'Beauty Item 353',
-    price: 93.77,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-354',
-    name: 'Beauty Item 354',
-    price: 47.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-355',
-    name: 'Beauty Item 355',
-    price: 21.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-356',
-    name: 'Beauty Item 356',
-    price: 89.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-357',
-    name: 'Beauty Item 357',
-    price: 31.89,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-358',
-    name: 'Beauty Item 358',
-    price: 65.75,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-359',
-    name: 'Beauty Item 359',
-    price: 26.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-360',
-    name: 'Beauty Item 360',
-    price: 33.96,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-361',
-    name: 'Beauty Item 361',
-    price: 87.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-362',
-    name: 'Beauty Item 362',
-    price: 74.26,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-363',
-    name: 'Beauty Item 363',
-    price: 79.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-364',
-    name: 'Beauty Item 364',
-    price: 47.36,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-365',
-    name: 'Beauty Item 365',
-    price: 44.9,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-366',
-    name: 'Beauty Item 366',
-    price: 99.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-367',
-    name: 'Beauty Item 367',
-    price: 19.17,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-368',
-    name: 'Beauty Item 368',
-    price: 74.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-369',
-    name: 'Beauty Item 369',
-    price: 23.95,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-370',
-    name: 'Beauty Item 370',
-    price: 84.36,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-371',
-    name: 'Beauty Item 371',
-    price: 93.62,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-372',
-    name: 'Beauty Item 372',
-    price: 13.03,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-373',
-    name: 'Beauty Item 373',
-    price: 70.97,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-374',
-    name: 'Beauty Item 374',
-    price: 21.53,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-375',
-    name: 'Beauty Item 375',
-    price: 46.02,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-376',
-    name: 'Beauty Item 376',
-    price: 81.78,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-377',
-    name: 'Beauty Item 377',
-    price: 34.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-378',
-    name: 'Beauty Item 378',
-    price: 49.56,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-379',
-    name: 'Beauty Item 379',
-    price: 39.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-380',
-    name: 'Beauty Item 380',
-    price: 79.74,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-381',
-    name: 'Beauty Item 381',
-    price: 96.78,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-382',
-    name: 'Beauty Item 382',
-    price: 95.75,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-383',
-    name: 'Beauty Item 383',
-    price: 18.36,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-384',
-    name: 'Beauty Item 384',
-    price: 58.76,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-385',
-    name: 'Beauty Item 385',
-    price: 45.99,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-386',
-    name: 'Beauty Item 386',
-    price: 83.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-387',
-    name: 'Beauty Item 387',
-    price: 55.11,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-388',
-    name: 'Beauty Item 388',
-    price: 39.28,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-389',
-    name: 'Beauty Item 389',
-    price: 84.36,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-390',
-    name: 'Beauty Item 390',
-    price: 72.56,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-391',
-    name: 'Beauty Item 391',
-    price: 35.85,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-392',
-    name: 'Beauty Item 392',
-    price: 50.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-393',
-    name: 'Beauty Item 393',
-    price: 63.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-394',
-    name: 'Beauty Item 394',
-    price: 11.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-395',
-    name: 'Beauty Item 395',
-    price: 25.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-396',
-    name: 'Beauty Item 396',
-    price: 90.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-397',
-    name: 'Beauty Item 397',
-    price: 10.25,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-398',
-    name: 'Beauty Item 398',
-    price: 68.97,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-399',
-    name: 'Beauty Item 399',
-    price: 65.08,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-400',
-    name: 'Beauty Item 400',
-    price: 79.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-401',
-    name: 'Beauty Item 401',
-    price: 11.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-402',
-    name: 'Beauty Item 402',
-    price: 99.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-403',
-    name: 'Beauty Item 403',
-    price: 78.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-404',
-    name: 'Beauty Item 404',
-    price: 66.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-405',
-    name: 'Beauty Item 405',
-    price: 83.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-406',
-    name: 'Beauty Item 406',
-    price: 82.3,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-407',
-    name: 'Beauty Item 407',
-    price: 50.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-408',
-    name: 'Beauty Item 408',
-    price: 75.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-409',
-    name: 'Beauty Item 409',
-    price: 66.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-410',
-    name: 'Beauty Item 410',
-    price: 72.01,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-411',
-    name: 'Beauty Item 411',
-    price: 93.27,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-412',
-    name: 'Beauty Item 412',
-    price: 21.26,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-413',
-    name: 'Beauty Item 413',
-    price: 80.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-414',
-    name: 'Beauty Item 414',
-    price: 41.63,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-415',
-    name: 'Beauty Item 415',
-    price: 35.41,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-416',
-    name: 'Beauty Item 416',
-    price: 72.51,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-417',
-    name: 'Beauty Item 417',
-    price: 32.18,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-418',
-    name: 'Beauty Item 418',
-    price: 60.16,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-419',
-    name: 'Beauty Item 419',
-    price: 14.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-420',
-    name: 'Beauty Item 420',
-    price: 24.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-421',
-    name: 'Beauty Item 421',
-    price: 22.52,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-422',
-    name: 'Beauty Item 422',
-    price: 34.66,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-423',
-    name: 'Beauty Item 423',
-    price: 17.28,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-424',
-    name: 'Beauty Item 424',
-    price: 92.51,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-425',
-    name: 'Beauty Item 425',
-    price: 64.85,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-426',
-    name: 'Beauty Item 426',
-    price: 58.07,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-427',
-    name: 'Beauty Item 427',
-    price: 10.91,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-428',
-    name: 'Beauty Item 428',
-    price: 11.07,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-429',
-    name: 'Beauty Item 429',
-    price: 68.28,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-430',
-    name: 'Beauty Item 430',
-    price: 93.04,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-431',
-    name: 'Beauty Item 431',
-    price: 49.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-432',
-    name: 'Beauty Item 432',
-    price: 22.27,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-433',
-    name: 'Beauty Item 433',
-    price: 65.43,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-434',
-    name: 'Beauty Item 434',
-    price: 54.53,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-435',
-    name: 'Beauty Item 435',
-    price: 14.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-436',
-    name: 'Beauty Item 436',
-    price: 28.42,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-437',
-    name: 'Beauty Item 437',
-    price: 87.81,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-438',
-    name: 'Beauty Item 438',
-    price: 54.26,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-439',
-    name: 'Beauty Item 439',
-    price: 41.26,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-440',
-    name: 'Beauty Item 440',
-    price: 94.8,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-441',
-    name: 'Beauty Item 441',
-    price: 55.18,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-442',
-    name: 'Beauty Item 442',
-    price: 83.59,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-443',
-    name: 'Beauty Item 443',
-    price: 56.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-444',
-    name: 'Beauty Item 444',
-    price: 91.95,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-445',
-    name: 'Beauty Item 445',
-    price: 44.5,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-446',
-    name: 'Beauty Item 446',
-    price: 20.42,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-447',
-    name: 'Beauty Item 447',
-    price: 23.88,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-448',
-    name: 'Beauty Item 448',
-    price: 58.03,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-449',
-    name: 'Beauty Item 449',
-    price: 57.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-450',
-    name: 'Beauty Item 450',
-    price: 73.49,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-451',
-    name: 'Beauty Item 451',
-    price: 87.46,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-452',
-    name: 'Beauty Item 452',
-    price: 49.59,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-453',
-    name: 'Beauty Item 453',
-    price: 21.33,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-454',
-    name: 'Beauty Item 454',
-    price: 50.09,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-455',
-    name: 'Beauty Item 455',
-    price: 44.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-456',
-    name: 'Beauty Item 456',
-    price: 13.64,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-457',
-    name: 'Beauty Item 457',
-    price: 67.62,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-458',
-    name: 'Beauty Item 458',
-    price: 61.55,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-459',
-    name: 'Beauty Item 459',
-    price: 71.05,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-460',
-    name: 'Beauty Item 460',
-    price: 43.01,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-461',
-    name: 'Beauty Item 461',
-    price: 75.46,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-462',
-    name: 'Beauty Item 462',
-    price: 60.08,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-463',
-    name: 'Beauty Item 463',
-    price: 51.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-464',
-    name: 'Beauty Item 464',
-    price: 41.8,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-465',
-    name: 'Beauty Item 465',
-    price: 57.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-466',
-    name: 'Beauty Item 466',
-    price: 56.89,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-467',
-    name: 'Beauty Item 467',
-    price: 23.5,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-468',
-    name: 'Beauty Item 468',
-    price: 52.94,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-469',
-    name: 'Beauty Item 469',
-    price: 19.62,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-470',
-    name: 'Beauty Item 470',
-    price: 63.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-471',
-    name: 'Beauty Item 471',
-    price: 67.95,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-472',
-    name: 'Beauty Item 472',
-    price: 96.89,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-473',
-    name: 'Beauty Item 473',
-    price: 85.92,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-474',
-    name: 'Beauty Item 474',
-    price: 95.48,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-475',
-    name: 'Beauty Item 475',
-    price: 12.19,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-476',
-    name: 'Beauty Item 476',
-    price: 98.2,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-477',
-    name: 'Beauty Item 477',
-    price: 11.03,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-478',
-    name: 'Beauty Item 478',
-    price: 60.26,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-479',
-    name: 'Beauty Item 479',
-    price: 55.44,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-480',
-    name: 'Beauty Item 480',
-    price: 63.02,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-481',
-    name: 'Beauty Item 481',
-    price: 53.67,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-482',
-    name: 'Beauty Item 482',
-    price: 29.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-483',
-    name: 'Beauty Item 483',
-    price: 93.93,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-484',
-    name: 'Beauty Item 484',
-    price: 71.46,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-485',
-    name: 'Beauty Item 485',
-    price: 23.76,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-486',
-    name: 'Beauty Item 486',
-    price: 62.49,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-487',
-    name: 'Beauty Item 487',
-    price: 89.21,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-488',
-    name: 'Beauty Item 488',
-    price: 23.12,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-489',
-    name: 'Beauty Item 489',
-    price: 93.67,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-490',
-    name: 'Beauty Item 490',
-    price: 60.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-491',
-    name: 'Beauty Item 491',
-    price: 47.06,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-492',
-    name: 'Beauty Item 492',
-    price: 11.57,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-493',
-    name: 'Beauty Item 493',
-    price: 19.57,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-494',
-    name: 'Beauty Item 494',
-    price: 48.1,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-495',
-    name: 'Beauty Item 495',
-    price: 82.07,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-496',
-    name: 'Beauty Item 496',
-    price: 49.47,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-497',
-    name: 'Beauty Item 497',
-    price: 13.14,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-498',
-    name: 'Beauty Item 498',
-    price: 44.68,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-499',
-    name: 'Beauty Item 499',
-    price: 37.55,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
-  },
-  {
-    id: 'beauty-500',
-    name: 'Beauty Item 500',
-    price: 49.5,
-    image: '/images/placeholder.jpg',
-    category: 'Beauty',
-    description: 'Generic beauty product - Specially formulated for your needs.'
+  {
+    "id": "98295",
+    "name": "Mild By Nature, Raw Shea Butter Bar Soap, 5 oz (141 g)",
+    "price": 14543,
+    "image": "/images/products/beauty/98295.jpg",
+    "category": "Beauty",
+    "description": "Mild By Nature, Raw Shea Butter Bar Soap, 5 oz (141 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-raw-shea-butter-bar-soap-5-oz-141-g/98295"
+  },
+  {
+    "id": "148319",
+    "name": "Mild By Nature, Sierra Bees™, Cuticle Care Balm Stick, Geranium, Orange & Lemongrass, 0.6 oz (17 g)",
+    "price": 15039,
+    "image": "/images/products/beauty/148319.jpg",
+    "category": "Beauty",
+    "description": "Mild By Nature, Sierra Bees™, Cuticle Care Balm Stick, Geranium, Orange & Lemongrass, 0.6 oz (17 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-cuticle-care-balm-stick-geranium-orange-lemongrass-0-6-oz-17-g/148319"
+  },
+  {
+    "id": "82189",
+    "name": "Advanced Clinicals, Vitamin C Brightening Serum, 1.75 fl oz (52 ml)",
+    "price": 35239,
+    "image": "/images/products/beauty/82189.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Vitamin C Brightening Serum, 1.75 fl oz (52 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-vitamin-c-brightening-serum-1-75-fl-oz-52-ml/82189"
+  },
+  {
+    "id": "69968",
+    "name": "CosRx, Acne Pimple Master Patch, 24 Patches",
+    "price": 12859,
+    "image": "/images/products/beauty/69968.jpg",
+    "category": "Beauty",
+    "description": "CosRx, Acne Pimple Master Patch, 24 Patches - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/cosrx-acne-pimple-master-patch-24-patches/69968"
+  },
+  {
+    "id": "103844",
+    "name": "PanOxyl, Acne Foaming Wash, For Face & Body, Maximum Strength, 5.5 oz (156 g)",
+    "price": 52256,
+    "image": "/images/products/beauty/103844.jpg",
+    "category": "Beauty",
+    "description": "PanOxyl, Acne Foaming Wash, For Face & Body, Maximum Strength, 5.5 oz (156 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/panoxyl-acne-foaming-wash-for-face-body-maximum-strength-5-5-oz-156-g/103844"
+  },
+  {
+    "id": "82183",
+    "name": "Advanced Clinicals, Retinol, Advanced Firming Cream, 16 oz (454 g)",
+    "price": 43660,
+    "image": "/images/products/beauty/82183.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Retinol, Advanced Firming Cream, 16 oz (454 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-retinol-advanced-firming-cream-16-oz-454-g/82183"
+  },
+  {
+    "id": "78526",
+    "name": "Heimish, Dailism, Smudge Stop Mascara, Curling, Black, 9 g",
+    "price": 39440,
+    "image": "/images/products/beauty/78526.jpg",
+    "category": "Beauty",
+    "description": "Heimish, Dailism, Smudge Stop Mascara, Curling, Black, 9 g - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/heimish-dailism-smudge-stop-mascara-curling-black-9-g/78526"
+  },
+  {
+    "id": "82182",
+    "name": "Advanced Clinicals, Hyaluronic Serum, 1.75 fl oz (52 ml)",
+    "price": 35152,
+    "image": "/images/products/beauty/82182.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Hyaluronic Serum, 1.75 fl oz (52 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-hyaluronic-serum-1-75-fl-oz-52-ml/82182"
+  },
+  {
+    "id": "147042",
+    "name": "Dr. Althea, 345 Relief Cream , 1.69 fl oz (50 ml)",
+    "price": 102459,
+    "image": "/images/products/beauty/147042.jpg",
+    "category": "Beauty",
+    "description": "Dr. Althea, 345 Relief Cream , 1.69 fl oz (50 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/dr-althea-345-relief-cream-1-69-fl-oz-50-ml/147042"
+  },
+  {
+    "id": "82188",
+    "name": "Advanced Clinicals, Vitamin C, Advanced Brightening Cream, 16 oz (454 g)",
+    "price": 43573,
+    "image": "/images/products/beauty/82188.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Vitamin C, Advanced Brightening Cream, 16 oz (454 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-vitamin-c-advanced-brightening-cream-16-oz-454-g/82188"
+  },
+  {
+    "id": "82184",
+    "name": "Advanced Clinicals, Retinol Anti-Wrinkle Serum, 1.75 fl oz (52 ml)",
+    "price": 36506,
+    "image": "/images/products/beauty/82184.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Retinol Anti-Wrinkle Serum, 1.75 fl oz (52 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-retinol-anti-wrinkle-serum-1-75-fl-oz-52-ml/82184"
+  },
+  {
+    "id": "86314",
+    "name": "Differin, Adapalene Gel 0.1 % Acne Treatment, Fragrance Free, 0.5 oz (15 g)",
+    "price": 71912,
+    "image": "/images/products/beauty/86314.jpg",
+    "category": "Beauty",
+    "description": "Differin, Adapalene Gel 0.1 % Acne Treatment, Fragrance Free, 0.5 oz (15 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/differin-adapalene-gel-0-1-acne-treatment-fragrance-free-0-5-oz-15-g/86314"
+  },
+  {
+    "id": "148322",
+    "name": "Sierra Bees™, Cuticle Care Balm, Geranium, Orange & Lemongrass, 0.6 oz (17 g)",
+    "price": 11040,
+    "image": "/images/products/beauty/148322.jpg",
+    "category": "Beauty",
+    "description": "Sierra Bees™, Cuticle Care Balm, Geranium, Orange & Lemongrass, 0.6 oz (17 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-cuticle-care-balm-geranium-orange-lemongrass-0-6-oz-17-g/148322"
+  },
+  {
+    "id": "89053",
+    "name": "Calendula Cream, 2 oz (56 g)",
+    "price": 22141,
+    "image": "/images/products/beauty/89053.jpg",
+    "category": "Beauty",
+    "description": "Calendula Cream, 2 oz (56 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-calendula-cream-2-oz-56-g/89053"
+  },
+  {
+    "id": "89691",
+    "name": "Witch Hazel, Alcohol-Free, Unscented, 12 fl oz (355 ml)",
+    "price": 19198,
+    "image": "/images/products/beauty/89691.jpg",
+    "category": "Beauty",
+    "description": "Witch Hazel, Alcohol-Free, Unscented, 12 fl oz (355 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-witch-hazel-alcohol-free-unscented-12-fl-oz-355-ml/89691"
+  },
+  {
+    "id": "97403",
+    "name": "Eye Admire Black Pearl Hydrogel Eye Patch, 60 Patches",
+    "price": 37087,
+    "image": "/images/products/beauty/97403.jpg",
+    "category": "Beauty",
+    "description": "Eye Admire Black Pearl Hydrogel Eye Patch, 60 Patches - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/idealove-eye-admire-black-pearl-hydrogel-eye-patch-60-patches/97403"
+  },
+  {
+    "id": "112417",
+    "name": "Peppermint & Shea Foot Cream with Argan & Marula Oils, 2.5 oz (71 g)",
+    "price": 21078,
+    "image": "/images/products/beauty/112417.jpg",
+    "category": "Beauty",
+    "description": "Peppermint & Shea Foot Cream with Argan & Marula Oils, 2.5 oz (71 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-peppermint-shea-foot-cream-with-argan-marula-oils-2-5-oz-71-g/112417"
+  },
+  {
+    "id": "131867",
+    "name": "Heartleaf  77% Soothing Toner, 16.9 fl oz (500 ml)",
+    "price": 77890,
+    "image": "/images/products/beauty/131867.jpg",
+    "category": "Beauty",
+    "description": "Heartleaf  77% Soothing Toner, 16.9 fl oz (500 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/anua-heartleaf-77-soothing-toner-16-9-fl-oz-500-ml/131867"
+  },
+  {
+    "id": "98673",
+    "name": "Vitamin C Moisturizer, Enhanced Brightening Lightweight Cream, 2.25 oz (64 g)",
+    "price": 61194,
+    "image": "/images/products/beauty/98673.jpg",
+    "category": "Beauty",
+    "description": "Vitamin C Moisturizer, Enhanced Brightening Lightweight Cream, 2.25 oz (64 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-vitamin-c-moisturizer-enhanced-brightening-lightweight-cream-2-25-oz-64-g/98673"
+  },
+  {
+    "id": "116240",
+    "name": "Fermentation Eye Cream, 1.05 oz (30 g)",
+    "price": 53647,
+    "image": "/images/products/beauty/116240.jpg",
+    "category": "Beauty",
+    "description": "Fermentation Eye Cream, 1.05 oz (30 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/benton-fermentation-eye-cream-1-05-oz-30-g/116240"
+  },
+  {
+    "id": "105017",
+    "name": "Bee Ageless, Snail & Bee Venom Serum, 1 fl oz (30 ml)",
+    "price": 52243,
+    "image": "/images/products/beauty/105017.jpg",
+    "category": "Beauty",
+    "description": "Bee Ageless, Snail & Bee Venom Serum, 1 fl oz (30 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/idealove-bee-ageless-snail-bee-venom-serum-1-fl-oz-30-ml/105017"
+  },
+  {
+    "id": "84612",
+    "name": "AHA. BHA. PHA 30 Days Miracle Cleansing Bar, 106 g",
+    "price": 37505,
+    "image": "/images/products/beauty/84612.jpg",
+    "category": "Beauty",
+    "description": "AHA. BHA. PHA 30 Days Miracle Cleansing Bar, 106 g - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/some-by-mi-aha-bha-pha-30-days-miracle-cleansing-bar-106-g/84612"
+  },
+  {
+    "id": "98670",
+    "name": "Vitamin C Toner, Enhanced Brightening Toner, 6 fl oz (177 ml)",
+    "price": 32222,
+    "image": "/images/products/beauty/98670.jpg",
+    "category": "Beauty",
+    "description": "Vitamin C Toner, Enhanced Brightening Toner, 6 fl oz (177 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-vitamin-c-toner-enhanced-brightening-toner-6-fl-oz-177-ml/98670"
+  },
+  {
+    "id": "145369",
+    "name": "100 Reedle Shot®, 10 Count, 2 ml Each",
+    "price": 24008,
+    "image": "/images/products/beauty/145369.jpg",
+    "category": "Beauty",
+    "description": "100 Reedle Shot®, 10 Count, 2 ml Each - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/vt-cosmetics-100-reedle-shot-10-count-2-ml-each/145369"
+  },
+  {
+    "id": "107303",
+    "name": "Placenta Ampoule Cream, 1.69 fl oz (50 ml)",
+    "price": 40279,
+    "image": "/images/products/beauty/107303.jpg",
+    "category": "Beauty",
+    "description": "Placenta Ampoule Cream, 1.69 fl oz (50 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mizon-placenta-ampoule-cream-1-69-fl-oz-50-ml/107303"
+  },
+  {
+    "id": "98669",
+    "name": "Vitamin C Cleanser, Enhanced Brightening Gel Cleanser, 6 fl oz (177 ml)",
+    "price": 48739,
+    "image": "/images/products/beauty/98669.jpg",
+    "category": "Beauty",
+    "description": "Vitamin C Cleanser, Enhanced Brightening Gel Cleanser, 6 fl oz (177 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-vitamin-c-cleanser-enhanced-brightening-gel-cleanser-6-fl-oz-177-ml/98669"
+  },
+  {
+    "id": "111966",
+    "name": "Hydrating Body Lotion, Lavender Lemongrass, 2.5 fl oz (74 ml)",
+    "price": 12906,
+    "image": "/images/products/beauty/111966.jpg",
+    "category": "Beauty",
+    "description": "Hydrating Body Lotion, Lavender Lemongrass, 2.5 fl oz (74 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-hydrating-body-lotion-lavender-lemongrass-2-5-fl-oz-74-ml/111966"
+  },
+  {
+    "id": "107595",
+    "name": "Tea Tree Castile Soap, 34 fl oz (1,005 ml)",
+    "price": 64161,
+    "image": "/images/products/beauty/107595.jpg",
+    "category": "Beauty",
+    "description": "Tea Tree Castile Soap, 34 fl oz (1,005 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-tea-tree-castile-soap-34-fl-oz-1-005-ml/107595"
+  },
+  {
+    "id": "80192",
+    "name": "Nutrition Cream, 3.3 fl oz (100 ml)",
+    "price": 58401,
+    "image": "/images/products/beauty/80192.jpg",
+    "category": "Beauty",
+    "description": "Nutrition Cream, 3.3 fl oz (100 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/pyunkang-yul-nutrition-cream-3-3-fl-oz-100-ml/80192"
+  },
+  {
+    "id": "70193",
+    "name": "AHA 7 Whitehead Power Liquid, 3.38 fl oz (100 ml)",
+    "price": 49693,
+    "image": "/images/products/beauty/70193.jpg",
+    "category": "Beauty",
+    "description": "AHA 7 Whitehead Power Liquid, 3.38 fl oz (100 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/cosrx-aha-7-whitehead-power-liquid-3-38-fl-oz-100-ml/70193"
+  },
+  {
+    "id": "113010",
+    "name": "Cetaphil, Moisturizing Cream, Fragrance Free, 3 oz (85 g)",
+    "price": 27589,
+    "image": "/images/products/beauty/113010.jpg",
+    "category": "Beauty",
+    "description": "Cetaphil, Moisturizing Cream, Fragrance Free, 3 oz (85 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/cetaphil-moisturizing-cream-fragrance-free-3-oz-85-g/113010"
+  },
+  {
+    "id": "131466",
+    "name": "PanOxyl, Acne Foaming Wash For Face & Body, Maximum Strength, 3 oz (85 g)",
+    "price": 27967,
+    "image": "/images/products/beauty/131466.jpg",
+    "category": "Beauty",
+    "description": "PanOxyl, Acne Foaming Wash For Face & Body, Maximum Strength, 3 oz (85 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/panoxyl-acne-foaming-wash-for-face-body-maximum-strength-3-oz-85-g/131466"
+  },
+  {
+    "id": "8475",
+    "name": "Nubian Heritage, African Black Soap, Body Wash, 13 fl oz (384 ml)",
+    "price": 50705,
+    "image": "/images/products/beauty/8475.jpg",
+    "category": "Beauty",
+    "description": "Nubian Heritage, African Black Soap, Body Wash, 13 fl oz (384 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/nubian-heritage-african-black-soap-body-wash-13-fl-oz-384-ml/8475"
+  },
+  {
+    "id": "36379",
+    "name": "ACURE, Brightening Facial Scrub, 4 fl oz (118 ml)",
+    "price": 47958,
+    "image": "/images/products/beauty/36379.jpg",
+    "category": "Beauty",
+    "description": "ACURE, Brightening Facial Scrub, 4 fl oz (118 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/acure-brightening-facial-scrub-4-fl-oz-118-ml/36379"
+  },
+  {
+    "id": "59501",
+    "name": "Eucerin, Face, Q10 Revitalize Daily Cream, Fragrance Free, 1.7 oz (48 g)",
+    "price": 54716,
+    "image": "/images/products/beauty/59501.jpg",
+    "category": "Beauty",
+    "description": "Eucerin, Face, Q10 Revitalize Daily Cream, Fragrance Free, 1.7 oz (48 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-face-q10-revitalize-daily-cream-fragrance-free-1-7-oz-48-g/59501"
+  },
+  {
+    "id": "44105",
+    "name": "Stridex, Maximum, Alcohol Free, 90 Acne Pads",
+    "price": 32651,
+    "image": "/images/products/beauty/44105.jpg",
+    "category": "Beauty",
+    "description": "Stridex, Maximum, Alcohol Free, 90 Acne Pads - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/stridex-maximum-alcohol-free-90-acne-pads/44105"
+  },
+  {
+    "id": "90264",
+    "name": "RapidLash, Eyelash Enhancing Serum, 0.1 fl oz (3 ml)",
+    "price": 116019,
+    "image": "/images/products/beauty/90264.jpg",
+    "category": "Beauty",
+    "description": "RapidLash, Eyelash Enhancing Serum, 0.1 fl oz (3 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/rapidlash-eyelash-enhancing-serum-0-1-fl-oz-3-ml/90264"
+  },
+  {
+    "id": "110665",
+    "name": "Advanced Clinicals, 5% Niacinamide Serum, 1.75 fl oz (52 ml)",
+    "price": 34757,
+    "image": "/images/products/beauty/110665.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, 5% Niacinamide Serum, 1.75 fl oz (52 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-5-niacinamide-serum-1-75-fl-oz-52-ml/110665"
+  },
+  {
+    "id": "14394",
+    "name": "NOW Foods, Solutions, Sweet Almond Oil, Unscented, 4 fl oz (118 ml)",
+    "price": 19366,
+    "image": "/images/products/beauty/14394.jpg",
+    "category": "Beauty",
+    "description": "NOW Foods, Solutions, Sweet Almond Oil, Unscented, 4 fl oz (118 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-sweet-almond-oil-unscented-4-fl-oz-118-ml/14394"
+  },
+  {
+    "id": "150472",
+    "name": "Medicube, Collagen Night Wrapping Mask , 2.53 fl oz (75 ml)",
+    "price": 80951,
+    "image": "/images/products/beauty/150472.jpg",
+    "category": "Beauty",
+    "description": "Medicube, Collagen Night Wrapping Mask , 2.53 fl oz (75 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/medicube-collagen-night-wrapping-mask-2-53-fl-oz-75-ml/150472"
+  },
+  {
+    "id": "131194",
+    "name": "Axis-Y, Dark Spot Correcting Glow Serum, 1.69 fl oz (50 ml)",
+    "price": 67443,
+    "image": "/images/products/beauty/131194.jpg",
+    "category": "Beauty",
+    "description": "Axis-Y, Dark Spot Correcting Glow Serum, 1.69 fl oz (50 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/axis-y-dark-spot-correcting-glow-serum-1-69-fl-oz-50-ml/131194"
+  },
+  {
+    "id": "143906",
+    "name": "Biodance, Bio Collagen Real Deep Beauty Mask, 4 Sheets, 1.19 oz (34 g) Each",
+    "price": 69083,
+    "image": "/images/products/beauty/143906.jpg",
+    "category": "Beauty",
+    "description": "Biodance, Bio Collagen Real Deep Beauty Mask, 4 Sheets, 1.19 oz (34 g) Each - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/biodance-bio-collagen-real-deep-beauty-mask-4-sheets-1-19-oz-34-g-each/143906"
+  },
+  {
+    "id": "45777",
+    "name": "Eucerin, Advanced Repair Hand Cream, Dry to Very Dry Skin, Fragrance Free, 2.7 oz (78 g)",
+    "price": 29442,
+    "image": "/images/products/beauty/45777.jpg",
+    "category": "Beauty",
+    "description": "Eucerin, Advanced Repair Hand Cream, Dry to Very Dry Skin, Fragrance Free, 2.7 oz (78 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-advanced-repair-hand-cream-dry-to-very-dry-skin-fragrance-free-2-7-oz-78-g/45777"
+  },
+  {
+    "id": "107605",
+    "name": "Medix 5.5, Body Cream, Vitamin C + Turmeric, 15 fl oz (444 ml)",
+    "price": 53608,
+    "image": "/images/products/beauty/107605.jpg",
+    "category": "Beauty",
+    "description": "Medix 5.5, Body Cream, Vitamin C + Turmeric, 15 fl oz (444 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/medix-5-5-body-cream-vitamin-c-turmeric-15-fl-oz-444-ml/107605"
+  },
+  {
+    "id": "6411",
+    "name": "Giovanni, Frizz Be Gone™, Super Smoothing, Anti-Frizz Hair Serum, 2.75 fl oz (81 ml)",
+    "price": 38067,
+    "image": "/images/products/beauty/6411.jpg",
+    "category": "Beauty",
+    "description": "Giovanni, Frizz Be Gone™, Super Smoothing, Anti-Frizz Hair Serum, 2.75 fl oz (81 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/giovanni-frizz-be-gone-super-smoothing-anti-frizz-hair-serum-2-75-fl-oz-81-ml/6411"
+  },
+  {
+    "id": "150933",
+    "name": "EQQUALBERRY, Deep Cera Vitamin Illuminating Serum, 1.01 fl oz (30 ml)",
+    "price": 88630,
+    "image": "/images/products/beauty/150933.jpg",
+    "category": "Beauty",
+    "description": "EQQUALBERRY, Deep Cera Vitamin Illuminating Serum, 1.01 fl oz (30 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/eqqualberry-deep-cera-vitamin-illuminating-serum-1-01-fl-oz-30-ml/150933"
+  },
+  {
+    "id": "102191",
+    "name": "Eucerin, Face, Q10 Revitalize, Night Cream, Fragrance Free, 1.7 fl oz (48 g)",
+    "price": 54716,
+    "image": "/images/products/beauty/102191.jpg",
+    "category": "Beauty",
+    "description": "Eucerin, Face, Q10 Revitalize, Night Cream, Fragrance Free, 1.7 fl oz (48 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-face-q10-revitalize-night-cream-fragrance-free-1-7-fl-oz-48-g/102191"
+  },
+  {
+    "id": "101522",
+    "name": "Eucerin, Roughness Relief Cream, Fragrance Free, 16 oz (454 g)",
+    "price": 82071,
+    "image": "/images/products/beauty/101522.jpg",
+    "category": "Beauty",
+    "description": "Eucerin, Roughness Relief Cream, Fragrance Free, 16 oz (454 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-roughness-relief-cream-fragrance-free-16-oz-454-g/101522"
+  },
+  {
+    "id": "89535",
+    "name": "SOME BY MI, Clear Spot Patch, 18 Patches",
+    "price": 13186,
+    "image": "/images/products/beauty/89535.jpg",
+    "category": "Beauty",
+    "description": "SOME BY MI, Clear Spot Patch, 18 Patches - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/some-by-mi-clear-spot-patch-18-patches/89535"
+  },
+  {
+    "id": "90094",
+    "name": "Advanced Clinicals, Hyaluronic Acid, Hydrating Body Cream, 16 oz (454 g)",
+    "price": 43529,
+    "image": "/images/products/beauty/90094.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Hyaluronic Acid, Hydrating Body Cream, 16 oz (454 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-hyaluronic-acid-hydrating-body-cream-16-oz-454-g/90094"
+  },
+  {
+    "id": "896",
+    "name": "NOW Foods, Solutions, Sweet Almond Oil, Pure Moisturizing Oil, Unscented, 16 fl oz (473 ml)",
+    "price": 51244,
+    "image": "/images/products/beauty/896.jpg",
+    "category": "Beauty",
+    "description": "NOW Foods, Solutions, Sweet Almond Oil, Pure Moisturizing Oil, Unscented, 16 fl oz (473 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-sweet-almond-oil-pure-moisturizing-oil-unscented-16-fl-oz-473-ml/896"
+  },
+  {
+    "id": "72108",
+    "name": "EcoTools, Dry Body Brush, 1 Brush",
+    "price": 25776,
+    "image": "/images/products/beauty/72108.jpg",
+    "category": "Beauty",
+    "description": "EcoTools, Dry Body Brush, 1 Brush - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/ecotools-dry-body-brush-1-brush/72108"
+  },
+  {
+    "id": "80873",
+    "name": "Petitfee, Dry Essence Foot Pack,  1 Pair, 0.28 oz (8 g)",
+    "price": 7271,
+    "image": "/images/products/beauty/80873.jpg",
+    "category": "Beauty",
+    "description": "Petitfee, Dry Essence Foot Pack,  1 Pair, 0.28 oz (8 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/petitfee-dry-essence-foot-pack-1-pair-0-28-oz-8-g/80873"
+  },
+  {
+    "id": "103843",
+    "name": "PanOxyl, Acne Creamy Wash, For Face & Body , 6 oz (170 g)",
+    "price": 52518,
+    "image": "/images/products/beauty/103843.jpg",
+    "category": "Beauty",
+    "description": "PanOxyl, Acne Creamy Wash, For Face & Body , 6 oz (170 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/panoxyl-acne-creamy-wash-for-face-body-6-oz-170-g/103843"
+  },
+  {
+    "id": "45772",
+    "name": "Aquaphor, Lip Repair, Immediate Relief, Fragrance Free, 0.35 fl oz (10 ml)",
+    "price": 23168,
+    "image": "/images/products/beauty/45772.jpg",
+    "category": "Beauty",
+    "description": "Aquaphor, Lip Repair, Immediate Relief, Fragrance Free, 0.35 fl oz (10 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/aquaphor-lip-repair-immediate-relief-fragrance-free-0-35-fl-oz-10-ml/45772"
+  },
+  {
+    "id": "77208",
+    "name": "CosRx, Advanced Snail 96 Mucin Power Essence, 3.38 fl oz (100 ml)",
+    "price": 60223,
+    "image": "/images/products/beauty/77208.jpg",
+    "category": "Beauty",
+    "description": "CosRx, Advanced Snail 96 Mucin Power Essence, 3.38 fl oz (100 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/cosrx-advanced-snail-96-mucin-power-essence-3-38-fl-oz-100-ml/77208"
+  },
+  {
+    "id": "108535",
+    "name": "Vanicream, Daily Facial Moisturizer For Sensitive Skin, Fragrance Free, 3 fl oz (89 ml)",
+    "price": 65959,
+    "image": "/images/products/beauty/108535.jpg",
+    "category": "Beauty",
+    "description": "Vanicream, Daily Facial Moisturizer For Sensitive Skin, Fragrance Free, 3 fl oz (89 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/vanicream-daily-facial-moisturizer-for-sensitive-skin-fragrance-free-3-fl-oz-89-ml/108535"
+  },
+  {
+    "id": "58555",
+    "name": "Avalon Organics, Thickening Shampoo, Biotin B-Complex, 32 fl oz (946 ml)",
+    "price": 89215,
+    "image": "/images/products/beauty/58555.jpg",
+    "category": "Beauty",
+    "description": "Avalon Organics, Thickening Shampoo, Biotin B-Complex, 32 fl oz (946 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/avalon-organics-thickening-shampoo-biotin-b-complex-32-fl-oz-946-ml/58555"
+  },
+  {
+    "id": "114687",
+    "name": "Cetaphil, Moisturizing Cream, Fragrance Free, 16 oz (453 g)",
+    "price": 95655,
+    "image": "/images/products/beauty/114687.jpg",
+    "category": "Beauty",
+    "description": "Cetaphil, Moisturizing Cream, Fragrance Free, 16 oz (453 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/cetaphil-moisturizing-cream-fragrance-free-16-oz-453-g/114687"
+  },
+  {
+    "id": "150749",
+    "name": "Celimax, Retinal Shot Tightening Booster, 0.5 fl oz (15 ml)",
+    "price": 57032,
+    "image": "/images/products/beauty/150749.jpg",
+    "category": "Beauty",
+    "description": "Celimax, Retinal Shot Tightening Booster, 0.5 fl oz (15 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/celimax-retinal-shot-tightening-booster-0-5-fl-oz-15-ml/150749"
+  },
+  {
+    "id": "100964",
+    "name": "Advanced Clinicals, Multi-Peptide Serum, Anti-Wrinkle Face Serum, 1.75 fl oz (52 ml)",
+    "price": 35255,
+    "image": "/images/products/beauty/100964.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Multi-Peptide Serum, Anti-Wrinkle Face Serum, 1.75 fl oz (52 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-multi-peptide-serum-anti-wrinkle-face-serum-1-75-fl-oz-52-ml/100964"
+  },
+  {
+    "id": "142805",
+    "name": "Elizavecca, Cer-100, Collagen Ceramide Coating Protein Treatment, 3.38 fl oz (100 ml)",
+    "price": 27505,
+    "image": "/images/products/beauty/142805.jpg",
+    "category": "Beauty",
+    "description": "Elizavecca, Cer-100, Collagen Ceramide Coating Protein Treatment, 3.38 fl oz (100 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/elizavecca-cer-100-collagen-ceramide-coating-protein-treatment-3-38-fl-oz-100-ml/142805"
+  },
+  {
+    "id": "105943",
+    "name": "Beauty of Joseon, Glow Serum, Propolis + Niacinamide, 1.01 fl oz (30 ml)",
+    "price": 67342,
+    "image": "/images/products/beauty/105943.jpg",
+    "category": "Beauty",
+    "description": "Beauty of Joseon, Glow Serum, Propolis + Niacinamide, 1.01 fl oz (30 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/beauty-of-joseon-glow-serum-propolis-niacinamide-1-01-fl-oz-30-ml/105943"
+  },
+  {
+    "id": "90100",
+    "name": "Advanced Clinicals, Complete 5-In-1 Eye Serum, 2 fl oz (59 ml)",
+    "price": 34192,
+    "image": "/images/products/beauty/90100.jpg",
+    "category": "Beauty",
+    "description": "Advanced Clinicals, Complete 5-In-1 Eye Serum, 2 fl oz (59 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-complete-5-in-1-eye-serum-2-fl-oz-59-ml/90100"
+  },
+  {
+    "id": "108541",
+    "name": "Vanicream, Gentle Facial Cleanser, For Sensitive Skin, Fragrance Free, 8 fl oz (237 ml)",
+    "price": 46729,
+    "image": "/images/products/beauty/108541.jpg",
+    "category": "Beauty",
+    "description": "Vanicream, Gentle Facial Cleanser, For Sensitive Skin, Fragrance Free, 8 fl oz (237 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/vanicream-gentle-facial-cleanser-for-sensitive-skin-fragrance-free-8-fl-oz-237-ml/108541"
+  },
+  {
+    "id": "113260",
+    "name": "Eucerin, Age Defense, Lightweight Sunscreen Lotion For Face, SPF 50, Fragrance Free, 2.5 fl oz (75 ml)",
+    "price": 70945,
+    "image": "/images/products/beauty/113260.jpg",
+    "category": "Beauty",
+    "description": "Eucerin, Age Defense, Lightweight Sunscreen Lotion For Face, SPF 50, Fragrance Free, 2.5 fl oz (75 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-age-defense-lightweight-sunscreen-lotion-for-face-spf-50-fragrance-free-2-5-fl-oz-75-ml/113260"
+  },
+  {
+    "id": "147764",
+    "name": "Manuka Honey, Raw & Unpasteurized, UMF™ 23+, 1,050 MGO+, 8.8 oz (250 g)",
+    "price": 352230,
+    "image": "/images/products/beauty/147764.jpg",
+    "category": "Beauty",
+    "description": "Manuka Honey, Raw & Unpasteurized, UMF™ 23+, 1,050 MGO+, 8.8 oz (250 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/egmont-honey-manuka-honey-raw-unpasteurized-umf-23-1-050-mgo-8-8-oz-250-g/147764"
+  },
+  {
+    "id": "65599",
+    "name": "L-Carnitine 3000, Berry Blast, 15.72 fl oz (465 ml)",
+    "price": 73138,
+    "image": "/images/products/beauty/65599.jpg",
+    "category": "Beauty",
+    "description": "L-Carnitine 3000, Berry Blast, 15.72 fl oz (465 ml) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/nutrex-research-l-carnitine-3000-berry-blast-15-72-fl-oz-465-ml/65599"
+  },
+  {
+    "id": "86311",
+    "name": "Multi Collagen Protein, Vanilla, 1.04 lb (472.5 g)",
+    "price": 170771,
+    "image": "/images/products/beauty/86311.jpg",
+    "category": "Beauty",
+    "description": "Multi Collagen Protein, Vanilla, 1.04 lb (472.5 g) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/ancient-nutrition-multi-collagen-protein-vanilla-1-04-lb-472-5-g/86311"
+  },
+  {
+    "id": "15",
+    "name": "High Absorption Magnesium, 120 Tablets (100 mg per Tablet)",
+    "price": 45810,
+    "image": "/images/products/beauty/15.jpg",
+    "category": "Beauty",
+    "description": "High Absorption Magnesium, 120 Tablets (100 mg per Tablet) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/doctor-s-best-high-absorption-magnesium-120-tablets-100-mg-per-tablet/15"
+  },
+  {
+    "id": "3620",
+    "name": "Probiotics®, Original Formula, 60 Capsules",
+    "price": 155977,
+    "image": "/images/products/beauty/3620.jpg",
+    "category": "Beauty",
+    "description": "Probiotics®, Original Formula, 60 Capsules - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/dr-ohhira-s-probiotics-original-formula-60-capsules/3620"
+  },
+  {
+    "id": "47358",
+    "name": "NEM, Knee & Joint Formula with Glucosamine, 60 Tablets",
+    "price": 67847,
+    "image": "/images/products/beauty/47358.jpg",
+    "category": "Beauty",
+    "description": "NEM, Knee & Joint Formula with Glucosamine, 60 Tablets - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/natural-factors-nem-knee-joint-formula-with-glucosamine-60-tablets/47358"
+  },
+  {
+    "id": "12057",
+    "name": "FertilAid® Multivitamin for Men, 90 Capsules",
+    "price": 156056,
+    "image": "/images/products/beauty/12057.jpg",
+    "category": "Beauty",
+    "description": "FertilAid® Multivitamin for Men, 90 Capsules - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/fairhaven-health-fertilaid-multivitamin-for-men-90-capsules/12057"
+  },
+  {
+    "id": "61441",
+    "name": "Elite 100% Whey Protein Powder, Rich Chocolate, 5 lbs (2.3 kg)",
+    "price": 410377,
+    "image": "/images/products/beauty/61441.jpg",
+    "category": "Beauty",
+    "description": "Elite 100% Whey Protein Powder, Rich Chocolate, 5 lbs (2.3 kg) - High quality product from Beauty.",
+    "originalLink": "https://ug.iherb.com/pr/dymatize-elite-100-whey-protein-powder-rich-chocolate-5-lbs-2-3-kg/61441"
   }
 ];

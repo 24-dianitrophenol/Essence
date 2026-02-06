@@ -1,0 +1,21 @@
+{
+    "name": "essence-product-scraper",
+    "version": "1.0.0",
+    "description": "Product scraper for iHerb integration",
+    "scripts": {
+        "scrape:test": "node scripts/scraping/test-scraper.js",
+        "scrape:category": "node scripts/scraping/scrape-category.js",
+        "scrape:all": "node scripts/scraping/import-all-products.js",
+        "download:images": "node scripts/scraping/download-images.js",
+        "generate:categories": "node scripts/scraping/generate-category-files.js"
+    },
+    "dependencies": {
+        "puppeteer": "^21.6.1",
+        "cheerio": "^1.0.0-rc.12",
+        "axios": "^1.6.5",
+        "sharp": "^0.33.2",
+        "p-limit": "^5.0.0",
+        "cli-progress": "^3.12.0",
+        "colors": "^1.4.0"
+    }
+}

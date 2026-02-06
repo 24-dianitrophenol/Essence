@@ -1,4005 +1,1199 @@
-// Easy-to-edit Bath data structure
-// To modify products: simply edit the id, name, price, image, category, and description fields below
-
 export const bath = [
-{
-    id: 'lotion-1',
-    name: 'Vaseline Gluta-Hya Dewy Radiance',
-    price: 4.86,
-    image: '/images/natural images/Vaseline Gluta -Hlyla Deruy Radiance.jpg',
-    category: 'Bath',
-    description: 'Glutathione and hyaluronic acid body lotion for radiant skin'
-  },
-{
-    id: 'lotion-2',
-    name: 'Vichy Mineral 89',
-    price: 4.32,
-    image: '/images/natural images/Vichy Mineral 89.jpg',
-    category: 'Bath',
-    description: 'Mineral-rich hydrating serum for all skin types'
-  },
-{
-    id: 'lotion-3',
-    name: 'Dr Teals Body Lotion',
-    price: 21.06,
-    image: '/images/natural images/Dr Teals Body Lotion.jpg',
-    category: 'Bath',
-    description: 'Therapeutic body lotion with essential oils'
-  },
-{
-    id: 'lotion-4',
-    name: 'FDOB Luminous Body Lotion & Brightening Nourishing Body Oil',
-    price: 8.64,
-    image: '/images/natural images/FDOB Luminous Body Lotion and Brightening Nourishing Body Oil.jpg',
-    category: 'Bath',
-    description: 'Dual-action lotion and oil for luminous skin'
-  },
-{
-    id: 'lotion-5',
-    name: 'Garnier Skin Active Moisture Rescue',
-    price: 12.96,
-    image: '/images/natural images/Garnier Skin Active Moisture Rescue.jpg',
-    category: 'Bath',
-    description: 'Intensive moisture rescue gel for dehydrated skin'
-  },
-{
-    id: 'lotion-6',
-    name: 'Garnier Skin Active Hyaluronic Aloe',
-    price: 19.44,
-    image: '/images/natural images/Garnier Skin Active Hyaluronic Aloe.jpg',
-    category: 'Bath',
-    description: 'Hyaluronic acid and aloe vera moisturizing lotion'
-  },
-{
-    id: 'lotion-7',
-    name: 'L\'Oreal Paris Wrinkle Expert',
-    price: 12.15,
-    image: '/images/natural images/Loreal Paris Wrinkle Expert.jpg',
-    category: 'Bath',
-    description: 'Anti-wrinkle day cream with advanced peptides'
-  },
-{
-    id: 'lotion-8',
-    name: 'Age Perfect Cell Renewal',
-    price: 6.75,
-    image: '/images/natural images/Age Perfect Cell Renewal.jpg',
-    category: 'Bath',
-    description: 'Cell renewal moisturizer for mature skin'
-  },
-{
-    id: 'lotion-9',
-    name: 'L\'Oreal Paris Vitamin C',
-    price: 14.04,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Bath',
-    description: 'Vitamin C brightening day moisturizer'
-  },
-{
-    id: 'lotion-10',
-    name: 'L\'Oreal Paris Midnight Serum',
-    price: 22.95,
-    image: '/images/natural images/Loreal Paris MidNight Serum.jpg',
-    category: 'Bath',
-    description: 'Overnight renewal serum for skin regeneration'
-  },
-  {
-    id: 'bath-11',
-    name: 'Bath Item 11',
-    price: 15.31,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-12',
-    name: 'Bath Item 12',
-    price: 64.57,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-13',
-    name: 'Bath Item 13',
-    price: 38.57,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-14',
-    name: 'Bath Item 14',
-    price: 90.81,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-15',
-    name: 'Bath Item 15',
-    price: 83.51,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-16',
-    name: 'Bath Item 16',
-    price: 80.32,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-17',
-    name: 'Bath Item 17',
-    price: 66.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-18',
-    name: 'Bath Item 18',
-    price: 90.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-19',
-    name: 'Bath Item 19',
-    price: 55.37,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-20',
-    name: 'Bath Item 20',
-    price: 99.82,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-21',
-    name: 'Bath Item 21',
-    price: 19.63,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-22',
-    name: 'Bath Item 22',
-    price: 50.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-23',
-    name: 'Bath Item 23',
-    price: 94.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-24',
-    name: 'Bath Item 24',
-    price: 25.2,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-25',
-    name: 'Bath Item 25',
-    price: 60.35,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-26',
-    name: 'Bath Item 26',
-    price: 24.64,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-27',
-    name: 'Bath Item 27',
-    price: 45.54,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-28',
-    name: 'Bath Item 28',
-    price: 76.57,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-29',
-    name: 'Bath Item 29',
-    price: 47.01,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-30',
-    name: 'Bath Item 30',
-    price: 23.14,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-31',
-    name: 'Bath Item 31',
-    price: 30.95,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-32',
-    name: 'Bath Item 32',
-    price: 73.42,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-33',
-    name: 'Bath Item 33',
-    price: 24.17,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-34',
-    name: 'Bath Item 34',
-    price: 74.78,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-35',
-    name: 'Bath Item 35',
-    price: 43.81,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-36',
-    name: 'Bath Item 36',
-    price: 33.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-37',
-    name: 'Bath Item 37',
-    price: 32.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-38',
-    name: 'Bath Item 38',
-    price: 20.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-39',
-    name: 'Bath Item 39',
-    price: 72.54,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-40',
-    name: 'Bath Item 40',
-    price: 22.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-41',
-    name: 'Bath Item 41',
-    price: 74.57,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-42',
-    name: 'Bath Item 42',
-    price: 89.92,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-43',
-    name: 'Bath Item 43',
-    price: 95.55,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-44',
-    name: 'Bath Item 44',
-    price: 77.74,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-45',
-    name: 'Bath Item 45',
-    price: 64.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-46',
-    name: 'Bath Item 46',
-    price: 25.35,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-47',
-    name: 'Bath Item 47',
-    price: 94.2,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-48',
-    name: 'Bath Item 48',
-    price: 65.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-49',
-    name: 'Bath Item 49',
-    price: 93.33,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-50',
-    name: 'Bath Item 50',
-    price: 67.14,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-51',
-    name: 'Bath Item 51',
-    price: 73.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-52',
-    name: 'Bath Item 52',
-    price: 29.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-53',
-    name: 'Bath Item 53',
-    price: 13.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-54',
-    name: 'Bath Item 54',
-    price: 95.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-55',
-    name: 'Bath Item 55',
-    price: 41.97,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-56',
-    name: 'Bath Item 56',
-    price: 76.24,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-57',
-    name: 'Bath Item 57',
-    price: 60.79,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-58',
-    name: 'Bath Item 58',
-    price: 43.45,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-59',
-    name: 'Bath Item 59',
-    price: 69.33,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-60',
-    name: 'Bath Item 60',
-    price: 79.13,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-61',
-    name: 'Bath Item 61',
-    price: 40.3,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-62',
-    name: 'Bath Item 62',
-    price: 62.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-63',
-    name: 'Bath Item 63',
-    price: 22.83,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-64',
-    name: 'Bath Item 64',
-    price: 24.15,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-65',
-    name: 'Bath Item 65',
-    price: 34.97,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-66',
-    name: 'Bath Item 66',
-    price: 40.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-67',
-    name: 'Bath Item 67',
-    price: 16.54,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-68',
-    name: 'Bath Item 68',
-    price: 33.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-69',
-    name: 'Bath Item 69',
-    price: 34.06,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-70',
-    name: 'Bath Item 70',
-    price: 51.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-71',
-    name: 'Bath Item 71',
-    price: 82.08,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-72',
-    name: 'Bath Item 72',
-    price: 54.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-73',
-    name: 'Bath Item 73',
-    price: 37.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-74',
-    name: 'Bath Item 74',
-    price: 42.86,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-75',
-    name: 'Bath Item 75',
-    price: 42.33,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-76',
-    name: 'Bath Item 76',
-    price: 62.88,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-77',
-    name: 'Bath Item 77',
-    price: 98.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-78',
-    name: 'Bath Item 78',
-    price: 12.18,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-79',
-    name: 'Bath Item 79',
-    price: 57.35,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-80',
-    name: 'Bath Item 80',
-    price: 31.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-81',
-    name: 'Bath Item 81',
-    price: 28.49,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-82',
-    name: 'Bath Item 82',
-    price: 82.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-83',
-    name: 'Bath Item 83',
-    price: 83.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-84',
-    name: 'Bath Item 84',
-    price: 58.84,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-85',
-    name: 'Bath Item 85',
-    price: 36.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-86',
-    name: 'Bath Item 86',
-    price: 58.69,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-87',
-    name: 'Bath Item 87',
-    price: 37.86,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-88',
-    name: 'Bath Item 88',
-    price: 60.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-89',
-    name: 'Bath Item 89',
-    price: 26.71,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-90',
-    name: 'Bath Item 90',
-    price: 92.05,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-91',
-    name: 'Bath Item 91',
-    price: 91.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-92',
-    name: 'Bath Item 92',
-    price: 95.36,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-93',
-    name: 'Bath Item 93',
-    price: 55.7,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-94',
-    name: 'Bath Item 94',
-    price: 19.15,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-95',
-    name: 'Bath Item 95',
-    price: 82.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-96',
-    name: 'Bath Item 96',
-    price: 14.7,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-97',
-    name: 'Bath Item 97',
-    price: 74.49,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-98',
-    name: 'Bath Item 98',
-    price: 45.75,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-99',
-    name: 'Bath Item 99',
-    price: 50.22,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-100',
-    name: 'Bath Item 100',
-    price: 75.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-101',
-    name: 'Bath Item 101',
-    price: 53.29,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-102',
-    name: 'Bath Item 102',
-    price: 78.03,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-103',
-    name: 'Bath Item 103',
-    price: 69.16,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-104',
-    name: 'Bath Item 104',
-    price: 39.79,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-105',
-    name: 'Bath Item 105',
-    price: 13.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-106',
-    name: 'Bath Item 106',
-    price: 83.22,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-107',
-    name: 'Bath Item 107',
-    price: 80.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-108',
-    name: 'Bath Item 108',
-    price: 89.67,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-109',
-    name: 'Bath Item 109',
-    price: 93.04,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-110',
-    name: 'Bath Item 110',
-    price: 38.05,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-111',
-    name: 'Bath Item 111',
-    price: 63.76,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-112',
-    name: 'Bath Item 112',
-    price: 75.18,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-113',
-    name: 'Bath Item 113',
-    price: 43.05,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-114',
-    name: 'Bath Item 114',
-    price: 45.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-115',
-    name: 'Bath Item 115',
-    price: 17.6,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-116',
-    name: 'Bath Item 116',
-    price: 50.27,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-117',
-    name: 'Bath Item 117',
-    price: 11.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-118',
-    name: 'Bath Item 118',
-    price: 83.74,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-119',
-    name: 'Bath Item 119',
-    price: 11.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-120',
-    name: 'Bath Item 120',
-    price: 42.29,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-121',
-    name: 'Bath Item 121',
-    price: 56.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-122',
-    name: 'Bath Item 122',
-    price: 67.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-123',
-    name: 'Bath Item 123',
-    price: 54.89,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-124',
-    name: 'Bath Item 124',
-    price: 39.93,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-125',
-    name: 'Bath Item 125',
-    price: 94.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-126',
-    name: 'Bath Item 126',
-    price: 51.76,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-127',
-    name: 'Bath Item 127',
-    price: 57.74,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-128',
-    name: 'Bath Item 128',
-    price: 64.85,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-129',
-    name: 'Bath Item 129',
-    price: 78.36,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-130',
-    name: 'Bath Item 130',
-    price: 48.99,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-131',
-    name: 'Bath Item 131',
-    price: 30.51,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-132',
-    name: 'Bath Item 132',
-    price: 62.32,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-133',
-    name: 'Bath Item 133',
-    price: 15.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-134',
-    name: 'Bath Item 134',
-    price: 51.33,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-135',
-    name: 'Bath Item 135',
-    price: 79.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-136',
-    name: 'Bath Item 136',
-    price: 90.65,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-137',
-    name: 'Bath Item 137',
-    price: 66.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-138',
-    name: 'Bath Item 138',
-    price: 37.09,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-139',
-    name: 'Bath Item 139',
-    price: 77.25,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-140',
-    name: 'Bath Item 140',
-    price: 89.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-141',
-    name: 'Bath Item 141',
-    price: 62.26,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-142',
-    name: 'Bath Item 142',
-    price: 70.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-143',
-    name: 'Bath Item 143',
-    price: 60.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-144',
-    name: 'Bath Item 144',
-    price: 39.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-145',
-    name: 'Bath Item 145',
-    price: 83.67,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-146',
-    name: 'Bath Item 146',
-    price: 93.76,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-147',
-    name: 'Bath Item 147',
-    price: 28.78,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-148',
-    name: 'Bath Item 148',
-    price: 79.07,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-149',
-    name: 'Bath Item 149',
-    price: 37.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-150',
-    name: 'Bath Item 150',
-    price: 62.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-151',
-    name: 'Bath Item 151',
-    price: 64.99,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-152',
-    name: 'Bath Item 152',
-    price: 40.36,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-153',
-    name: 'Bath Item 153',
-    price: 69.95,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-154',
-    name: 'Bath Item 154',
-    price: 29.66,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-155',
-    name: 'Bath Item 155',
-    price: 92.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-156',
-    name: 'Bath Item 156',
-    price: 41.27,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-157',
-    name: 'Bath Item 157',
-    price: 34.04,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-158',
-    name: 'Bath Item 158',
-    price: 54.03,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-159',
-    name: 'Bath Item 159',
-    price: 27.8,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-160',
-    name: 'Bath Item 160',
-    price: 17.14,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-161',
-    name: 'Bath Item 161',
-    price: 79.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-162',
-    name: 'Bath Item 162',
-    price: 79.24,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-163',
-    name: 'Bath Item 163',
-    price: 36.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-164',
-    name: 'Bath Item 164',
-    price: 10.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-165',
-    name: 'Bath Item 165',
-    price: 46.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-166',
-    name: 'Bath Item 166',
-    price: 30.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-167',
-    name: 'Bath Item 167',
-    price: 24.05,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-168',
-    name: 'Bath Item 168',
-    price: 69.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-169',
-    name: 'Bath Item 169',
-    price: 23.25,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-170',
-    name: 'Bath Item 170',
-    price: 95.36,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-171',
-    name: 'Bath Item 171',
-    price: 30.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-172',
-    name: 'Bath Item 172',
-    price: 12.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-173',
-    name: 'Bath Item 173',
-    price: 36.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-174',
-    name: 'Bath Item 174',
-    price: 23.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-175',
-    name: 'Bath Item 175',
-    price: 17.8,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-176',
-    name: 'Bath Item 176',
-    price: 47.26,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-177',
-    name: 'Bath Item 177',
-    price: 87.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-178',
-    name: 'Bath Item 178',
-    price: 47.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-179',
-    name: 'Bath Item 179',
-    price: 83.71,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-180',
-    name: 'Bath Item 180',
-    price: 70.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-181',
-    name: 'Bath Item 181',
-    price: 57.3,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-182',
-    name: 'Bath Item 182',
-    price: 78.78,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-183',
-    name: 'Bath Item 183',
-    price: 26.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-184',
-    name: 'Bath Item 184',
-    price: 44.16,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-185',
-    name: 'Bath Item 185',
-    price: 80.99,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-186',
-    name: 'Bath Item 186',
-    price: 17.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-187',
-    name: 'Bath Item 187',
-    price: 57.51,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-188',
-    name: 'Bath Item 188',
-    price: 78.75,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-189',
-    name: 'Bath Item 189',
-    price: 67.43,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-190',
-    name: 'Bath Item 190',
-    price: 71.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-191',
-    name: 'Bath Item 191',
-    price: 26.75,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-192',
-    name: 'Bath Item 192',
-    price: 83.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-193',
-    name: 'Bath Item 193',
-    price: 83.18,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-194',
-    name: 'Bath Item 194',
-    price: 95.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-195',
-    name: 'Bath Item 195',
-    price: 28.18,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-196',
-    name: 'Bath Item 196',
-    price: 64.88,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-197',
-    name: 'Bath Item 197',
-    price: 83.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-198',
-    name: 'Bath Item 198',
-    price: 40.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-199',
-    name: 'Bath Item 199',
-    price: 32.72,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-200',
-    name: 'Bath Item 200',
-    price: 86.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-201',
-    name: 'Bath Item 201',
-    price: 79.04,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-202',
-    name: 'Bath Item 202',
-    price: 77.24,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-203',
-    name: 'Bath Item 203',
-    price: 72.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-204',
-    name: 'Bath Item 204',
-    price: 60.84,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-205',
-    name: 'Bath Item 205',
-    price: 51.1,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-206',
-    name: 'Bath Item 206',
-    price: 99.82,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-207',
-    name: 'Bath Item 207',
-    price: 49.13,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-208',
-    name: 'Bath Item 208',
-    price: 72.25,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-209',
-    name: 'Bath Item 209',
-    price: 91.45,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-210',
-    name: 'Bath Item 210',
-    price: 46.8,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-211',
-    name: 'Bath Item 211',
-    price: 51.1,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-212',
-    name: 'Bath Item 212',
-    price: 12.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-213',
-    name: 'Bath Item 213',
-    price: 15.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-214',
-    name: 'Bath Item 214',
-    price: 91.5,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-215',
-    name: 'Bath Item 215',
-    price: 49.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-216',
-    name: 'Bath Item 216',
-    price: 55.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-217',
-    name: 'Bath Item 217',
-    price: 39.91,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-218',
-    name: 'Bath Item 218',
-    price: 66.61,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-219',
-    name: 'Bath Item 219',
-    price: 38.85,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-220',
-    name: 'Bath Item 220',
-    price: 58.66,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-221',
-    name: 'Bath Item 221',
-    price: 14.35,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-222',
-    name: 'Bath Item 222',
-    price: 41.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-223',
-    name: 'Bath Item 223',
-    price: 58.5,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-224',
-    name: 'Bath Item 224',
-    price: 34.68,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-225',
-    name: 'Bath Item 225',
-    price: 89.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-226',
-    name: 'Bath Item 226',
-    price: 85.66,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-227',
-    name: 'Bath Item 227',
-    price: 63.66,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-228',
-    name: 'Bath Item 228',
-    price: 71.34,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-229',
-    name: 'Bath Item 229',
-    price: 69.63,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-230',
-    name: 'Bath Item 230',
-    price: 39.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-231',
-    name: 'Bath Item 231',
-    price: 36.2,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-232',
-    name: 'Bath Item 232',
-    price: 30.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-233',
-    name: 'Bath Item 233',
-    price: 27.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-234',
-    name: 'Bath Item 234',
-    price: 66.6,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-235',
-    name: 'Bath Item 235',
-    price: 64.46,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-236',
-    name: 'Bath Item 236',
-    price: 75.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-237',
-    name: 'Bath Item 237',
-    price: 89.76,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-238',
-    name: 'Bath Item 238',
-    price: 91.79,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-239',
-    name: 'Bath Item 239',
-    price: 90.82,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-240',
-    name: 'Bath Item 240',
-    price: 25.74,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-241',
-    name: 'Bath Item 241',
-    price: 22.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-242',
-    name: 'Bath Item 242',
-    price: 72.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-243',
-    name: 'Bath Item 243',
-    price: 51.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-244',
-    name: 'Bath Item 244',
-    price: 57.71,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-245',
-    name: 'Bath Item 245',
-    price: 60.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-246',
-    name: 'Bath Item 246',
-    price: 71.24,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-247',
-    name: 'Bath Item 247',
-    price: 52.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-248',
-    name: 'Bath Item 248',
-    price: 22.93,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-249',
-    name: 'Bath Item 249',
-    price: 44.55,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-250',
-    name: 'Bath Item 250',
-    price: 69.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-251',
-    name: 'Bath Item 251',
-    price: 92.2,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-252',
-    name: 'Bath Item 252',
-    price: 68.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-253',
-    name: 'Bath Item 253',
-    price: 91.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-254',
-    name: 'Bath Item 254',
-    price: 96.32,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-255',
-    name: 'Bath Item 255',
-    price: 80.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-256',
-    name: 'Bath Item 256',
-    price: 59.01,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-257',
-    name: 'Bath Item 257',
-    price: 47.99,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-258',
-    name: 'Bath Item 258',
-    price: 10.17,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-259',
-    name: 'Bath Item 259',
-    price: 26.32,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-260',
-    name: 'Bath Item 260',
-    price: 22.17,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-261',
-    name: 'Bath Item 261',
-    price: 43.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-262',
-    name: 'Bath Item 262',
-    price: 82.3,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-263',
-    name: 'Bath Item 263',
-    price: 25.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-264',
-    name: 'Bath Item 264',
-    price: 87.92,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-265',
-    name: 'Bath Item 265',
-    price: 77.57,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-266',
-    name: 'Bath Item 266',
-    price: 81.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-267',
-    name: 'Bath Item 267',
-    price: 89.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-268',
-    name: 'Bath Item 268',
-    price: 67.32,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-269',
-    name: 'Bath Item 269',
-    price: 51.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-270',
-    name: 'Bath Item 270',
-    price: 38.22,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-271',
-    name: 'Bath Item 271',
-    price: 46.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-272',
-    name: 'Bath Item 272',
-    price: 92.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-273',
-    name: 'Bath Item 273',
-    price: 15.72,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-274',
-    name: 'Bath Item 274',
-    price: 26.22,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-275',
-    name: 'Bath Item 275',
-    price: 88.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-276',
-    name: 'Bath Item 276',
-    price: 58.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-277',
-    name: 'Bath Item 277',
-    price: 77.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-278',
-    name: 'Bath Item 278',
-    price: 69.43,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-279',
-    name: 'Bath Item 279',
-    price: 26.61,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-280',
-    name: 'Bath Item 280',
-    price: 25.02,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-281',
-    name: 'Bath Item 281',
-    price: 82.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-282',
-    name: 'Bath Item 282',
-    price: 50.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-283',
-    name: 'Bath Item 283',
-    price: 61.09,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-284',
-    name: 'Bath Item 284',
-    price: 20.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-285',
-    name: 'Bath Item 285',
-    price: 97.88,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-286',
-    name: 'Bath Item 286',
-    price: 65.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-287',
-    name: 'Bath Item 287',
-    price: 43.06,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-288',
-    name: 'Bath Item 288',
-    price: 15.84,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-289',
-    name: 'Bath Item 289',
-    price: 98.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-290',
-    name: 'Bath Item 290',
-    price: 77.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-291',
-    name: 'Bath Item 291',
-    price: 11.83,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-292',
-    name: 'Bath Item 292',
-    price: 93.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-293',
-    name: 'Bath Item 293',
-    price: 92.65,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-294',
-    name: 'Bath Item 294',
-    price: 94.64,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-295',
-    name: 'Bath Item 295',
-    price: 51.88,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-296',
-    name: 'Bath Item 296',
-    price: 97.05,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-297',
-    name: 'Bath Item 297',
-    price: 75.25,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-298',
-    name: 'Bath Item 298',
-    price: 57.37,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-299',
-    name: 'Bath Item 299',
-    price: 66.46,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-300',
-    name: 'Bath Item 300',
-    price: 69.69,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-301',
-    name: 'Bath Item 301',
-    price: 12.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-302',
-    name: 'Bath Item 302',
-    price: 99.89,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-303',
-    name: 'Bath Item 303',
-    price: 67.68,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-304',
-    name: 'Bath Item 304',
-    price: 23.91,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-305',
-    name: 'Bath Item 305',
-    price: 91.43,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-306',
-    name: 'Bath Item 306',
-    price: 21.37,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-307',
-    name: 'Bath Item 307',
-    price: 55.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-308',
-    name: 'Bath Item 308',
-    price: 78.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-309',
-    name: 'Bath Item 309',
-    price: 16.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-310',
-    name: 'Bath Item 310',
-    price: 24.75,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-311',
-    name: 'Bath Item 311',
-    price: 35.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-312',
-    name: 'Bath Item 312',
-    price: 31.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-313',
-    name: 'Bath Item 313',
-    price: 14.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-314',
-    name: 'Bath Item 314',
-    price: 44.45,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-315',
-    name: 'Bath Item 315',
-    price: 57.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-316',
-    name: 'Bath Item 316',
-    price: 81.63,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-317',
-    name: 'Bath Item 317',
-    price: 58.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-318',
-    name: 'Bath Item 318',
-    price: 42.14,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-319',
-    name: 'Bath Item 319',
-    price: 79.08,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-320',
-    name: 'Bath Item 320',
-    price: 70.72,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-321',
-    name: 'Bath Item 321',
-    price: 65.68,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-322',
-    name: 'Bath Item 322',
-    price: 38.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-323',
-    name: 'Bath Item 323',
-    price: 80.54,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-324',
-    name: 'Bath Item 324',
-    price: 25.26,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-325',
-    name: 'Bath Item 325',
-    price: 55.64,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-326',
-    name: 'Bath Item 326',
-    price: 37.61,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-327',
-    name: 'Bath Item 327',
-    price: 12.9,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-328',
-    name: 'Bath Item 328',
-    price: 12.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-329',
-    name: 'Bath Item 329',
-    price: 82.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-330',
-    name: 'Bath Item 330',
-    price: 82.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-331',
-    name: 'Bath Item 331',
-    price: 29.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-332',
-    name: 'Bath Item 332',
-    price: 19.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-333',
-    name: 'Bath Item 333',
-    price: 78.67,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-334',
-    name: 'Bath Item 334',
-    price: 21.18,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-335',
-    name: 'Bath Item 335',
-    price: 35.37,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-336',
-    name: 'Bath Item 336',
-    price: 65.72,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-337',
-    name: 'Bath Item 337',
-    price: 98.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-338',
-    name: 'Bath Item 338',
-    price: 66.46,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-339',
-    name: 'Bath Item 339',
-    price: 71.04,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-340',
-    name: 'Bath Item 340',
-    price: 62.79,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-341',
-    name: 'Bath Item 341',
-    price: 81.45,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-342',
-    name: 'Bath Item 342',
-    price: 74.82,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-343',
-    name: 'Bath Item 343',
-    price: 19.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-344',
-    name: 'Bath Item 344',
-    price: 67.14,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-345',
-    name: 'Bath Item 345',
-    price: 16.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-346',
-    name: 'Bath Item 346',
-    price: 26.83,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-347',
-    name: 'Bath Item 347',
-    price: 54.68,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-348',
-    name: 'Bath Item 348',
-    price: 89.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-349',
-    name: 'Bath Item 349',
-    price: 46.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-350',
-    name: 'Bath Item 350',
-    price: 36.14,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-351',
-    name: 'Bath Item 351',
-    price: 37.34,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-352',
-    name: 'Bath Item 352',
-    price: 59.29,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-353',
-    name: 'Bath Item 353',
-    price: 31.28,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-354',
-    name: 'Bath Item 354',
-    price: 70.5,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-355',
-    name: 'Bath Item 355',
-    price: 54.05,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-356',
-    name: 'Bath Item 356',
-    price: 56.25,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-357',
-    name: 'Bath Item 357',
-    price: 57.34,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-358',
-    name: 'Bath Item 358',
-    price: 42.9,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-359',
-    name: 'Bath Item 359',
-    price: 51.3,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-360',
-    name: 'Bath Item 360',
-    price: 16.09,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-361',
-    name: 'Bath Item 361',
-    price: 32.83,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-362',
-    name: 'Bath Item 362',
-    price: 73.07,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-363',
-    name: 'Bath Item 363',
-    price: 26.92,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-364',
-    name: 'Bath Item 364',
-    price: 75.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-365',
-    name: 'Bath Item 365',
-    price: 91.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-366',
-    name: 'Bath Item 366',
-    price: 13.82,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-367',
-    name: 'Bath Item 367',
-    price: 65.29,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-368',
-    name: 'Bath Item 368',
-    price: 13.06,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-369',
-    name: 'Bath Item 369',
-    price: 74.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-370',
-    name: 'Bath Item 370',
-    price: 26.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-371',
-    name: 'Bath Item 371',
-    price: 26.72,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-372',
-    name: 'Bath Item 372',
-    price: 67.24,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-373',
-    name: 'Bath Item 373',
-    price: 61.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-374',
-    name: 'Bath Item 374',
-    price: 68.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-375',
-    name: 'Bath Item 375',
-    price: 23.46,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-376',
-    name: 'Bath Item 376',
-    price: 90.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-377',
-    name: 'Bath Item 377',
-    price: 30.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-378',
-    name: 'Bath Item 378',
-    price: 62.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-379',
-    name: 'Bath Item 379',
-    price: 20.85,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-380',
-    name: 'Bath Item 380',
-    price: 49.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-381',
-    name: 'Bath Item 381',
-    price: 13.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-382',
-    name: 'Bath Item 382',
-    price: 99.01,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-383',
-    name: 'Bath Item 383',
-    price: 75.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-384',
-    name: 'Bath Item 384',
-    price: 83.34,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-385',
-    name: 'Bath Item 385',
-    price: 98.67,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-386',
-    name: 'Bath Item 386',
-    price: 49.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-387',
-    name: 'Bath Item 387',
-    price: 82.49,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-388',
-    name: 'Bath Item 388',
-    price: 22.25,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-389',
-    name: 'Bath Item 389',
-    price: 46.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-390',
-    name: 'Bath Item 390',
-    price: 95.3,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-391',
-    name: 'Bath Item 391',
-    price: 72.63,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-392',
-    name: 'Bath Item 392',
-    price: 42.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-393',
-    name: 'Bath Item 393',
-    price: 68.0,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-394',
-    name: 'Bath Item 394',
-    price: 49.92,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-395',
-    name: 'Bath Item 395',
-    price: 67.61,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-396',
-    name: 'Bath Item 396',
-    price: 81.72,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-397',
-    name: 'Bath Item 397',
-    price: 97.68,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-398',
-    name: 'Bath Item 398',
-    price: 84.07,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-399',
-    name: 'Bath Item 399',
-    price: 17.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-400',
-    name: 'Bath Item 400',
-    price: 14.15,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-401',
-    name: 'Bath Item 401',
-    price: 65.75,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-402',
-    name: 'Bath Item 402',
-    price: 75.78,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-403',
-    name: 'Bath Item 403',
-    price: 84.85,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-404',
-    name: 'Bath Item 404',
-    price: 89.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-405',
-    name: 'Bath Item 405',
-    price: 79.13,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-406',
-    name: 'Bath Item 406',
-    price: 90.53,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-407',
-    name: 'Bath Item 407',
-    price: 10.02,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-408',
-    name: 'Bath Item 408',
-    price: 76.97,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-409',
-    name: 'Bath Item 409',
-    price: 69.9,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-410',
-    name: 'Bath Item 410',
-    price: 36.06,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-411',
-    name: 'Bath Item 411',
-    price: 11.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-412',
-    name: 'Bath Item 412',
-    price: 63.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-413',
-    name: 'Bath Item 413',
-    price: 97.66,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-414',
-    name: 'Bath Item 414',
-    price: 40.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-415',
-    name: 'Bath Item 415',
-    price: 11.2,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-416',
-    name: 'Bath Item 416',
-    price: 68.03,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-417',
-    name: 'Bath Item 417',
-    price: 70.12,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-418',
-    name: 'Bath Item 418',
-    price: 23.68,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-419',
-    name: 'Bath Item 419',
-    price: 54.46,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-420',
-    name: 'Bath Item 420',
-    price: 26.6,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-421',
-    name: 'Bath Item 421',
-    price: 49.17,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-422',
-    name: 'Bath Item 422',
-    price: 19.37,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-423',
-    name: 'Bath Item 423',
-    price: 80.62,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-424',
-    name: 'Bath Item 424',
-    price: 62.57,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-425',
-    name: 'Bath Item 425',
-    price: 85.27,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-426',
-    name: 'Bath Item 426',
-    price: 11.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-427',
-    name: 'Bath Item 427',
-    price: 53.28,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-428',
-    name: 'Bath Item 428',
-    price: 90.49,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-429',
-    name: 'Bath Item 429',
-    price: 83.64,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-430',
-    name: 'Bath Item 430',
-    price: 43.16,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-431',
-    name: 'Bath Item 431',
-    price: 90.73,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-432',
-    name: 'Bath Item 432',
-    price: 82.9,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-433',
-    name: 'Bath Item 433',
-    price: 13.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-434',
-    name: 'Bath Item 434',
-    price: 99.56,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-435',
-    name: 'Bath Item 435',
-    price: 46.08,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-436',
-    name: 'Bath Item 436',
-    price: 63.84,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-437',
-    name: 'Bath Item 437',
-    price: 29.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-438',
-    name: 'Bath Item 438',
-    price: 70.5,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-439',
-    name: 'Bath Item 439',
-    price: 17.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-440',
-    name: 'Bath Item 440',
-    price: 22.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-441',
-    name: 'Bath Item 441',
-    price: 99.91,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-442',
-    name: 'Bath Item 442',
-    price: 50.4,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-443',
-    name: 'Bath Item 443',
-    price: 31.58,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-444',
-    name: 'Bath Item 444',
-    price: 28.96,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-445',
-    name: 'Bath Item 445',
-    price: 64.55,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-446',
-    name: 'Bath Item 446',
-    price: 96.41,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-447',
-    name: 'Bath Item 447',
-    price: 67.77,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-448',
-    name: 'Bath Item 448',
-    price: 35.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-449',
-    name: 'Bath Item 449',
-    price: 21.84,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-450',
-    name: 'Bath Item 450',
-    price: 34.38,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-451',
-    name: 'Bath Item 451',
-    price: 97.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-452',
-    name: 'Bath Item 452',
-    price: 99.8,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-453',
-    name: 'Bath Item 453',
-    price: 70.86,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-454',
-    name: 'Bath Item 454',
-    price: 91.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-455',
-    name: 'Bath Item 455',
-    price: 36.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-456',
-    name: 'Bath Item 456',
-    price: 56.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-457',
-    name: 'Bath Item 457',
-    price: 76.6,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-458',
-    name: 'Bath Item 458',
-    price: 82.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-459',
-    name: 'Bath Item 459',
-    price: 96.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-460',
-    name: 'Bath Item 460',
-    price: 53.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-461',
-    name: 'Bath Item 461',
-    price: 46.26,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-462',
-    name: 'Bath Item 462',
-    price: 15.61,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-463',
-    name: 'Bath Item 463',
-    price: 30.93,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-464',
-    name: 'Bath Item 464',
-    price: 58.98,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-465',
-    name: 'Bath Item 465',
-    price: 23.17,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-466',
-    name: 'Bath Item 466',
-    price: 88.21,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-467',
-    name: 'Bath Item 467',
-    price: 89.51,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-468',
-    name: 'Bath Item 468',
-    price: 28.54,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-469',
-    name: 'Bath Item 469',
-    price: 37.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-470',
-    name: 'Bath Item 470',
-    price: 29.87,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-471',
-    name: 'Bath Item 471',
-    price: 81.3,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-472',
-    name: 'Bath Item 472',
-    price: 66.48,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-473',
-    name: 'Bath Item 473',
-    price: 51.45,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-474',
-    name: 'Bath Item 474',
-    price: 17.29,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-475',
-    name: 'Bath Item 475',
-    price: 39.17,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-476',
-    name: 'Bath Item 476',
-    price: 48.1,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-477',
-    name: 'Bath Item 477',
-    price: 91.91,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-478',
-    name: 'Bath Item 478',
-    price: 18.59,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-479',
-    name: 'Bath Item 479',
-    price: 58.11,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-480',
-    name: 'Bath Item 480',
-    price: 12.19,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-481',
-    name: 'Bath Item 481',
-    price: 54.08,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-482',
-    name: 'Bath Item 482',
-    price: 74.82,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-483',
-    name: 'Bath Item 483',
-    price: 89.74,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-484',
-    name: 'Bath Item 484',
-    price: 37.39,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-485',
-    name: 'Bath Item 485',
-    price: 57.75,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-486',
-    name: 'Bath Item 486',
-    price: 64.55,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-487',
-    name: 'Bath Item 487',
-    price: 51.37,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
   {
-    id: 'bath-488',
-    name: 'Bath Item 488',
-    price: 19.55,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-489',
-    name: 'Bath Item 489',
-    price: 93.94,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-490',
-    name: 'Bath Item 490',
-    price: 95.23,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-491',
-    name: 'Bath Item 491',
-    price: 74.88,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-492',
-    name: 'Bath Item 492',
-    price: 66.16,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-493',
-    name: 'Bath Item 493',
-    price: 43.95,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-494',
-    name: 'Bath Item 494',
-    price: 35.8,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-495',
-    name: 'Bath Item 495',
-    price: 77.89,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-496',
-    name: 'Bath Item 496',
-    price: 77.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-497',
-    name: 'Bath Item 497',
-    price: 37.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-498',
-    name: 'Bath Item 498',
-    price: 68.5,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-499',
-    name: 'Bath Item 499',
-    price: 34.52,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
-  },
-  {
-    id: 'bath-500',
-    name: 'Bath Item 500',
-    price: 59.44,
-    image: '/images/placeholder.jpg',
-    category: 'Bath',
-    description: 'Generic bath product - Specially formulated for your needs.'
+    "id": "82852",
+    "name": "Mild By Nature, Thickening Shampoo, B-Complex + Biotin, Citrus Squeeze, 16 fl oz (473 ml)",
+    "price": 43595,
+    "image": "/images/products/bath/82852.jpg",
+    "category": "Bath",
+    "description": "Mild By Nature, Thickening Shampoo, B-Complex + Biotin, Citrus Squeeze, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-thickening-shampoo-b-complex-biotin-citrus-squeeze-16-fl-oz-473-ml/82852"
+  },
+  {
+    "id": "98295",
+    "name": "Mild By Nature, Raw Shea Butter Bar Soap, 5 oz (141 g)",
+    "price": 14543,
+    "image": "/images/products/bath/98295.jpg",
+    "category": "Bath",
+    "description": "Mild By Nature, Raw Shea Butter Bar Soap, 5 oz (141 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-raw-shea-butter-bar-soap-5-oz-141-g/98295"
+  },
+  {
+    "id": "885",
+    "name": "NOW Foods, Solutions, XyliWhite™, Toothpaste Gel, Refreshmint, 6.4 oz (181 g)",
+    "price": 23529,
+    "image": "/images/products/bath/885.jpg",
+    "category": "Bath",
+    "description": "NOW Foods, Solutions, XyliWhite™, Toothpaste Gel, Refreshmint, 6.4 oz (181 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-xyliwhite-toothpaste-gel-refreshmint-6-4-oz-181-g/885"
+  },
+  {
+    "id": "5948",
+    "name": "Hobe Labs, Energizer, Hair Follicle Stimulator, 8 fl oz (237 ml)",
+    "price": 50607,
+    "image": "/images/products/bath/5948.jpg",
+    "category": "Bath",
+    "description": "Hobe Labs, Energizer, Hair Follicle Stimulator, 8 fl oz (237 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/hobe-labs-energizer-hair-follicle-stimulator-8-fl-oz-237-ml/5948"
+  },
+  {
+    "id": "147042",
+    "name": "Dr. Althea, 345 Relief Cream , 1.69 fl oz (50 ml)",
+    "price": 102459,
+    "image": "/images/products/bath/147042.jpg",
+    "category": "Bath",
+    "description": "Dr. Althea, 345 Relief Cream , 1.69 fl oz (50 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/dr-althea-345-relief-cream-1-69-fl-oz-50-ml/147042"
+  },
+  {
+    "id": "82188",
+    "name": "Advanced Clinicals, Vitamin C, Advanced Brightening Cream, 16 oz (454 g)",
+    "price": 43573,
+    "image": "/images/products/bath/82188.jpg",
+    "category": "Bath",
+    "description": "Advanced Clinicals, Vitamin C, Advanced Brightening Cream, 16 oz (454 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-vitamin-c-advanced-brightening-cream-16-oz-454-g/82188"
+  },
+  {
+    "id": "100963",
+    "name": "Advanced Clinicals, Keratin,  Sleek + Smooth Hair Mask,  12 oz (340 g)",
+    "price": 39501,
+    "image": "/images/products/bath/100963.jpg",
+    "category": "Bath",
+    "description": "Advanced Clinicals, Keratin,  Sleek + Smooth Hair Mask,  12 oz (340 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-keratin-sleek-smooth-hair-mask-12-oz-340-g/100963"
+  },
+  {
+    "id": "137798",
+    "name": "GuruNanda, Premium Whitening Strips, 14 Strips",
+    "price": 47531,
+    "image": "/images/products/bath/137798.jpg",
+    "category": "Bath",
+    "description": "GuruNanda, Premium Whitening Strips, 14 Strips - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/gurunanda-premium-whitening-strips-14-strips/137798"
+  },
+  {
+    "id": "8475",
+    "name": "Nubian Heritage, African Black Soap, Body Wash, 13 fl oz (384 ml)",
+    "price": 50705,
+    "image": "/images/products/bath/8475.jpg",
+    "category": "Bath",
+    "description": "Nubian Heritage, African Black Soap, Body Wash, 13 fl oz (384 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nubian-heritage-african-black-soap-body-wash-13-fl-oz-384-ml/8475"
+  },
+  {
+    "id": "110487",
+    "name": "Mielle, Scalp & Hair Strengthening Oil, Rosemary Mint, 2 fl oz (59 ml)",
+    "price": 46666,
+    "image": "/images/products/bath/110487.jpg",
+    "category": "Bath",
+    "description": "Mielle, Scalp & Hair Strengthening Oil, Rosemary Mint, 2 fl oz (59 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mielle-scalp-hair-strengthening-oil-rosemary-mint-2-fl-oz-59-ml/110487"
+  },
+  {
+    "id": "92579",
+    "name": "TRESemmé, Protecting Heat Styling Spray, 8 fl oz (236 ml)",
+    "price": 36880,
+    "image": "/images/products/bath/92579.jpg",
+    "category": "Bath",
+    "description": "TRESemmé, Protecting Heat Styling Spray, 8 fl oz (236 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/tresemm-protecting-heat-styling-spray-8-fl-oz-236-ml/92579"
+  },
+  {
+    "id": "14394",
+    "name": "NOW Foods, Solutions, Sweet Almond Oil, Unscented, 4 fl oz (118 ml)",
+    "price": 19366,
+    "image": "/images/products/bath/14394.jpg",
+    "category": "Bath",
+    "description": "NOW Foods, Solutions, Sweet Almond Oil, Unscented, 4 fl oz (118 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-sweet-almond-oil-unscented-4-fl-oz-118-ml/14394"
+  },
+  {
+    "id": "148307",
+    "name": "Sierra Bees™, Organic Lip Balms, Pomegranate, 4 Pack, 0.15 oz (4.25g) Each",
+    "price": 13907,
+    "image": "/images/products/bath/148307.jpg",
+    "category": "Bath",
+    "description": "Sierra Bees™, Organic Lip Balms, Pomegranate, 4 Pack, 0.15 oz (4.25g) Each - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-organic-lip-balms-pomegranate-4-pack-0-15-oz-4-25g-each/148307"
+  },
+  {
+    "id": "97380",
+    "name": "Castile Bar Soap, Lavender, 5 oz (141 g)",
+    "price": 9962,
+    "image": "/images/products/bath/97380.jpg",
+    "category": "Bath",
+    "description": "Castile Bar Soap, Lavender, 5 oz (141 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-castile-bar-soap-lavender-5-oz-141-g/97380"
+  },
+  {
+    "id": "148309",
+    "name": "Sierra Bees™, Organic Lip Balms, Black Cherry, 4 Pack, 0.15 oz (4.25 g) Each",
+    "price": 13907,
+    "image": "/images/products/bath/148309.jpg",
+    "category": "Bath",
+    "description": "Sierra Bees™, Organic Lip Balms, Black Cherry, 4 Pack, 0.15 oz (4.25 g) Each - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-organic-lip-balms-black-cherry-4-pack-0-15-oz-4-25-g-each/148309"
+  },
+  {
+    "id": "148316",
+    "name": "Sierra Bees™, Organic Lip Balms, Mint Burst, 4 Pack, 0.15 oz (4.25 g) Each",
+    "price": 9817,
+    "image": "/images/products/bath/148316.jpg",
+    "category": "Bath",
+    "description": "Sierra Bees™, Organic Lip Balms, Mint Burst, 4 Pack, 0.15 oz (4.25 g) Each - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-organic-lip-balms-mint-burst-4-pack-0-15-oz-4-25-g-each/148316"
+  },
+  {
+    "id": "148303",
+    "name": "Sierra Bees™, Bumpy Road Salve®, 0.6 oz (17 g)",
+    "price": 8705,
+    "image": "/images/products/bath/148303.jpg",
+    "category": "Bath",
+    "description": "Sierra Bees™, Bumpy Road Salve®, 0.6 oz (17 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-bumpy-road-salve-0-6-oz-17-g/148303"
+  },
+  {
+    "id": "89053",
+    "name": "Calendula Cream, 2 oz (56 g)",
+    "price": 22141,
+    "image": "/images/products/bath/89053.jpg",
+    "category": "Bath",
+    "description": "Calendula Cream, 2 oz (56 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-calendula-cream-2-oz-56-g/89053"
+  },
+  {
+    "id": "148318",
+    "name": "Sierra Bees™, Organic Lip Balms, Unflavored, 4 Pack, 0.15 oz (4.25 g) Each",
+    "price": 13907,
+    "image": "/images/products/bath/148318.jpg",
+    "category": "Bath",
+    "description": "Sierra Bees™, Organic Lip Balms, Unflavored, 4 Pack, 0.15 oz (4.25 g) Each - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-sierra-bees-organic-lip-balms-unflavored-4-pack-0-15-oz-4-25-g-each/148318"
+  },
+  {
+    "id": "97004",
+    "name": "Beauty, Sleep Time Balm, Lavender & Chamomile, 0.6 oz (17 g)",
+    "price": 12801,
+    "image": "/images/products/bath/97004.jpg",
+    "category": "Bath",
+    "description": "Beauty, Sleep Time Balm, Lavender & Chamomile, 0.6 oz (17 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-beauty-sleep-time-balm-lavender-chamomile-0-6-oz-17-g/97004"
+  },
+  {
+    "id": "111964",
+    "name": "Hydrating Body Wash, Lavender Lemongrass, 16 fl oz (473 ml)",
+    "price": 27784,
+    "image": "/images/products/bath/111964.jpg",
+    "category": "Bath",
+    "description": "Hydrating Body Wash, Lavender Lemongrass, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-hydrating-body-wash-lavender-lemongrass-16-fl-oz-473-ml/111964"
+  },
+  {
+    "id": "101051",
+    "name": "Pomegranate Mint Balancing Shampoo, 16 fl oz (473 ml)",
+    "price": 25597,
+    "image": "/images/products/bath/101051.jpg",
+    "category": "Bath",
+    "description": "Pomegranate Mint Balancing Shampoo, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-pomegranate-mint-balancing-shampoo-16-fl-oz-473-ml/101051"
+  },
+  {
+    "id": "112417",
+    "name": "Peppermint & Shea Foot Cream with Argan & Marula Oils, 2.5 oz (71 g)",
+    "price": 21078,
+    "image": "/images/products/bath/112417.jpg",
+    "category": "Bath",
+    "description": "Peppermint & Shea Foot Cream with Argan & Marula Oils, 2.5 oz (71 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-peppermint-shea-foot-cream-with-argan-marula-oils-2-5-oz-71-g/112417"
+  },
+  {
+    "id": "116512",
+    "name": "(Nature's Gate), Biotin & Bamboo Shampoo for Thin Hair, 16 fl oz (473 ml)",
+    "price": 29561,
+    "image": "/images/products/bath/116512.jpg",
+    "category": "Bath",
+    "description": "(Nature's Gate), Biotin & Bamboo Shampoo for Thin Hair, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-nature-s-gate-biotin-bamboo-shampoo-for-thin-hair-16-fl-oz-473-ml/116512"
+  },
+  {
+    "id": "43279",
+    "name": "Exfoliating Bar Soap, English Rose , 5.25 oz (149 g)",
+    "price": 15601,
+    "image": "/images/products/bath/43279.jpg",
+    "category": "Bath",
+    "description": "Exfoliating Bar Soap, English Rose , 5.25 oz (149 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/dr-woods-exfoliating-bar-soap-english-rose-5-25-oz-149-g/43279"
+  },
+  {
+    "id": "97377",
+    "name": "Castile Bar Soap, Peppermint, 5 oz (141 g)",
+    "price": 10326,
+    "image": "/images/products/bath/97377.jpg",
+    "category": "Bath",
+    "description": "Castile Bar Soap, Peppermint, 5 oz (141 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-castile-bar-soap-peppermint-5-oz-141-g/97377"
+  },
+  {
+    "id": "21248",
+    "name": "Sandal Bar Soap, 75 g",
+    "price": 8177,
+    "image": "/images/products/bath/21248.jpg",
+    "category": "Bath",
+    "description": "Sandal Bar Soap, 75 g - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/chandrika-soap-sandal-bar-soap-75-g/21248"
+  },
+  {
+    "id": "75114",
+    "name": "Honey Lemon Menthol Eucalyptus Drops , 1.6 oz (45 g)",
+    "price": 6181,
+    "image": "/images/products/bath/75114.jpg",
+    "category": "Bath",
+    "description": "Honey Lemon Menthol Eucalyptus Drops , 1.6 oz (45 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/honees-honey-lemon-menthol-eucalyptus-drops-1-6-oz-45-g/75114"
+  },
+  {
+    "id": "111968",
+    "name": "Nourishing Body Lotion, Coconut Bergamot,  8 fl oz (236 ml)",
+    "price": 17069,
+    "image": "/images/products/bath/111968.jpg",
+    "category": "Bath",
+    "description": "Nourishing Body Lotion, Coconut Bergamot,  8 fl oz (236 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-nourishing-body-lotion-coconut-bergamot-8-fl-oz-236-ml/111968"
+  },
+  {
+    "id": "111965",
+    "name": "Hydrating Body Lotion, Lavender Lemongrass, 8 fl oz (236 ml)",
+    "price": 16964,
+    "image": "/images/products/bath/111965.jpg",
+    "category": "Bath",
+    "description": "Hydrating Body Lotion, Lavender Lemongrass, 8 fl oz (236 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-hydrating-body-lotion-lavender-lemongrass-8-fl-oz-236-ml/111965"
+  },
+  {
+    "id": "147189",
+    "name": "EOS, Shea Better™, 24H Moisture Body Lotion, Vanilla Cashmere , 16 fl oz (473 ml)",
+    "price": 60991,
+    "image": "/images/products/bath/147189.jpg",
+    "category": "Bath",
+    "description": "EOS, Shea Better™, 24H Moisture Body Lotion, Vanilla Cashmere , 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/eos-shea-better-24h-moisture-body-lotion-vanilla-cashmere-16-fl-oz-473-ml/147189"
+  },
+  {
+    "id": "98513",
+    "name": "Advanced Clinicals, Biotin, Strengthening Hair Mask, 12 fl oz (340 ml)",
+    "price": 39632,
+    "image": "/images/products/bath/98513.jpg",
+    "category": "Bath",
+    "description": "Advanced Clinicals, Biotin, Strengthening Hair Mask, 12 fl oz (340 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-biotin-strengthening-hair-mask-12-fl-oz-340-ml/98513"
+  },
+  {
+    "id": "109415",
+    "name": "Clear Eyes, Maximum Redness Relief, Lubricant/Redness Reliever Eye Drops, 0.5 fl oz (15 ml)",
+    "price": 21975,
+    "image": "/images/products/bath/109415.jpg",
+    "category": "Bath",
+    "description": "Clear Eyes, Maximum Redness Relief, Lubricant/Redness Reliever Eye Drops, 0.5 fl oz (15 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/clear-eyes-maximum-redness-relief-lubricant-redness-reliever-eye-drops-0-5-fl-oz-15-ml/109415"
+  },
+  {
+    "id": "49179",
+    "name": "Cococare, Repairs and Conditions Dry Cracked Heels, .5 oz (11 g)",
+    "price": 11402,
+    "image": "/images/products/bath/49179.jpg",
+    "category": "Bath",
+    "description": "Cococare, Repairs and Conditions Dry Cracked Heels, .5 oz (11 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/cococare-repairs-and-conditions-dry-cracked-heels-5-oz-11-g/49179"
+  },
+  {
+    "id": "65838",
+    "name": "Honees, Honey Lemon Menthol Eucalyptus Cough Drops, 20 King Sized Drops, 3.5 oz (100 g)",
+    "price": 14753,
+    "image": "/images/products/bath/65838.jpg",
+    "category": "Bath",
+    "description": "Honees, Honey Lemon Menthol Eucalyptus Cough Drops, 20 King Sized Drops, 3.5 oz (100 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/honees-honey-lemon-menthol-eucalyptus-cough-drops-20-king-sized-drops-3-5-oz-100-g/65838"
+  },
+  {
+    "id": "45777",
+    "name": "Eucerin, Advanced Repair Hand Cream, Dry to Very Dry Skin, Fragrance Free, 2.7 oz (78 g)",
+    "price": 29442,
+    "image": "/images/products/bath/45777.jpg",
+    "category": "Bath",
+    "description": "Eucerin, Advanced Repair Hand Cream, Dry to Very Dry Skin, Fragrance Free, 2.7 oz (78 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-advanced-repair-hand-cream-dry-to-very-dry-skin-fragrance-free-2-7-oz-78-g/45777"
+  },
+  {
+    "id": "107605",
+    "name": "Medix 5.5, Body Cream, Vitamin C + Turmeric, 15 fl oz (444 ml)",
+    "price": 53608,
+    "image": "/images/products/bath/107605.jpg",
+    "category": "Bath",
+    "description": "Medix 5.5, Body Cream, Vitamin C + Turmeric, 15 fl oz (444 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/medix-5-5-body-cream-vitamin-c-turmeric-15-fl-oz-444-ml/107605"
+  },
+  {
+    "id": "11419",
+    "name": "Dr. Tung's, Ecosentials™, Smart Floss®, Natural Cardamom, 30 yd (27 m)",
+    "price": 21548,
+    "image": "/images/products/bath/11419.jpg",
+    "category": "Bath",
+    "description": "Dr. Tung's, Ecosentials™, Smart Floss®, Natural Cardamom, 30 yd (27 m) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/dr-tung-s-ecosentials-smart-floss-natural-cardamom-30-yd-27-m/11419"
+  },
+  {
+    "id": "6411",
+    "name": "Giovanni, Frizz Be Gone™, Super Smoothing, Anti-Frizz Hair Serum, 2.75 fl oz (81 ml)",
+    "price": 38067,
+    "image": "/images/products/bath/6411.jpg",
+    "category": "Bath",
+    "description": "Giovanni, Frizz Be Gone™, Super Smoothing, Anti-Frizz Hair Serum, 2.75 fl oz (81 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/giovanni-frizz-be-gone-super-smoothing-anti-frizz-hair-serum-2-75-fl-oz-81-ml/6411"
+  },
+  {
+    "id": "83969",
+    "name": "Arm & Hammer, UltraMax™, Antiperspirant Deodorant, Solid, Powder Fresh, 2.6 oz (73 g)",
+    "price": 15180,
+    "image": "/images/products/bath/83969.jpg",
+    "category": "Bath",
+    "description": "Arm & Hammer, UltraMax™, Antiperspirant Deodorant, Solid, Powder Fresh, 2.6 oz (73 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/arm-hammer-ultramax-antiperspirant-deodorant-solid-powder-fresh-2-6-oz-73-g/83969"
+  },
+  {
+    "id": "81310",
+    "name": "Arm & Hammer, Essentials™ with Natural Deodorizers, Deodorant, Rosemary Lavender, 2.5 oz (71 g)",
+    "price": 19261,
+    "image": "/images/products/bath/81310.jpg",
+    "category": "Bath",
+    "description": "Arm & Hammer, Essentials™ with Natural Deodorizers, Deodorant, Rosemary Lavender, 2.5 oz (71 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/arm-hammer-essentials-with-natural-deodorizers-deodorant-rosemary-lavender-2-5-oz-71-g/81310"
+  },
+  {
+    "id": "101522",
+    "name": "Eucerin, Roughness Relief Cream, Fragrance Free, 16 oz (454 g)",
+    "price": 82071,
+    "image": "/images/products/bath/101522.jpg",
+    "category": "Bath",
+    "description": "Eucerin, Roughness Relief Cream, Fragrance Free, 16 oz (454 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-roughness-relief-cream-fragrance-free-16-oz-454-g/101522"
+  },
+  {
+    "id": "11465",
+    "name": "NOW Foods, Solutions, XyliWhite™, Toothpaste Gel with Baking Soda, Platinum Mint, 6.4 oz (181 g)",
+    "price": 23529,
+    "image": "/images/products/bath/11465.jpg",
+    "category": "Bath",
+    "description": "NOW Foods, Solutions, XyliWhite™, Toothpaste Gel with Baking Soda, Platinum Mint, 6.4 oz (181 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-xyliwhite-toothpaste-gel-with-baking-soda-platinum-mint-6-4-oz-181-g/11465"
+  },
+  {
+    "id": "90094",
+    "name": "Advanced Clinicals, Hyaluronic Acid, Hydrating Body Cream, 16 oz (454 g)",
+    "price": 43529,
+    "image": "/images/products/bath/90094.jpg",
+    "category": "Bath",
+    "description": "Advanced Clinicals, Hyaluronic Acid, Hydrating Body Cream, 16 oz (454 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-clinicals-hyaluronic-acid-hydrating-body-cream-16-oz-454-g/90094"
+  },
+  {
+    "id": "137803",
+    "name": "GuruNanda, Whitening Flossing Spiral Bristles Toothbrush, Soft, 1 Toothbrush",
+    "price": 7271,
+    "image": "/images/products/bath/137803.jpg",
+    "category": "Bath",
+    "description": "GuruNanda, Whitening Flossing Spiral Bristles Toothbrush, Soft, 1 Toothbrush - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/gurunanda-whitening-flossing-spiral-bristles-toothbrush-soft-1-toothbrush/137803"
+  },
+  {
+    "id": "896",
+    "name": "NOW Foods, Solutions, Sweet Almond Oil, Pure Moisturizing Oil, Unscented, 16 fl oz (473 ml)",
+    "price": 51244,
+    "image": "/images/products/bath/896.jpg",
+    "category": "Bath",
+    "description": "NOW Foods, Solutions, Sweet Almond Oil, Pure Moisturizing Oil, Unscented, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-sweet-almond-oil-pure-moisturizing-oil-unscented-16-fl-oz-473-ml/896"
+  },
+  {
+    "id": "5665",
+    "name": "CRYSTAL, Mineral Deodorant Stick, Unscented, 1.5 oz (40 g)",
+    "price": 14421,
+    "image": "/images/products/bath/5665.jpg",
+    "category": "Bath",
+    "description": "CRYSTAL, Mineral Deodorant Stick, Unscented, 1.5 oz (40 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/crystal-mineral-deodorant-stick-unscented-1-5-oz-40-g/5665"
+  },
+  {
+    "id": "72108",
+    "name": "EcoTools, Dry Body Brush, 1 Brush",
+    "price": 25776,
+    "image": "/images/products/bath/72108.jpg",
+    "category": "Bath",
+    "description": "EcoTools, Dry Body Brush, 1 Brush - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/ecotools-dry-body-brush-1-brush/72108"
+  },
+  {
+    "id": "80873",
+    "name": "Petitfee, Dry Essence Foot Pack,  1 Pair, 0.28 oz (8 g)",
+    "price": 7271,
+    "image": "/images/products/bath/80873.jpg",
+    "category": "Bath",
+    "description": "Petitfee, Dry Essence Foot Pack,  1 Pair, 0.28 oz (8 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/petitfee-dry-essence-foot-pack-1-pair-0-28-oz-8-g/80873"
+  },
+  {
+    "id": "142479",
+    "name": "Aquaphor, Healing Balm Stick, 0.65 oz (18.4 g)",
+    "price": 44888,
+    "image": "/images/products/bath/142479.jpg",
+    "category": "Bath",
+    "description": "Aquaphor, Healing Balm Stick, 0.65 oz (18.4 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/aquaphor-healing-balm-stick-0-65-oz-18-4-g/142479"
+  },
+  {
+    "id": "142348",
+    "name": "Vaseline, Healing Jelly™, All-Over Body Balm, Fragrance Free, 1.4 oz (40 g)",
+    "price": 26368,
+    "image": "/images/products/bath/142348.jpg",
+    "category": "Bath",
+    "description": "Vaseline, Healing Jelly™, All-Over Body Balm, Fragrance Free, 1.4 oz (40 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/vaseline-healing-jelly-all-over-body-balm-fragrance-free-1-4-oz-40-g/142348"
+  },
+  {
+    "id": "16737",
+    "name": "Earth Science, Deep Conditioning, Hair Masque, Olive & Avocado, 6 oz (170 g)",
+    "price": 40152,
+    "image": "/images/products/bath/16737.jpg",
+    "category": "Bath",
+    "description": "Earth Science, Deep Conditioning, Hair Masque, Olive & Avocado, 6 oz (170 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/earth-science-deep-conditioning-hair-masque-olive-avocado-6-oz-170-g/16737"
+  },
+  {
+    "id": "72759",
+    "name": "Carmex, Classic Lip Balm, Medicated, SPF 15, 0.15 oz (4.25 g)",
+    "price": 8540,
+    "image": "/images/products/bath/72759.jpg",
+    "category": "Bath",
+    "description": "Carmex, Classic Lip Balm, Medicated, SPF 15, 0.15 oz (4.25 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/carmex-classic-lip-balm-medicated-spf-15-0-15-oz-4-25-g/72759"
+  },
+  {
+    "id": "45772",
+    "name": "Aquaphor, Lip Repair, Immediate Relief, Fragrance Free, 0.35 fl oz (10 ml)",
+    "price": 23168,
+    "image": "/images/products/bath/45772.jpg",
+    "category": "Bath",
+    "description": "Aquaphor, Lip Repair, Immediate Relief, Fragrance Free, 0.35 fl oz (10 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/aquaphor-lip-repair-immediate-relief-fragrance-free-0-35-fl-oz-10-ml/45772"
+  },
+  {
+    "id": "58555",
+    "name": "Avalon Organics, Thickening Shampoo, Biotin B-Complex, 32 fl oz (946 ml)",
+    "price": 89215,
+    "image": "/images/products/bath/58555.jpg",
+    "category": "Bath",
+    "description": "Avalon Organics, Thickening Shampoo, Biotin B-Complex, 32 fl oz (946 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/avalon-organics-thickening-shampoo-biotin-b-complex-32-fl-oz-946-ml/58555"
+  },
+  {
+    "id": "121141",
+    "name": "Crest, 3D Whitestrips, Enamel Safe Dental Whitening Kit, Noticeably White, 20 Strips",
+    "price": 103716,
+    "image": "/images/products/bath/121141.jpg",
+    "category": "Bath",
+    "description": "Crest, 3D Whitestrips, Enamel Safe Dental Whitening Kit, Noticeably White, 20 Strips - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/crest-3d-whitestrips-enamel-safe-dental-whitening-kit-noticeably-white-20-strips/121141"
+  },
+  {
+    "id": "142805",
+    "name": "Elizavecca, Cer-100, Collagen Ceramide Coating Protein Treatment, 3.38 fl oz (100 ml)",
+    "price": 27505,
+    "image": "/images/products/bath/142805.jpg",
+    "category": "Bath",
+    "description": "Elizavecca, Cer-100, Collagen Ceramide Coating Protein Treatment, 3.38 fl oz (100 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/elizavecca-cer-100-collagen-ceramide-coating-protein-treatment-3-38-fl-oz-100-ml/142805"
+  },
+  {
+    "id": "85784",
+    "name": "Life-flo, Pure Magnesium Flakes, 1.65 lb (26.4 oz)",
+    "price": 51383,
+    "image": "/images/products/bath/85784.jpg",
+    "category": "Bath",
+    "description": "Life-flo, Pure Magnesium Flakes, 1.65 lb (26.4 oz) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-flo-pure-magnesium-flakes-1-65-lb-26-4-oz/85784"
+  },
+  {
+    "id": "113260",
+    "name": "Eucerin, Age Defense, Lightweight Sunscreen Lotion For Face, SPF 50, Fragrance Free, 2.5 fl oz (75 ml)",
+    "price": 70945,
+    "image": "/images/products/bath/113260.jpg",
+    "category": "Bath",
+    "description": "Eucerin, Age Defense, Lightweight Sunscreen Lotion For Face, SPF 50, Fragrance Free, 2.5 fl oz (75 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-age-defense-lightweight-sunscreen-lotion-for-face-spf-50-fragrance-free-2-5-fl-oz-75-ml/113260"
+  },
+  {
+    "id": "900",
+    "name": "NOW Foods, Solutions, Certified Organic Jojoba Oil, 4 fl oz (118 ml)",
+    "price": 44524,
+    "image": "/images/products/bath/900.jpg",
+    "category": "Bath",
+    "description": "NOW Foods, Solutions, Certified Organic Jojoba Oil, 4 fl oz (118 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-solutions-certified-organic-jojoba-oil-4-fl-oz-118-ml/900"
+  },
+  {
+    "id": "62552",
+    "name": "Honees, Soothing Throat Drops with Honey, Menthol & Eucalyptus, 20 Pieces, 3.5 oz (100 g)",
+    "price": 14753,
+    "image": "/images/products/bath/62552.jpg",
+    "category": "Bath",
+    "description": "Honees, Soothing Throat Drops with Honey, Menthol & Eucalyptus, 20 Pieces, 3.5 oz (100 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/honees-soothing-throat-drops-with-honey-menthol-eucalyptus-20-pieces-3-5-oz-100-g/62552"
+  },
+  {
+    "id": "85219",
+    "name": "Mild By Nature, Thickening Shampoo, B-Complex & Biotin, Rosemary Mint, 16 fl oz (473 ml)",
+    "price": 41413,
+    "image": "/images/products/bath/85219.jpg",
+    "category": "Bath",
+    "description": "Mild By Nature, Thickening Shampoo, B-Complex & Biotin, Rosemary Mint, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/mild-by-nature-thickening-shampoo-b-complex-biotin-rosemary-mint-16-fl-oz-473-ml/85219"
+  },
+  {
+    "id": "142341",
+    "name": "Vaseline, Intensive Care™, Cocoa Radiant®, Vitalizing Body Oil, 6.8 fl oz (200 ml)",
+    "price": 37916,
+    "image": "/images/products/bath/142341.jpg",
+    "category": "Bath",
+    "description": "Vaseline, Intensive Care™, Cocoa Radiant®, Vitalizing Body Oil, 6.8 fl oz (200 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/vaseline-intensive-care-cocoa-radiant-vitalizing-body-oil-6-8-fl-oz-200-ml/142341"
+  },
+  {
+    "id": "22831",
+    "name": "Heritage Store, Organic Castor Oil, 16 fl oz (473 ml)",
+    "price": 67234,
+    "image": "/images/products/bath/22831.jpg",
+    "category": "Bath",
+    "description": "Heritage Store, Organic Castor Oil, 16 fl oz (473 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/heritage-store-organic-castor-oil-16-fl-oz-473-ml/22831"
+  },
+  {
+    "id": "26938",
+    "name": "Palmer's, Cocoa Butter Formula® with Vitamin E, Massage Lotion for Stretch Marks, 8.5 fl oz (250 ml)",
+    "price": 39437,
+    "image": "/images/products/bath/26938.jpg",
+    "category": "Bath",
+    "description": "Palmer's, Cocoa Butter Formula® with Vitamin E, Massage Lotion for Stretch Marks, 8.5 fl oz (250 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/palmer-s-cocoa-butter-formula-with-vitamin-e-massage-lotion-for-stretch-marks-8-5-fl-oz-250-ml/26938"
+  },
+  {
+    "id": "97567",
+    "name": "SheaMoisture, Jamaican Black Castor Oil, Strengthen & Restore Masque, 11.5 oz (326 g)",
+    "price": 54507,
+    "image": "/images/products/bath/97567.jpg",
+    "category": "Bath",
+    "description": "SheaMoisture, Jamaican Black Castor Oil, Strengthen & Restore Masque, 11.5 oz (326 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/sheamoisture-jamaican-black-castor-oil-strengthen-restore-masque-11-5-oz-326-g/97567"
+  },
+  {
+    "id": "90284",
+    "name": "Alaskan Omega-3 Fish Oil, 90 Softgels",
+    "price": 120566,
+    "image": "/images/products/bath/90284.jpg",
+    "category": "Bath",
+    "description": "Alaskan Omega-3 Fish Oil, 90 Softgels - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/sports-research-alaskan-omega-3-fish-oil-90-softgels/90284"
+  },
+  {
+    "id": "12137",
+    "name": "High Absorption Curcumin, 120 Tablets",
+    "price": 246412,
+    "image": "/images/products/bath/12137.jpg",
+    "category": "Bath",
+    "description": "High Absorption Curcumin, 120 Tablets - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/doctor-s-best-high-absorption-curcumin-120-tablets/12137"
+  },
+  {
+    "id": "36580",
+    "name": "Vitamin D3, 125 mcg (5,000 IU), 360 Softgels",
+    "price": 43096,
+    "image": "/images/products/bath/36580.jpg",
+    "category": "Bath",
+    "description": "Vitamin D3, 125 mcg (5,000 IU), 360 Softgels - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/doctor-s-best-vitamin-d3-125-mcg-5-000-iu-360-softgels/36580"
+  },
+  {
+    "id": "4200",
+    "name": "Ultimate Omega®, Great Lemon, 120 Soft Gels (640 mg per Soft Gel)",
+    "price": 188454,
+    "image": "/images/products/bath/4200.jpg",
+    "category": "Bath",
+    "description": "Ultimate Omega®, Great Lemon, 120 Soft Gels (640 mg per Soft Gel) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nordic-naturals-ultimate-omega-great-lemon-120-soft-gels-640-mg-per-soft-gel/4200"
+  },
+  {
+    "id": "60047",
+    "name": "Curcumin C3 Complex®  with BioPerine® Black Pepper Extract, Turmeric Curcumin Complex, Enhanced Bioavailablity, 120 Veggie Capsules",
+    "price": 126895,
+    "image": "/images/products/bath/60047.jpg",
+    "category": "Bath",
+    "description": "Curcumin C3 Complex®  with BioPerine® Black Pepper Extract, Turmeric Curcumin Complex, Enhanced Bioavailablity, 120 Veggie Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-curcumin-c3-complex-with-bioperine-black-pepper-extract-turmeric-curcumin-complex-enhanced-bioavailablity-120-veggie-capsules/60047"
+  },
+  {
+    "id": "78526",
+    "name": "Dailism, Smudge Stop Mascara, Curling, Black, 9 g",
+    "price": 39440,
+    "image": "/images/products/bath/78526.jpg",
+    "category": "Bath",
+    "description": "Dailism, Smudge Stop Mascara, Curling, Black, 9 g - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/heimish-dailism-smudge-stop-mascara-curling-black-9-g/78526"
+  },
+  {
+    "id": "16567",
+    "name": "High Absorption Magnesium Lysinate Glycinate, Chelated, Albion® TRAACS®, 240 Tablets (100 mg per Tablet)",
+    "price": 81358,
+    "image": "/images/products/bath/16567.jpg",
+    "category": "Bath",
+    "description": "High Absorption Magnesium Lysinate Glycinate, Chelated, Albion® TRAACS®, 240 Tablets (100 mg per Tablet) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/doctor-s-best-high-absorption-magnesium-lysinate-glycinate-chelated-albion-traacs-240-tablets-100-mg-per-tablet/16567"
+  },
+  {
+    "id": "6299",
+    "name": "Pure Essential Oil, Frankincense, 0.5 fl oz (15 ml)",
+    "price": 92071,
+    "image": "/images/products/bath/6299.jpg",
+    "category": "Bath",
+    "description": "Pure Essential Oil, Frankincense, 0.5 fl oz (15 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/aura-cacia-pure-essential-oil-frankincense-0-5-fl-oz-15-ml/6299"
+  },
+  {
+    "id": "146153",
+    "name": "Mastic Gum, 120 Capsules (500 mg per Capsule)",
+    "price": 52270,
+    "image": "/images/products/bath/146153.jpg",
+    "category": "Bath",
+    "description": "Mastic Gum, 120 Capsules (500 mg per Capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/vitamatic-mastic-gum-120-capsules-500-mg-per-capsule/146153"
+  },
+  {
+    "id": "7492",
+    "name": "Animal Parade®, DHA Kids, Children's Chewable Omega-3 Supplement, Cherry, 90 Animal-Shaped Tablets",
+    "price": 62998,
+    "image": "/images/products/bath/7492.jpg",
+    "category": "Bath",
+    "description": "Animal Parade®, DHA Kids, Children's Chewable Omega-3 Supplement, Cherry, 90 Animal-Shaped Tablets - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/naturesplus-animal-parade-dha-kids-children-s-chewable-omega-3-supplement-cherry-90-animal-shaped-tablets/7492"
+  },
+  {
+    "id": "90165",
+    "name": "Ashwagandha, 60 Vegetarian Capsules",
+    "price": 65298,
+    "image": "/images/products/bath/90165.jpg",
+    "category": "Bath",
+    "description": "Ashwagandha, 60 Vegetarian Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/youtheory-ashwagandha-60-vegetarian-capsules/90165"
+  },
+  {
+    "id": "105827",
+    "name": "NAD+  Cell Regenerator, 300 mg, 30 Vegetarian Capsules",
+    "price": 171472,
+    "image": "/images/products/bath/105827.jpg",
+    "category": "Bath",
+    "description": "NAD+  Cell Regenerator, 300 mg, 30 Vegetarian Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-extension-nad-cell-regenerator-300-mg-30-vegetarian-capsules/105827"
+  },
+  {
+    "id": "86731",
+    "name": "Alive! Hair, Skin & Nails Gummies, Strawberry, 60 Gummies",
+    "price": 46578,
+    "image": "/images/products/bath/86731.jpg",
+    "category": "Bath",
+    "description": "Alive! Hair, Skin & Nails Gummies, Strawberry, 60 Gummies - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nature-s-way-alive-hair-skin-nails-gummies-strawberry-60-gummies/86731"
+  },
+  {
+    "id": "118105",
+    "name": "Zinc Carnosine, 60 Capsules",
+    "price": 51607,
+    "image": "/images/products/bath/118105.jpg",
+    "category": "Bath",
+    "description": "Zinc Carnosine, 60 Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/swanson-zinc-carnosine-60-capsules/118105"
+  },
+  {
+    "id": "803",
+    "name": "Saw Palmetto Berries, 550 mg, 250 Veg Capsules",
+    "price": 70165,
+    "image": "/images/products/bath/803.jpg",
+    "category": "Bath",
+    "description": "Saw Palmetto Berries, 550 mg, 250 Veg Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-saw-palmetto-berries-550-mg-250-veg-capsules/803"
+  },
+  {
+    "id": "2031",
+    "name": "Pau D'Arco Inner Bark, 180 Vegan Capsules (545 mg per Capsule)",
+    "price": 46540,
+    "image": "/images/products/bath/2031.jpg",
+    "category": "Bath",
+    "description": "Pau D'Arco Inner Bark, 180 Vegan Capsules (545 mg per Capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nature-s-way-pau-d-arco-inner-bark-180-vegan-capsules-545-mg-per-capsule/2031"
+  },
+  {
+    "id": "83389",
+    "name": "Creatine5000®, Unflavored, 10.58 oz (300 g)",
+    "price": 67192,
+    "image": "/images/products/bath/83389.jpg",
+    "category": "Bath",
+    "description": "Creatine5000®, Unflavored, 10.58 oz (300 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/evlution-nutrition-creatine5000-unflavored-10-58-oz-300-g/83389"
+  },
+  {
+    "id": "39613",
+    "name": "Optimized Garlic, 200 Vegetarian Capsules (600 mg per Capsule)",
+    "price": 82042,
+    "image": "/images/products/bath/39613.jpg",
+    "category": "Bath",
+    "description": "Optimized Garlic, 200 Vegetarian Capsules (600 mg per Capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-extension-optimized-garlic-200-vegetarian-capsules-600-mg-per-capsule/39613"
+  },
+  {
+    "id": "75363",
+    "name": "Camphor Ointment 11%, Pain Relieving Rub, 2.5 oz (70.9 g)",
+    "price": 25739,
+    "image": "/images/products/bath/75363.jpg",
+    "category": "Bath",
+    "description": "Camphor Ointment 11%, Pain Relieving Rub, 2.5 oz (70.9 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/de-la-cruz-camphor-ointment-11-pain-relieving-rub-2-5-oz-70-9-g/75363"
+  },
+  {
+    "id": "14738",
+    "name": "Complete Probiotic Pearls, 1 Billion CFU, 30 Softgels",
+    "price": 60303,
+    "image": "/images/products/bath/14738.jpg",
+    "category": "Bath",
+    "description": "Complete Probiotic Pearls, 1 Billion CFU, 30 Softgels - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nature-s-way-complete-probiotic-pearls-1-billion-cfu-30-softgels/14738"
+  },
+  {
+    "id": "104457",
+    "name": "Vegan NMN, 125 mg, 60 Tablets",
+    "price": 213632,
+    "image": "/images/products/bath/104457.jpg",
+    "category": "Bath",
+    "description": "Vegan NMN, 125 mg, 60 Tablets - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/jarrow-formulas-vegan-nmn-125-mg-60-tablets/104457"
+  },
+  {
+    "id": "64442",
+    "name": "Dr. Formulated Probiotics, Once Daily Women's, 50 Billion, 30 Vegetarian Capsules",
+    "price": 130942,
+    "image": "/images/products/bath/64442.jpg",
+    "category": "Bath",
+    "description": "Dr. Formulated Probiotics, Once Daily Women's, 50 Billion, 30 Vegetarian Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/garden-of-life-dr-formulated-probiotics-once-daily-women-s-50-billion-30-vegetarian-capsules/64442"
+  },
+  {
+    "id": "52394",
+    "name": "Colostrum, 7.05 oz (200 g)",
+    "price": 91888,
+    "image": "/images/products/bath/52394.jpg",
+    "category": "Bath",
+    "description": "Colostrum, 7.05 oz (200 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-colostrum-7-05-oz-200-g/52394"
+  },
+  {
+    "id": "47342",
+    "name": "Inositol Caps, 1,000 mg, 360 Vegetarian Capsules",
+    "price": 205302,
+    "image": "/images/products/bath/47342.jpg",
+    "category": "Bath",
+    "description": "Inositol Caps, 1,000 mg, 360 Vegetarian Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-extension-inositol-caps-1-000-mg-360-vegetarian-capsules/47342"
+  },
+  {
+    "id": "104715",
+    "name": "Madagascar Centella Ampoule, 1.85 fl oz (55 ml)",
+    "price": 57099,
+    "image": "/images/products/bath/104715.jpg",
+    "category": "Bath",
+    "description": "Madagascar Centella Ampoule, 1.85 fl oz (55 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/skin1004-madagascar-centella-ampoule-1-85-fl-oz-55-ml/104715"
+  },
+  {
+    "id": "102191",
+    "name": "Face, Q10 Revitalize, Night Cream, Fragrance Free, 1.7 fl oz (48 g)",
+    "price": 54716,
+    "image": "/images/products/bath/102191.jpg",
+    "category": "Bath",
+    "description": "Face, Q10 Revitalize, Night Cream, Fragrance Free, 1.7 fl oz (48 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/eucerin-face-q10-revitalize-night-cream-fragrance-free-1-7-fl-oz-48-g/102191"
+  },
+  {
+    "id": "27366",
+    "name": "RAW Probiotics, Men 50 & Wiser, 90 Vegetarian Capsules",
+    "price": 174084,
+    "image": "/images/products/bath/27366.jpg",
+    "category": "Bath",
+    "description": "RAW Probiotics, Men 50 & Wiser, 90 Vegetarian Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/garden-of-life-raw-probiotics-men-50-wiser-90-vegetarian-capsules/27366"
+  },
+  {
+    "id": "39933",
+    "name": "Taurine, 1,000 mg, 250 Veg Capsules",
+    "price": 77205,
+    "image": "/images/products/bath/39933.jpg",
+    "category": "Bath",
+    "description": "Taurine, 1,000 mg, 250 Veg Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-taurine-1-000-mg-250-veg-capsules/39933"
+  },
+  {
+    "id": "14132",
+    "name": "Magnesium & Vitamin B6, 90 Vegetable Capsules",
+    "price": 64915,
+    "image": "/images/products/bath/14132.jpg",
+    "category": "Bath",
+    "description": "Magnesium & Vitamin B6, 90 Vegetable Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/bluebonnet-nutrition-magnesium-vitamin-b6-90-vegetable-capsules/14132"
+  },
+  {
+    "id": "102159",
+    "name": "ColonMax™, Potent Herbal & Mineral Formula, 100 Vegan Capsules",
+    "price": 110845,
+    "image": "/images/products/bath/102159.jpg",
+    "category": "Bath",
+    "description": "ColonMax™, Potent Herbal & Mineral Formula, 100 Vegan Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/advanced-naturals-colonmax-potent-herbal-mineral-formula-100-vegan-capsules/102159"
+  },
+  {
+    "id": "99943",
+    "name": "Absolutely Full, 60 Capsules",
+    "price": 59045,
+    "image": "/images/products/bath/99943.jpg",
+    "category": "Bath",
+    "description": "Absolutely Full, 60 Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/absolute-nutrition-absolutely-full-60-capsules/99943"
+  },
+  {
+    "id": "3926",
+    "name": "Aged Garlic Extract, Cardiovascular Health, One Per Day, Formula 250, 60 Vegan Caplets (1,000 mg per Capsule)",
+    "price": 78281,
+    "image": "/images/products/bath/3926.jpg",
+    "category": "Bath",
+    "description": "Aged Garlic Extract, Cardiovascular Health, One Per Day, Formula 250, 60 Vegan Caplets (1,000 mg per Capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/kyolic-aged-garlic-extract-cardiovascular-health-one-per-day-formula-250-60-vegan-caplets-1-000-mg-per-capsule/3926"
+  },
+  {
+    "id": "133518",
+    "name": "Apple Cider Vinegar Anti-Dandruff Pre-Wash w/ Salicylic Acid , 4 fl oz (118 ml)",
+    "price": 55002,
+    "image": "/images/products/bath/133518.jpg",
+    "category": "Bath",
+    "description": "Apple Cider Vinegar Anti-Dandruff Pre-Wash w/ Salicylic Acid , 4 fl oz (118 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/sheamoisture-apple-cider-vinegar-anti-dandruff-pre-wash-w-salicylic-acid-4-fl-oz-118-ml/133518"
+  },
+  {
+    "id": "79354",
+    "name": "Raw + Unfiltered Organic White Honey, 16 oz (454 g)",
+    "price": 58452,
+    "image": "/images/products/bath/79354.jpg",
+    "category": "Bath",
+    "description": "Raw + Unfiltered Organic White Honey, 16 oz (454 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/wholesome-sweeteners-raw-unfiltered-organic-white-honey-16-oz-454-g/79354"
+  },
+  {
+    "id": "57292",
+    "name": "CurcuBrain™, 400 mg, 50 Veg Capsules",
+    "price": 94730,
+    "image": "/images/products/bath/57292.jpg",
+    "category": "Bath",
+    "description": "CurcuBrain™, 400 mg, 50 Veg Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-curcubrain-400-mg-50-veg-capsules/57292"
+  },
+  {
+    "id": "1978",
+    "name": "Horsetail Grass, 440 mg, 100 Vegan Capsules",
+    "price": 32118,
+    "image": "/images/products/bath/1978.jpg",
+    "category": "Bath",
+    "description": "Horsetail Grass, 440 mg, 100 Vegan Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nature-s-way-horsetail-grass-440-mg-100-vegan-capsules/1978"
+  },
+  {
+    "id": "72055",
+    "name": "Sweet Sweat®, Workout Enhancer, Original, 13.5 oz (383 g)",
+    "price": 212824,
+    "image": "/images/products/bath/72055.jpg",
+    "category": "Bath",
+    "description": "Sweet Sweat®, Workout Enhancer, Original, 13.5 oz (383 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/sports-research-sweet-sweat-workout-enhancer-original-13-5-oz-383-g/72055"
+  },
+  {
+    "id": "2534",
+    "name": "Fermented Apple Cider Vinegar, 500 mg, 180 Easy to Swallow Capsules",
+    "price": 43963,
+    "image": "/images/products/bath/2534.jpg",
+    "category": "Bath",
+    "description": "Fermented Apple Cider Vinegar, 500 mg, 180 Easy to Swallow Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/natural-factors-fermented-apple-cider-vinegar-500-mg-180-easy-to-swallow-capsules/2534"
+  },
+  {
+    "id": "47798",
+    "name": "Glutathione, Cysteine & C, 100 Capsules",
+    "price": 66262,
+    "image": "/images/products/bath/47798.jpg",
+    "category": "Bath",
+    "description": "Glutathione, Cysteine & C, 100 Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-extension-glutathione-cysteine-c-100-capsules/47798"
+  },
+  {
+    "id": "46866",
+    "name": "Salicylic Acid 2% Spray, 8 fl oz (237 ml)",
+    "price": 72699,
+    "image": "/images/products/bath/46866.jpg",
+    "category": "Bath",
+    "description": "Salicylic Acid 2% Spray, 8 fl oz (237 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-flo-salicylic-acid-2-spray-8-fl-oz-237-ml/46866"
+  },
+  {
+    "id": "142158",
+    "name": "NAC, 120 Vegetarian Capsules (600 mg per Capsule)",
+    "price": 90873,
+    "image": "/images/products/bath/142158.jpg",
+    "category": "Bath",
+    "description": "NAC, 120 Vegetarian Capsules (600 mg per Capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/wholesome-story-nac-120-vegetarian-capsules-600-mg-per-capsule/142158"
+  },
+  {
+    "id": "43654",
+    "name": "Ultimate Omega, Lemon, 60 Soft Gels (640 mg per Soft Gel)",
+    "price": 104515,
+    "image": "/images/products/bath/43654.jpg",
+    "category": "Bath",
+    "description": "Ultimate Omega, Lemon, 60 Soft Gels (640 mg per Soft Gel) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nordic-naturals-ultimate-omega-lemon-60-soft-gels-640-mg-per-soft-gel/43654"
+  },
+  {
+    "id": "117930",
+    "name": "Fenugreek Extract, 500 mg, 90 Capsules",
+    "price": 46867,
+    "image": "/images/products/bath/117930.jpg",
+    "category": "Bath",
+    "description": "Fenugreek Extract, 500 mg, 90 Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/swanson-fenugreek-extract-500-mg-90-capsules/117930"
+  },
+  {
+    "id": "42377",
+    "name": "Raw Brazil Nuts, 16 oz (454 g)",
+    "price": 80614,
+    "image": "/images/products/bath/42377.jpg",
+    "category": "Bath",
+    "description": "Raw Brazil Nuts, 16 oz (454 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/bergin-fruit-and-nut-company-raw-brazil-nuts-16-oz-454-g/42377"
+  },
+  {
+    "id": "888",
+    "name": "Single \"0\" Veg Capsules, Approx. 300 Empty Veg Capsules, 1.02 oz (29 g)",
+    "price": 36981,
+    "image": "/images/products/bath/888.jpg",
+    "category": "Bath",
+    "description": "Single \"0\" Veg Capsules, Approx. 300 Empty Veg Capsules, 1.02 oz (29 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-single-0-veg-capsules-approx-300-empty-veg-capsules-1-02-oz-29-g/888"
+  },
+  {
+    "id": "77930",
+    "name": "Beet Root, 320 Vegan Capsules (500 mg Per capsule)",
+    "price": 95896,
+    "image": "/images/products/bath/77930.jpg",
+    "category": "Bath",
+    "description": "Beet Root, 320 Vegan Capsules (500 mg Per capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/nature-s-way-beet-root-320-vegan-capsules-500-mg-per-capsule/77930"
+  },
+  {
+    "id": "16589",
+    "name": "Grassfed Collagen Peptides + Vitamin C, 250 Tablets",
+    "price": 90771,
+    "image": "/images/products/bath/16589.jpg",
+    "category": "Bath",
+    "description": "Grassfed Collagen Peptides + Vitamin C, 250 Tablets - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/neocell-grassfed-collagen-peptides-vitamin-c-250-tablets/16589"
+  },
+  {
+    "id": "12959",
+    "name": "L-Theanine, 150 mg, 90 Veggie Caps",
+    "price": 82266,
+    "image": "/images/products/bath/12959.jpg",
+    "category": "Bath",
+    "description": "L-Theanine, 150 mg, 90 Veggie Caps - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/doctor-s-best-l-theanine-150-mg-90-veggie-caps/12959"
+  },
+  {
+    "id": "119399",
+    "name": "Madagascar Centella, Tone Brightening Capsule Ampoule, 3.38 fl oz (100 ml)",
+    "price": 83265,
+    "image": "/images/products/bath/119399.jpg",
+    "category": "Bath",
+    "description": "Madagascar Centella, Tone Brightening Capsule Ampoule, 3.38 fl oz (100 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/skin1004-madagascar-centella-tone-brightening-capsule-ampoule-3-38-fl-oz-100-ml/119399"
+  },
+  {
+    "id": "7145",
+    "name": "Cleanse More™, 100 Vegetarian Capsules",
+    "price": 110062,
+    "image": "/images/products/bath/7145.jpg",
+    "category": "Bath",
+    "description": "Cleanse More™, 100 Vegetarian Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/renew-life-cleanse-more-100-vegetarian-capsules/7145"
+  },
+  {
+    "id": "11904",
+    "name": "Nattokinase, 100 mg, 120 Veg Capsules",
+    "price": 118320,
+    "image": "/images/products/bath/11904.jpg",
+    "category": "Bath",
+    "description": "Nattokinase, 100 mg, 120 Veg Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-nattokinase-100-mg-120-veg-capsules/11904"
+  },
+  {
+    "id": "103274",
+    "name": "Magnesium Bisglycinate Chelate, Albion TRAACS®, 240 Veggie Capsules (100 mg per Capsule)",
+    "price": 103334,
+    "image": "/images/products/bath/103274.jpg",
+    "category": "Bath",
+    "description": "Magnesium Bisglycinate Chelate, Albion TRAACS®, 240 Veggie Capsules (100 mg per Capsule) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-magnesium-bisglycinate-chelate-albion-traacs-240-veggie-capsules-100-mg-per-capsule/103274"
+  },
+  {
+    "id": "70316",
+    "name": "Vitamin D3, 125 mcg (5,000 IU), 90 Fish Gelatin Softgels",
+    "price": 21301,
+    "image": "/images/products/bath/70316.jpg",
+    "category": "Bath",
+    "description": "Vitamin D3, 125 mcg (5,000 IU), 90 Fish Gelatin Softgels - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-vitamin-d3-125-mcg-5-000-iu-90-fish-gelatin-softgels/70316"
+  },
+  {
+    "id": "8521",
+    "name": "Pure Arctic Cod Liver Oil, Natural Strawberry, 8 fl oz (237 ml)",
+    "price": 98185,
+    "image": "/images/products/bath/8521.jpg",
+    "category": "Bath",
+    "description": "Pure Arctic Cod Liver Oil, Natural Strawberry, 8 fl oz (237 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/childlife-essentials-pure-arctic-cod-liver-oil-natural-strawberry-8-fl-oz-237-ml/8521"
+  },
+  {
+    "id": "119167",
+    "name": "Sleep, Blackberry Zen, 50 Gummies",
+    "price": 66337,
+    "image": "/images/products/bath/119167.jpg",
+    "category": "Bath",
+    "description": "Sleep, Blackberry Zen, 50 Gummies - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/olly-sleep-blackberry-zen-50-gummies/119167"
+  },
+  {
+    "id": "36491",
+    "name": "Baby Oh Baby®, Herbal Body Lotion, Unscented, 16 fl oz",
+    "price": 38265,
+    "image": "/images/products/bath/36491.jpg",
+    "category": "Bath",
+    "description": "Baby Oh Baby®, Herbal Body Lotion, Unscented, 16 fl oz - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/rainbow-research-baby-oh-baby-herbal-body-lotion-unscented-16-fl-oz/36491"
+  },
+  {
+    "id": "119362",
+    "name": "Kids Omega-3 Gummies, Ages 2+, Orange, 60 Gummies",
+    "price": 69997,
+    "image": "/images/products/bath/119362.jpg",
+    "category": "Bath",
+    "description": "Kids Omega-3 Gummies, Ages 2+, Orange, 60 Gummies - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/maryruth-s-kids-omega-3-gummies-ages-2-orange-60-gummies/119362"
+  },
+  {
+    "id": "134816",
+    "name": "Energy Tea, Black Tea, 12 Tea Bags, 0.8 oz (23 g) Each",
+    "price": 20831,
+    "image": "/images/products/bath/134816.jpg",
+    "category": "Bath",
+    "description": "Energy Tea, Black Tea, 12 Tea Bags, 0.8 oz (23 g) Each - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/celestial-seasonings-energy-tea-black-tea-12-tea-bags-0-8-oz-23-g-each/134816"
+  },
+  {
+    "id": "12678",
+    "name": "Glutathione With Milk Thistle Extract & Alpha Lipoic Acid, 60 Veg Capsules",
+    "price": 104707,
+    "image": "/images/products/bath/12678.jpg",
+    "category": "Bath",
+    "description": "Glutathione With Milk Thistle Extract & Alpha Lipoic Acid, 60 Veg Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-glutathione-with-milk-thistle-extract-alpha-lipoic-acid-60-veg-capsules/12678"
+  },
+  {
+    "id": "59561",
+    "name": "Gold C Powder, Vitamin C, 1,000 mg, 8.81 oz (250 g)",
+    "price": 39268,
+    "image": "/images/products/bath/59561.jpg",
+    "category": "Bath",
+    "description": "Gold C Powder, Vitamin C, 1,000 mg, 8.81 oz (250 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-gold-c-powder-vitamin-c-1-000-mg-8-81-oz-250-g/59561"
+  },
+  {
+    "id": "138593",
+    "name": "Milk Skin Toner, 5.07 fl oz (150 ml)",
+    "price": 90213,
+    "image": "/images/products/bath/138593.jpg",
+    "category": "Bath",
+    "description": "Milk Skin Toner, 5.07 fl oz (150 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/tirtir-milk-skin-toner-5-07-fl-oz-150-ml/138593"
+  },
+  {
+    "id": "86453",
+    "name": "Two-Per-Day Multivitamin, 120 Capsules",
+    "price": 80326,
+    "image": "/images/products/bath/86453.jpg",
+    "category": "Bath",
+    "description": "Two-Per-Day Multivitamin, 120 Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/life-extension-two-per-day-multivitamin-120-capsules/86453"
+  },
+  {
+    "id": "86314",
+    "name": "Adapalene Gel 0.1 % Acne Treatment, Fragrance Free, 0.5 oz (15 g)",
+    "price": 71912,
+    "image": "/images/products/bath/86314.jpg",
+    "category": "Bath",
+    "description": "Adapalene Gel 0.1 % Acne Treatment, Fragrance Free, 0.5 oz (15 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/differin-adapalene-gel-0-1-acne-treatment-fragrance-free-0-5-oz-15-g/86314"
+  },
+  {
+    "id": "102077",
+    "name": "Hydrolyzed Marine Collagen Peptides, Unflavored, 1.1 lb (500 g)",
+    "price": 148748,
+    "image": "/images/products/bath/102077.jpg",
+    "category": "Bath",
+    "description": "Hydrolyzed Marine Collagen Peptides, Unflavored, 1.1 lb (500 g) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/california-gold-nutrition-hydrolyzed-marine-collagen-peptides-unflavored-1-1-lb-500-g/102077"
+  },
+  {
+    "id": "106008",
+    "name": "RapidShield, Eyelash Daily Conditioner, 0.135 fl oz (4 ml)",
+    "price": 109273,
+    "image": "/images/products/bath/106008.jpg",
+    "category": "Bath",
+    "description": "RapidShield, Eyelash Daily Conditioner, 0.135 fl oz (4 ml) - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/rapidlash-rapidshield-eyelash-daily-conditioner-0-135-fl-oz-4-ml/106008"
+  },
+  {
+    "id": "27242",
+    "name": "Advanced Omega-3 & EFAS Pill Packs, 30 Packs",
+    "price": 170245,
+    "image": "/images/products/bath/27242.jpg",
+    "category": "Bath",
+    "description": "Advanced Omega-3 & EFAS Pill Packs, 30 Packs - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/animal-advanced-omega-3-efas-pill-packs-30-packs/27242"
+  },
+  {
+    "id": "3319",
+    "name": "Biotin, 5,000 mcg, 120 Veg Capsules",
+    "price": 37561,
+    "image": "/images/products/bath/3319.jpg",
+    "category": "Bath",
+    "description": "Biotin, 5,000 mcg, 120 Veg Capsules - High quality product from Bath.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-biotin-5-000-mcg-120-veg-capsules/3319"
   }
 ];
