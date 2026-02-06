@@ -43,17 +43,11 @@ type Product = {
   // add other fields as needed
 };
 
-// Get trending products (first 8 products from different categories)
-const trendingProducts: Product[] = [
-  allProducts.find(p => p.category === 'Supplements' && p.image),
-  allProducts.find(p => p.category === 'Sports' && p.image),
-  allProducts.find(p => p.category === 'Bath' && p.image),
-  allProducts.find(p => p.category === 'Beauty' && p.image),
-  allProducts.find(p => p.category === 'Bedroom Products' && p.image),
-  allProducts.find(p => p.category === 'Baby' && p.image),
-  allProducts.find(p => p.category === 'Grocery' && p.image),
-  allProducts.find(p => p.category === 'Pets' && p.image)
-].filter(Boolean) as Product[];
+// Get trending products (10 random products from Supplements category)
+const trendingProducts: Product[] = allProducts
+  .filter(p => p.category === 'Supplements' && p.image)
+  .sort(() => 0.5 - Math.random())
+  .slice(0, 10);
 
 const getCategoryImage = (category: string) => {
   // Find a product with a valid image (not empty and not a placeholder)
