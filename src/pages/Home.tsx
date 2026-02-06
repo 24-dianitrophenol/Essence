@@ -335,22 +335,22 @@ export default function Home() {
               product && (
               <div
                 key={product.id}
-                className="w-[180px] sm:w-[220px] lg:w-[260px] bg-white rounded-xl shadow-lg transition-all duration-300 flex-shrink-0 border border-gray-100 flex flex-col snap-center hover:shadow-xl"
+                className="w-[180px] sm:w-[220px] lg:w-[260px] min-w-[180px] sm:min-w-[220px] lg:min-w-[260px] bg-white rounded-xl shadow-lg transition-all duration-300 flex-shrink-0 border border-gray-100 flex flex-col snap-center hover:shadow-xl"
               >
                 {/* Product Image Container */}
-                <div className="relative p-2 sm:p-3 pb-0">
-                  <div className="relative bg-gray-50 rounded-lg overflow-hidden h-32 sm:h-40 lg:h-48 flex items-center justify-center">
-                    <Link to={`/shop-detail/${product.id}`} className="w-full h-full flex items-center justify-center">
+                <div className="relative p-3">
+                  <div className="relative bg-gray-50 rounded-lg overflow-hidden aspect-square flex items-center justify-center">
+                    <Link to={`/shop-detail/${product.id}`} className="w-full h-full flex items-center justify-center p-4">
                       <img 
                         src={product.image} 
                         alt={product.name} 
-                        className="max-w-full max-h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                        className="max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-110"
                       />
                     </Link>
                     
                     {/* TRENDING Badge */}
-                    <div className="absolute top-1 left-1 sm:top-2 sm:left-2">
-                      <span className="bg-[#f98203] text-white px-1 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider">
+                    <div className="absolute top-2 left-2">
+                      <span className="bg-[#f98203] text-white px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider shadow-sm">
                         NEW
                       </span>
                     </div>
@@ -358,10 +358,10 @@ export default function Home() {
                     {/* Wishlist Heart */}
                     <button
                       onClick={() => toggleWishlist(product.id)}
-                      className="absolute top-1 right-1 sm:top-2 sm:right-2 p-1.5 bg-white/80 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors z-10"
+                      className="absolute top-2 right-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors z-10"
                     >
                       <Heart 
-                        className={`w-3 h-3 sm:w-4 sm:h-4 ${
+                        className={`w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 ${
                           wishlist[product.id] 
                             ? 'fill-red-500 text-red-500' 
                             : 'text-gray-400'
@@ -372,10 +372,10 @@ export default function Home() {
                 </div>
                 
                 {/* Product Info */}
-                <div className="p-3 sm:p-4 flex-1 flex flex-col justify-between">
-                  <div className="mb-2">
+                <div className="p-4 pt-0 flex-1 flex flex-col">
+                  <div className="mb-3">
                     <Link to={`/shop-detail/${product.id}`} className="block">
-                      <h3 className="text-xs sm:text-sm font-semibold text-gray-800 hover:text-[#dd2581] transition-colors line-clamp-2 leading-tight text-center min-h-[32px] sm:min-h-[40px] flex items-center justify-center">
+                      <h3 className="text-xs sm:text-sm font-semibold text-gray-800 hover:text-[#dd2581] transition-colors line-clamp-2 leading-tight text-center h-10 flex items-center justify-center overflow-hidden">
                         {product.name}
                       </h3>
                     </Link>
@@ -388,17 +388,19 @@ export default function Home() {
                   </div>
                   
                   {/* Add to Cart Button */}
-                  <button
-                    onClick={() => handleAddToCart(product)}
-                    className={`w-full flex items-center justify-center gap-2 py-2 sm:py-2.5 px-3 rounded-lg font-bold text-[10px] sm:text-xs tracking-wider transition-all duration-300 ${
-                      addedToCart[product.id] 
-                        ? 'bg-green-600 text-white shadow-inner scale-[0.98]' 
-                        : 'bg-[#dd2581] text-white hover:bg-[#f98203] hover:shadow-lg active:scale-95'
-                    }`}
-                  >
-                    <ShoppingCart className="w-3.5 h-3.5" />
-                    <span className="uppercase">{addedToCart[product.id] ? 'ADDED!' : 'ADD TO CART'}</span>
-                  </button>
+                  <div className="mt-auto">
+                    <button
+                      onClick={() => handleAddToCart(product)}
+                      className={`w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg font-bold text-[10px] sm:text-xs tracking-wider transition-all duration-300 ${
+                        addedToCart[product.id] 
+                          ? 'bg-green-600 text-white shadow-inner scale-[0.98]' 
+                          : 'bg-[#dd2581] text-white hover:bg-[#f98203] hover:shadow-lg active:scale-95'
+                      }`}
+                    >
+                      <ShoppingCart className="w-3.5 h-3.5" />
+                      <span className="uppercase">{addedToCart[product.id] ? 'ADDED!' : 'ADD TO CART'}</span>
+                    </button>
+                  </div>
                 </div>
               </div>
               )
