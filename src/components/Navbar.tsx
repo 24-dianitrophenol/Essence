@@ -183,7 +183,7 @@ export default function Navbar() {
                             <div className="text-sm text-gray-500">{product.category}</div>
                           </div>
                           <div className="ml-auto text-sm font-medium text-[#dd2581]">
-                            ${product.price.toFixed(2)}
+                            ${((product.price / 3600) * 1.55).toFixed(2)}
                           </div>
                         </Link>
                       ))}

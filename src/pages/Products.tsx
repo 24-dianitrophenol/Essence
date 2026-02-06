@@ -114,7 +114,7 @@ export default function Products() {
   };
 
   const handleAddToCart = (product: Product) => {
-    addToCart({ ...product, quantity: 1 });
+    addToCart({ ...product, price: (product.price / 3600) * 1.55, quantity: 1 });
     setAddedToCart(prev => ({ ...prev, [product.id]: true }));
 
     // Reset button after 2 seconds

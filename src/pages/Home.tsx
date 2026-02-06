@@ -161,7 +161,7 @@ export default function Home() {
     addToCart({
       id: product.id,
       name: product.name,
-      price: product.price,
+      price: (product.price / 3600) * 1.55,
       image: product.image,
       quantity: 1
     });
@@ -372,7 +372,7 @@ export default function Home() {
                   {/* Pricing Section */}
                   <div className="mb-2 flex-1">
                     <div className="text-sm sm:text-base font-bold text-[#dd2581] text-center">
-                      ${product.price.toFixed(2)}
+                      ${((product.price / 3600) * 1.55).toFixed(2)}
                     </div>
                   </div>
                   

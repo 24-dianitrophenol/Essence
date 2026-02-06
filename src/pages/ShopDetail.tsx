@@ -51,7 +51,7 @@ export default function ShopDetail() {
     addToCart({
       id: product.id,
       name: product.name,
-      price: product.price,
+      price: (product.price / 3600) * 1.55,
       image: product.image,
       quantity: quantity
     });
@@ -87,7 +87,7 @@ export default function ShopDetail() {
           </div>
 
           <p className="text-2xl sm:text-3xl font-bold text-[#dd2581]">
-            ${product.price.toFixed(2)}
+            ${((product.price / 3600) * 1.55).toFixed(2)}
           </p>
 
           <p className="text-gray-600 text-sm sm:text-base">{product.description}</p>
