@@ -1,51 +1,47 @@
 // Central product aggregator - combines all category products
 import { supplements } from './categories/Supplements';
-import { sports } from './categories/Sports';
 import { bath } from './categories/Bath';
 import { beauty } from './categories/Beauty';
-import { grocery } from './categories/Grocery';
-import { home } from './categories/Home';
-import { baby } from './categories/Baby';
-import { pets } from './categories/Pets';
 import { bedroomProducts } from './categories/BedroomProducts';
+import { healthProducts } from './categories/HealthProducts';
+import { lotions } from './categories/Lotions';
+import { skinProducts } from './categories/SkinProducts';
+import { tablets } from './categories/Tablets';
 
 // Combine all products from different categories
 export const allProducts = [
   ...supplements,
-  ...sports,
   ...bath,
   ...beauty,
-  ...grocery,
-  ...home,
-  ...baby,
-  ...pets,
-  ...bedroomProducts
+  ...bedroomProducts,
+  ...healthProducts,
+  ...lotions,
+  ...skinProducts,
+  ...tablets
 ];
 
 // Export individual categories for easy access
 export {
   supplements,
-  sports,
   bath,
   beauty,
-  grocery,
-  home,
-  baby,
-  pets,
-  bedroomProducts
+  bedroomProducts,
+  healthProducts,
+  lotions,
+  skinProducts,
+  tablets
 };
 
 // Category mapping for filtering
 export const categoryMapping = {
   'Supplements': supplements,
-  'Sports': sports,
   'Bath': bath,
   'Beauty': beauty,
-  'Grocery': grocery,
-  'Home': home,
-  'Baby': baby,
-  'Pets': pets,
-  'Bedroom Products': bedroomProducts
+  'Bedroom Products': bedroomProducts,
+  'Health Products': healthProducts,
+  'Lotions': lotions,
+  'Skin Products': skinProducts,
+  'Tablets': tablets
 };
 
 // Get products by category
