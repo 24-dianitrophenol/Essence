@@ -2,9 +2,7 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
 import { allProducts, getProductsByCategory } from '../data/allProducts';
-import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { Heart, ShoppingCart } from 'lucide-react';
 import { Product } from '../types';
 
 // Define category type
@@ -69,7 +67,6 @@ export default function Products() {
   const [sortBy, setSortBy] = useState('name');
   const [addedToCart, setAddedToCart] = useState<{ [key: string]: boolean }>({});
   const [wishlist, setWishlist] = useState<{ [key: string]: boolean }>({});
-  const navigate = useNavigate();
   const { addToCart } = useCart();
   const currentSlides = categorySlides[selectedCategory] ?? categorySlides['All'];
 
@@ -86,11 +83,10 @@ export default function Products() {
     setCurrentPromoSlide(0);
   }, [selectedCategory]);
 
-  // Filter products by category and ensure they have a valid image
-  const filteredProducts = (selectedCategory === 'All'
+  // Filter products by category
+  const filteredProducts = selectedCategory === 'All'
     ? allProducts
-    : getProductsByCategory(selectedCategory)
-  ).filter(p => p.image && p.image.trim() !== '' && !p.image.includes('undefined'));
+    : getProductsByCategory(selectedCategory);
 
   // Sort products
   const sortedProducts = [...filteredProducts].sort((a, b) => {
@@ -213,7 +209,7 @@ export default function Products() {
 
             {/* Products Grid */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {sortedProducts.map((product, index) => (
+              {sortedProducts.map((product) => (
                 <ProductCard
                   key={product.id}
                   id={product.id}

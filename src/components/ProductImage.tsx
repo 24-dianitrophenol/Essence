@@ -26,9 +26,9 @@ const ProductImage: React.FC<ProductImageProps> = ({
   fallbackSrc
 }) => {
   const defaultFallback = fallbackSrc || getPlaceholderImage(category);
-  const [imgSrc, setImgSrc] = useState(src);
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
+  const [imgSrc, setImgSrc] = useState(src && src.trim() !== '' ? src : defaultFallback);
+  const [isLoading, setIsLoading] = useState(src && src.trim() !== '' ? true : false);
+  const [hasError, setHasError] = useState(src && src.trim() !== '' ? false : true);
 
   const handleError = () => {
     if (imgSrc !== defaultFallback) {
