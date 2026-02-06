@@ -55,48 +55,55 @@ const trendingProducts: Product[] = [
   allProducts.find(p => p.category === 'Pets' && p.image)
 ].filter(Boolean) as Product[];
 
+const getCategoryImage = (category: string) => {
+  // Find a product with a valid image (not empty and not a placeholder)
+  const product = allProducts.find(p => p.category === category && p.image && p.image !== '');
+  return product?.image || '/images/placeholder.jpg';
+};
+
 const categoryProducts = [
   {
     category: 'Supplements',
-    image: '/images/natural/15.jpg',
+    image: getCategoryImage('Supplements'),
     product: allProducts.find(p => p.category === 'Supplements') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Sports',
-    image: '/images/natural/16.jpg',
+    image: getCategoryImage('Sports'),
     product: allProducts.find(p => p.category === 'Sports') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Bath',
-    image: '/images/natural/17.jpg',
+    image: getCategoryImage('Bath'),
     product: allProducts.find(p => p.category === 'Bath') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Beauty',
-    image: '/images/natural/23.jpg',
+    image: getCategoryImage('Beauty'),
     product: allProducts.find(p => p.category === 'Beauty') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Grocery',
-    image: '/images/natural/24.jpg',
+    image: getCategoryImage('Grocery'),
     product: allProducts.find(p => p.category === 'Grocery') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Baby',
-    image: '/images/natural/18.jpg',
+    image: getCategoryImage('Baby'),
     product: allProducts.find(p => p.category === 'Baby') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Pets',
-    image: '/images/natural/15.jpg',
+    image: getCategoryImage('Pets'),
     product: allProducts.find(p => p.category === 'Pets') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Bedroom Products',
-    image: '/images/natural/17.jpg',
+    image: getCategoryImage('Bedroom Products'),
     product: allProducts.find(p => p.category === 'Bedroom Products') || { name: "Coming Soon", price: 0 }
   }
 ];
+
 
 
 const features = [
