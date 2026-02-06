@@ -45,46 +45,56 @@ type Product = {
 
 // Get trending products (first 8 products from different categories)
 const trendingProducts: Product[] = [
-  allProducts.find(p => p.category === 'Skin Products' && p.name.includes('Lanorient')),
-  allProducts.find(p => p.category === 'Health Products' && p.name.includes('Organika')),
-  allProducts.find(p => p.category === 'Lotions' && p.name.includes('Vaseline')),
-  allProducts.find(p => p.category === 'Tablets' && p.name.includes('Vitamin C')),
-  allProducts.find(p => p.category === 'Bedroom Products' && p.name.includes('Testosterone')),
-  allProducts.find(p => p.category === 'Skin Products' && p.name.includes('PCA')),
-  allProducts.find(p => p.category === 'Health Products' && p.name.includes('Naka')),
-  allProducts.find(p => p.category === 'Lotions' && p.name.includes('Dr Teals'))
+  allProducts.find(p => p.category === 'Supplements' && p.image),
+  allProducts.find(p => p.category === 'Sports' && p.image),
+  allProducts.find(p => p.category === 'Bath' && p.image),
+  allProducts.find(p => p.category === 'Beauty' && p.image),
+  allProducts.find(p => p.category === 'Bedroom Products' && p.image),
+  allProducts.find(p => p.category === 'Baby' && p.image),
+  allProducts.find(p => p.category === 'Grocery' && p.image),
+  allProducts.find(p => p.category === 'Pets' && p.image)
 ].filter(Boolean) as Product[];
 
 const categoryProducts = [
   {
-    category: 'Skin Products',
-    image: '/images/natural/23.jpg',
-    product: allProducts.find(p => p.category === 'Skin Products') || { name: "Coming Soon", price: 0 }
-  },
-  {
-    category: 'Lotions',
-    image: '/images/natural/24.jpg',
-    product: allProducts.find(p => p.category === 'Lotions') || { name: "Coming Soon", price: 0 }
-  },
-  {
-    category: 'Health Products',
+    category: 'Supplements',
     image: '/images/natural/15.jpg',
-    product: allProducts.find(p => p.category === 'Health Products') || { name: "Coming Soon", price: 0 }
+    product: allProducts.find(p => p.category === 'Supplements') || { name: "Coming Soon", price: 0 }
   },
   {
-    category: 'Tablets',
+    category: 'Sports',
     image: '/images/natural/16.jpg',
-    product: allProducts.find(p => p.category === 'Tablets') || { name: "Coming Soon", price: 0 }
+    product: allProducts.find(p => p.category === 'Sports') || { name: "Coming Soon", price: 0 }
+  },
+  {
+    category: 'Bath',
+    image: '/images/natural/17.jpg',
+    product: allProducts.find(p => p.category === 'Bath') || { name: "Coming Soon", price: 0 }
+  },
+  {
+    category: 'Beauty',
+    image: '/images/natural/23.jpg',
+    product: allProducts.find(p => p.category === 'Beauty') || { name: "Coming Soon", price: 0 }
+  },
+  {
+    category: 'Grocery',
+    image: '/images/natural/24.jpg',
+    product: allProducts.find(p => p.category === 'Grocery') || { name: "Coming Soon", price: 0 }
+  },
+  {
+    category: 'Baby',
+    image: '/images/natural/18.jpg',
+    product: allProducts.find(p => p.category === 'Baby') || { name: "Coming Soon", price: 0 }
+  },
+  {
+    category: 'Pets',
+    image: '/images/natural/15.jpg',
+    product: allProducts.find(p => p.category === 'Pets') || { name: "Coming Soon", price: 0 }
   },
   {
     category: 'Bedroom Products',
     image: '/images/natural/17.jpg',
     product: allProducts.find(p => p.category === 'Bedroom Products') || { name: "Coming Soon", price: 0 }
-  },
-  {
-    category: 'Health Products',
-    image: '/images/natural/18.jpg',
-    product: allProducts.find(p => p.category === 'Health Products') || { name: "Coming Soon", price: 0 }
   }
 ];
 
