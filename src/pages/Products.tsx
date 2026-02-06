@@ -83,10 +83,22 @@ export default function Products() {
     setCurrentPromoSlide(0);
   }, [selectedCategory]);
 
-  // Filter products by category
-  const filteredProducts = selectedCategory === 'All'
+  // Filter products by category and exclude obvious test/placeholder data
+  const filteredProducts = (selectedCategory === 'All'
     ? allProducts
-    : getProductsByCategory(selectedCategory);
+    : getProductsByCategory(selectedCategory)
+  ).filter(p => {
+    // A real product should have a non-placeholder image
+    const hasRealImage = p.image && p.image.trim() !== '' && !p.image.toLowerCase().includes('placeholder') && !p.image.toLowerCase().includes('undefined');
+    
+    // Test items often have names like "Category Item XX"
+    const isTestName = p.name.includes('Item ') || p.name.match(new RegExp(`${p.category} \\d+`, 'i'));
+    
+    // Suspect very low prices (anything less than ~0.10 USD / 370 UGX)
+    const hasRealisticPrice = p.price > 370;
+    
+    return hasRealImage && !isTestName && hasRealisticPrice;
+  });
 
   // Sort products
   const sortedProducts = [...filteredProducts].sort((a, b) => {

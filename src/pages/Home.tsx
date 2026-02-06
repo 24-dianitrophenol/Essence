@@ -45,13 +45,25 @@ type Product = {
 
 // Get trending products (10 random products from Supplements category)
 const trendingProducts: Product[] = allProducts
-  .filter(p => p.category === 'Supplements' && p.image)
+  .filter(p => 
+    p.category === 'Supplements' && 
+    p.image && 
+    p.image.trim() !== '' && 
+    !p.image.toLowerCase().includes('placeholder') &&
+    !p.name.includes('Item ') &&
+    p.price > 370
+  )
   .sort(() => 0.5 - Math.random())
   .slice(0, 10);
 
 const getCategoryImage = (category: string) => {
   // Find a product with a valid image (not empty and not a placeholder)
-  const product = allProducts.find(p => p.category === category && p.image && p.image !== '');
+  const product = allProducts.find(p => 
+    p.category === category && 
+    p.image && 
+    p.image !== '' && 
+    !p.image.toLowerCase().includes('placeholder')
+  );
   return product?.image || '/images/placeholder.jpg';
 };
 
@@ -331,8 +343,7 @@ export default function Home() {
             className="flex gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 px-10"
             style={{ scrollSnapType: 'x mandatory' }}
           >
-            {trendingProducts.map((product, idx) => (
-              product && (
+            {trendingProducts.map((product) => (
               <div
                 key={product.id}
                 className="w-[180px] sm:w-[220px] lg:w-[260px] min-w-[180px] sm:min-w-[220px] lg:min-w-[260px] bg-white rounded-xl shadow-lg transition-all duration-300 flex-shrink-0 border border-gray-100 flex flex-col snap-center hover:shadow-xl"
@@ -403,7 +414,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              )
             ))}
           </div>
           
