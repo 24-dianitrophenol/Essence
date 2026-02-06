@@ -8,7 +8,7 @@ import { Heart, ShoppingCart } from 'lucide-react';
 import { Product } from '../types';
 
 // Define category type
-type Category = 'All' | 'Supplements' | 'Sports' | 'Bath' | 'Beauty' | 'Grocery' | 'Home' | 'Baby' | 'Pets' | 'Bedroom Products';
+type Category = 'All' | 'Supplements' | 'Sports' | 'Bath' | 'Beauty' | 'Grocery' | 'Baby' | 'Pets' | 'Bedroom Products';
 
 // Available product categories
 const categories: Exclude<Category, 'All'>[] = [
@@ -17,7 +17,6 @@ const categories: Exclude<Category, 'All'>[] = [
   'Bath',
   'Beauty',
   'Grocery',
-  'Home',
   'Baby',
   'Pets',
   'Bedroom Products'
@@ -49,10 +48,7 @@ const categorySlides: Record<Category, { image: string }[]> = {
     { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" },
     { image: "/images/Home Sliders/NATURAL INGREDIENTS WEB BANNER.jpg" }
   ],
-  'Home': [
-    { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" },
-    { image: "/images/Home Sliders/NATURAL INGREDIENTS WEB BANNER.jpg" }
-  ],
+
   'Baby': [
     { image: "/images/Home Sliders/WEB BANNER 10_page-0001.jpg" },
     { image: "/images/Home Sliders/NATURAL INGREDIENTS WEB BANNER.jpg" }

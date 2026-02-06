@@ -12,7 +12,6 @@ const categories = [
   'Bath',
   'Beauty',
   'Grocery',
-  'Home',
   'Baby',
   'Pets',
   'Bedroom Products'
