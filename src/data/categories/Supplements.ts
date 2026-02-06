@@ -1,4005 +1,4002 @@
-// Easy-to-edit Health Products data structure
-// To modify products: simply edit the id, name, price, image, category, and description fields below
-
-export const healthProducts = [
+export const supplements = [
 {
     id: 'health-1',
     name: 'Organika Collagen Type 1,2,3',
     price: 27.16,
     image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Complete collagen complex for skin, joints, and overall health'
   },
-  {
+{
     id: 'health-2',
     name: 'Naka Platinum Ultra Collagen',
     price: 28.66,
     image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Premium ultra collagen for maximum absorption and benefits'
   },
-  {
+{
     id: 'health-3',
     name: 'Full Chea Detox Tea',
     price: 6.03,
     image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Natural detox tea for cleansing and weight management'
   },
-  {
+{
     id: 'health-4',
     name: 'D+K2 MK-7 Form',
     price: 12.07,
     image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Essential vitamins D3 and K2 for bone and heart health'
   },
-  {
+{
     id: 'health-5',
     name: 'OEM/ODM Collagen +C',
     price: 10.56,
     image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Delicious collagen gummies for skin elasticity and hydration'
   },
-  {
+{
     id: 'health-6',
     name: 'Sproos Marine Collagen',
     price: 28.66,
     image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Pure marine collagen for skin and joint support'
   },
-  {
+{
     id: 'health-7',
     name: 'Centrum Forte Essentials',
     price: 15.08,
     image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Complete multivitamin for daily nutritional support'
   },
-  {
+{
     id: 'health-8',
     name: 'Collagen Powder For Women',
     price: 12.83,
     image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Specialized collagen formula designed for women\'s health'
   },
-  {
+{
     id: 'health-9',
     name: 'Server Cracked Heel Repair',
     price: 6.03,
     image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'High-quality marine collagen for beauty and wellness'
   },
-  {
+{
     id: 'health-10',
     name: 'Pure And Charm Retinol Collagen',
     price: 9.80,
     image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Stress relief and energy support with enhanced absorption'
   },
-  {
+{
     id: 'health-11',
     name: 'Moonrin Retinol And Collagen',
     price: 9.05,
     image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Pure black seed oil for immune system support'
   },
-  {
+{
     id: 'health-12',
     name: 'Day And Night Retinol Collagen',
     price: 9.80,
     image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Essential fatty acids for heart and brain health'
   },
-  {
+{
     id: 'health-13',
     name: 'Pure Marine Collagen',
     price: 13.58,
     image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Premium ashwagandha for stress management and vitality'
   },
-  {
+{
     id: 'health-14',
     name: 'Arvesa Retinol Collagen Vitamin C',
     price: 10.56,
     image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Blood sugar support and metabolic health supplement'
   },
-  {
+{
     id: 'health-15',
     name: "L'Oreal Paris Vitamin C",
     price: 22.65,
     image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-16',
     name: "Ashwagandha with Black Pepper",
     price: 9.07,
     image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-17',
     name: "Health Harmony Black Seed Oil",
     price: 11.31,
     image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-18',
     name: "Genacol Aminolock Collagen",
     price: 30.19,
     image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-19',
     name: "High Patency Omega 3-6-9",
     price: 11.31,
     image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-20',
     name: "Naka Ultra Collagen High Potency Ashwagandha",
     price: 28.67,
-    image:'/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Naka Ultra Collagen.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-21',
     name: "Multi Collagene Corps Entier",
     price: 28.67,
-    image:'/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-22',
     name: "All Max Grass Fed & Pasture raised collagen",
     price: 27.68,
-    image:'/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-23',
     name: "Resveratrol  700 mg",
     price: 9.81,
-    image:'/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Resveratrol 700mg.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-24',
     name: "Well Bet X Berberine",
     price: 12.83,
-    image:'/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Well Bet X Berberine.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-25',
     name: "Tumeric Curcumin Super Vitamin C Serum",
     price: 9.99,
-    image:'/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Well Bet X Berberine.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-26',
     name: "Extra Tumeric Platinum + Black Pepper",
     price: 9.99,
-    image:'/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-27',
     name: "Senallis Hyaluronic Acid Serum",
     price: 8.29,
-    image:'/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-28',
     name: "Colgate Mouth Wash",
     price: 5.30,
-    image:'/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Colagate MouthWash.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-29',
     name: "Iron Gummies",
     price: 8.29,
-    image:'/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
+    image: '/images/natural images/Iron Gummies.jpg',
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-30',
     name: "Nature's Bounty",
     price: 10.56,
-    image:"/images/natural images/Nature's Bounty.jpg",
-    category: 'Health Products',
+    image: "/images/natural images/Nature's Bounty.jpg",
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-31',
     name: "Purefuly Benfotiamine",
     price: 11.31,
-    image:"/images/natural images/Purefully Benfotiamine.jpg",
-    category: 'Health Products',
+    image: "/images/natural images/Purefully Benfotiamine.jpg",
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-32',
     name: "Genacol Aminolock Collagen",
     price: 30.18,
-    image:"/images/natural images/Genacol Amino lock Collagen.jpg",
-    category: 'Health Products',
+    image: "/images/natural images/Genacol Amino lock Collagen.jpg",
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-33',
     name: "Tumeric Bioperine Garlic Ginger",
     price: 9.07,
-    image:"/images/natural images/Tumeric Bioperine Garlic Ginger.jpg",
-    category: 'Health Products',
+    image: "/images/natural images/Tumeric Bioperine Garlic Ginger.jpg",
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-34',
     name: "Organika Enhanced Collagen",
     price: 27.15,
-    image:"/images/natural images/Organika Enhanced Colagen.jpg",
-    category: 'Health Products',
+    image: "/images/natural images/Organika Enhanced Colagen.jpg",
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
+{
     id: 'health-35',
     name: "Effective Appetite Suppresant",
     price: 9.81,
-    image:"/images/natural images/Organika Enhanced Colagen.jpg",
-    category: 'Health Products',
+    image: "/images/natural images/Organika Enhanced Colagen.jpg",
+    category: 'Supplements',
     description: 'Anti-inflammatory support with turmeric and curcumin'
   },
-  {
-    id: 'health-36',
-    name: 'Arvesa Retinol Collagen Vitamin C 36',
-    price: 23.52,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
+{
+    id: 'tablet-1',
+    name: 'Vitamin C Tablets',
+    price: 5.94,
+    image: '/images/natural images/Vitamin C.jpg',
+    category: 'Supplements',
+    description: 'High-potency vitamin C tablets for immune support'
   },
-  {
-    id: 'health-37',
-    name: 'Senallis Hyaluronic Acid Serum 37',
-    price: 72.47,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+{
+    id: 'tablet-2',
+    name: 'Iron Gummies',
+    price: 9.45,
+    image: '/images/natural images/Iron Gummies 2.jpg',
+    category: 'Supplements',
+    description: 'Delicious iron gummies for energy and vitality'
   },
-  {
-    id: 'health-38',
-    name: 'Effective Appetite Suppresant 38',
-    price: 39.76,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+{
+    id: 'tablet-3',
+    name: "Nature's Bounty",
+    price: 11.34,
+    image: "/images/natural images/Nature's Bounty.jpg",
+    category: 'Supplements',
+    description: 'Premium multivitamin tablets for daily wellness'
   },
-  {
-    id: 'health-39',
-    name: 'Purefuly Benfotiamine 39',
-    price: 80.42,
+{
+    id: 'tablet-4',
+    name: 'MedChoice Turmeric Curcumin',
+    price: 10.26,
+    image: '/images/natural images/Med Choice Tumeric Curcumin Description.jpg',
+    category: 'Supplements',
+    description: 'Anti-inflammatory turmeric curcumin tablets'
+  },
+{
+    id: 'tablet-5',
+    name: 'Purefully Benfotiamine',
+    price: 12.15,
     image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-40',
-    name: 'Pure Marine Collagen 40',
-    price: 34.65,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-41',
-    name: 'Pure And Charm Retinol Collagen 41',
-    price: 34.56,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-42',
-    name: 'Arvesa Retinol Collagen Vitamin C 42',
-    price: 95.9,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-43',
-    name: 'Purefuly Benfotiamine 43',
-    price: 67.89,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-44',
-    name: 'Organika Enhanced Collagen 44',
-    price: 96.09,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-45',
-    name: 'Ashwagandha with Black Pepper 45',
-    price: 119.01,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-46',
-    name: 'Effective Appetite Suppresant 46',
-    price: 142.94,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-47',
-    name: 'Organika Collagen Type 1,2,3 47',
-    price: 14.23,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-48',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 48',
-    price: 39.84,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-49',
-    name: 'Tumeric Bioperine Garlic Ginger 49',
-    price: 128.79,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-50',
-    name: 'Purefuly Benfotiamine 50',
-    price: 140.0,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-51',
-    name: 'Multi Collagene Corps Entier 51',
-    price: 21.65,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-52',
-    name: 'All Max Grass Fed & Pasture raised collagen 52',
-    price: 64.04,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-53',
-    name: 'Organika Collagen Type 1,2,3 53',
-    price: 52.67,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-54',
-    name: 'Organika Enhanced Collagen 54',
-    price: 27.15,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-55',
-    name: 'Pure Marine Collagen 55',
-    price: 106.01,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-56',
-    name: 'D+K2 MK-7 Form 56',
-    price: 45.0,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-57',
-    name: 'L 57',
-    price: 123.81,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-58',
-    name: 'Naka Platinum Ultra Collagen 58',
-    price: 46.69,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-59',
-    name: 'Collagen Powder For Women 59',
-    price: 19.71,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-60',
-    name: 'High Patency Omega 3-6-9 60',
-    price: 108.78,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-61',
-    name: 'Tumeric Bioperine Garlic Ginger 61',
-    price: 146.02,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-62',
-    name: 'OEM/ODM Collagen +C 62',
-    price: 104.96,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-63',
-    name: 'Ashwagandha with Black Pepper 63',
-    price: 112.31,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-64',
-    name: 'Centrum Forte Essentials 64',
-    price: 103.22,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-65',
-    name: 'Resveratrol  700 mg 65',
-    price: 51.98,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-66',
-    name: 'D+K2 MK-7 Form 66',
-    price: 46.92,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-67',
-    name: 'Multi Collagene Corps Entier 67',
-    price: 20.85,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-68',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 68',
-    price: 34.72,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-69',
-    name: 'Pure Marine Collagen 69',
-    price: 102.54,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-70',
-    name: 'Server Cracked Heel Repair 70',
-    price: 59.09,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-71',
-    name: 'Effective Appetite Suppresant 71',
-    price: 83.66,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-72',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 72',
-    price: 7.91,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-73',
-    name: 'Organika Collagen Type 1,2,3 73',
-    price: 63.68,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-74',
-    name: 'Ashwagandha with Black Pepper 74',
-    price: 107.06,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-75',
-    name: 'Naka Platinum Ultra Collagen 75',
-    price: 44.93,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-76',
-    name: 'Well Bet X Berberine 76',
-    price: 48.06,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-77',
-    name: 'Arvesa Retinol Collagen Vitamin C 77',
-    price: 117.11,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-78',
-    name: 'Multi Collagene Corps Entier 78',
-    price: 78.85,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-79',
-    name: 'Moonrin Retinol And Collagen 79',
-    price: 30.33,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-80',
-    name: 'Nature 80',
-    price: 36.24,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-81',
-    name: 'Health Harmony Black Seed Oil 81',
-    price: 71.59,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-82',
-    name: 'Resveratrol  700 mg 82',
-    price: 147.53,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-83',
-    name: 'Effective Appetite Suppresant 83',
-    price: 93.16,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-84',
-    name: 'Organika Collagen Type 1,2,3 84',
-    price: 45.19,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-85',
-    name: 'All Max Grass Fed & Pasture raised collagen 85',
-    price: 88.35,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-86',
-    name: 'Server Cracked Heel Repair 86',
-    price: 130.37,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-87',
-    name: 'Purefuly Benfotiamine 87',
-    price: 75.06,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-88',
-    name: 'Naka Platinum Ultra Collagen 88',
-    price: 139.8,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-89',
-    name: 'Health Harmony Black Seed Oil 89',
-    price: 69.71,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-90',
-    name: 'Pure And Charm Retinol Collagen 90',
-    price: 33.09,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-91',
-    name: 'Effective Appetite Suppresant 91',
-    price: 9.2,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-92',
-    name: 'Arvesa Retinol Collagen Vitamin C 92',
-    price: 112.95,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-93',
-    name: 'Pure Marine Collagen 93',
-    price: 94.2,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-94',
-    name: 'Purefuly Benfotiamine 94',
-    price: 93.74,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-95',
-    name: 'L 95',
-    price: 134.4,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-96',
-    name: 'Server Cracked Heel Repair 96',
-    price: 59.43,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-97',
-    name: 'Resveratrol  700 mg 97',
-    price: 59.13,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-98',
-    name: 'Centrum Forte Essentials 98',
-    price: 40.02,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-99',
-    name: 'Nature 99',
-    price: 104.91,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-100',
-    name: 'L 100',
-    price: 137.24,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-101',
-    name: 'High Patency Omega 3-6-9 101',
-    price: 10.94,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-102',
-    name: 'Health Harmony Black Seed Oil 102',
-    price: 18.84,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-103',
-    name: 'High Patency Omega 3-6-9 103',
-    price: 111.51,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-104',
-    name: 'Sproos Marine Collagen 104',
-    price: 118.14,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-105',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 105',
-    price: 86.7,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-106',
-    name: 'Ashwagandha with Black Pepper 106',
-    price: 97.98,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-107',
-    name: 'Ashwagandha with Black Pepper 107',
-    price: 91.61,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-108',
-    name: 'Organika Enhanced Collagen 108',
-    price: 91.88,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-109',
-    name: 'Tumeric Bioperine Garlic Ginger 109',
-    price: 42.16,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-110',
-    name: 'Purefuly Benfotiamine 110',
-    price: 134.65,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-111',
-    name: 'Sproos Marine Collagen 111',
-    price: 61.03,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-112',
-    name: 'Genacol Aminolock Collagen 112',
-    price: 53.18,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-113',
-    name: 'Organika Collagen Type 1,2,3 113',
-    price: 29.48,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-114',
-    name: 'Server Cracked Heel Repair 114',
-    price: 8.31,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-115',
-    name: 'Full Chea Detox Tea 115',
-    price: 64.11,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-116',
-    name: 'High Patency Omega 3-6-9 116',
-    price: 132.62,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-117',
-    name: 'Well Bet X Berberine 117',
-    price: 136.73,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-118',
-    name: 'Server Cracked Heel Repair 118',
-    price: 16.16,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-119',
-    name: 'Resveratrol  700 mg 119',
-    price: 94.43,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-120',
-    name: 'Colgate Mouth Wash 120',
-    price: 68.07,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-121',
-    name: 'Full Chea Detox Tea 121',
-    price: 25.75,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-122',
-    name: 'Pure Marine Collagen 122',
-    price: 124.15,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-123',
-    name: 'Sproos Marine Collagen 123',
-    price: 144.71,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-124',
-    name: 'Senallis Hyaluronic Acid Serum 124',
-    price: 99.2,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-125',
-    name: 'Ashwagandha with Black Pepper 125',
-    price: 41.0,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-126',
-    name: 'Ashwagandha with Black Pepper 126',
-    price: 53.69,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-127',
-    name: 'Purefuly Benfotiamine 127',
-    price: 102.08,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-128',
-    name: 'Ashwagandha with Black Pepper 128',
-    price: 38.22,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-129',
-    name: 'L 129',
-    price: 53.04,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-130',
-    name: 'Pure Marine Collagen 130',
-    price: 76.98,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-131',
-    name: 'L 131',
-    price: 16.91,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-132',
-    name: 'Collagen Powder For Women 132',
-    price: 126.58,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-133',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 133',
-    price: 109.61,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-134',
-    name: 'L 134',
-    price: 106.3,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-135',
-    name: 'D+K2 MK-7 Form 135',
-    price: 39.43,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-136',
-    name: 'Collagen Powder For Women 136',
-    price: 56.22,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-137',
-    name: 'Pure And Charm Retinol Collagen 137',
-    price: 77.65,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-138',
-    name: 'D+K2 MK-7 Form 138',
-    price: 42.01,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-139',
-    name: 'Organika Collagen Type 1,2,3 139',
-    price: 21.0,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-140',
-    name: 'Iron Gummies 140',
-    price: 36.38,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-141',
-    name: 'Tumeric Bioperine Garlic Ginger 141',
-    price: 130.22,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-142',
-    name: 'Purefuly Benfotiamine 142',
-    price: 106.35,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-143',
-    name: 'Full Chea Detox Tea 143',
-    price: 23.01,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-144',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 144',
-    price: 84.35,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-145',
-    name: 'Nature 145',
-    price: 80.94,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-146',
-    name: 'Effective Appetite Suppresant 146',
-    price: 145.05,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-147',
-    name: 'Iron Gummies 147',
-    price: 127.19,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-148',
-    name: 'Health Harmony Black Seed Oil 148',
-    price: 22.48,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-149',
-    name: 'OEM/ODM Collagen +C 149',
-    price: 58.06,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-150',
-    name: 'Sproos Marine Collagen 150',
-    price: 147.05,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-151',
-    name: 'Day And Night Retinol Collagen 151',
-    price: 39.47,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-152',
-    name: 'Genacol Aminolock Collagen 152',
-    price: 122.86,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-153',
-    name: 'Multi Collagene Corps Entier 153',
-    price: 57.22,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-154',
-    name: 'Resveratrol  700 mg 154',
-    price: 60.2,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-155',
-    name: 'Pure And Charm Retinol Collagen 155',
-    price: 117.53,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-156',
-    name: 'Extra Tumeric Platinum + Black Pepper 156',
-    price: 18.86,
+    category: 'Supplements',
+    description: 'Benfotiamine tablets for nerve health support'
+  },
+{
+    id: 'tablet-6',
+    name: 'Turmeric Bioperine Garlic Ginger',
+    price: 12.96,
+    image: '/images/natural images/Turmeric Bioperine Garlic Ginger.jpg',
+    category: 'Supplements',
+    description: 'Comprehensive herbal supplement with multiple benefits'
+  },
+{
+    id: 'tablet-7',
+    name: 'Effective Appetite Suppressant',
+    price: 14.04,
+    image: '/images/natural images/Effective Appetite Suppresant.jpg',
+    category: 'Supplements',
+    description: 'Natural appetite control tablets for weight management'
+  },
+{
+    id: 'tablet-8',
+    name: 'Extra Turmeric Platinum + Black Pepper',
+    price: 14.85,
     image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    category: 'Supplements',
+    description: 'Enhanced turmeric formula with black pepper for absorption'
   },
   {
-    id: 'health-157',
-    name: 'D+K2 MK-7 Form 157',
-    price: 10.01,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
+    id: 'supplement-44',
+    name: 'Supplements Item 44',
+    price: 43.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-158',
-    name: 'Effective Appetite Suppresant 158',
-    price: 19.0,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-45',
+    name: 'Supplements Item 45',
+    price: 92.17,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-159',
-    name: 'Genacol Aminolock Collagen 159',
-    price: 140.55,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-46',
+    name: 'Supplements Item 46',
+    price: 12.32,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-160',
-    name: 'Genacol Aminolock Collagen 160',
-    price: 18.11,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-47',
+    name: 'Supplements Item 47',
+    price: 35.51,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-161',
-    name: 'Organika Collagen Type 1,2,3 161',
-    price: 29.75,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
+    id: 'supplement-48',
+    name: 'Supplements Item 48',
+    price: 81.16,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-162',
-    name: 'Collagen Powder For Women 162',
-    price: 71.44,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
+    id: 'supplement-49',
+    name: 'Supplements Item 49',
+    price: 30.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-163',
-    name: 'Senallis Hyaluronic Acid Serum 163',
-    price: 130.48,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-50',
+    name: 'Supplements Item 50',
+    price: 63.72,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-164',
-    name: 'Genacol Aminolock Collagen 164',
-    price: 76.83,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-51',
+    name: 'Supplements Item 51',
+    price: 78.14,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-165',
-    name: 'Effective Appetite Suppresant 165',
-    price: 51.73,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-52',
+    name: 'Supplements Item 52',
+    price: 39.48,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-166',
-    name: 'Ashwagandha with Black Pepper 166',
-    price: 29.44,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-53',
+    name: 'Supplements Item 53',
+    price: 68.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-167',
-    name: 'Full Chea Detox Tea 167',
-    price: 6.93,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
+    id: 'supplement-54',
+    name: 'Supplements Item 54',
+    price: 44.33,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-168',
-    name: 'Nature 168',
-    price: 138.12,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-55',
+    name: 'Supplements Item 55',
+    price: 16.87,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-169',
-    name: 'Naka Platinum Ultra Collagen 169',
-    price: 141.99,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-170',
-    name: 'D+K2 MK-7 Form 170',
-    price: 17.32,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-171',
-    name: 'Organika Enhanced Collagen 171',
-    price: 118.38,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-172',
-    name: 'All Max Grass Fed & Pasture raised collagen 172',
-    price: 107.55,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-173',
-    name: 'Multi Collagene Corps Entier 173',
-    price: 60.95,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-174',
-    name: 'Purefuly Benfotiamine 174',
-    price: 75.59,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-175',
-    name: 'High Patency Omega 3-6-9 175',
-    price: 40.09,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-176',
-    name: 'Colgate Mouth Wash 176',
-    price: 42.35,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-177',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 177',
-    price: 41.29,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-178',
-    name: 'Effective Appetite Suppresant 178',
-    price: 84.97,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-179',
-    name: 'Genacol Aminolock Collagen 179',
-    price: 70.48,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-180',
-    name: 'Genacol Aminolock Collagen 180',
-    price: 69.5,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-181',
-    name: 'OEM/ODM Collagen +C 181',
-    price: 81.18,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-182',
-    name: 'Collagen Powder For Women 182',
-    price: 60.69,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-183',
-    name: 'Sproos Marine Collagen 183',
-    price: 52.28,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-184',
-    name: 'Organika Collagen Type 1,2,3 184',
-    price: 76.92,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-185',
-    name: 'Organika Collagen Type 1,2,3 185',
-    price: 129.77,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-186',
-    name: 'Moonrin Retinol And Collagen 186',
-    price: 65.6,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-187',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 187',
-    price: 124.2,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-188',
-    name: 'High Patency Omega 3-6-9 188',
-    price: 113.77,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-189',
-    name: 'Nature 189',
-    price: 110.85,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-190',
-    name: 'OEM/ODM Collagen +C 190',
-    price: 129.74,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-191',
-    name: 'Senallis Hyaluronic Acid Serum 191',
-    price: 17.76,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-192',
-    name: 'Colgate Mouth Wash 192',
-    price: 72.47,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-193',
-    name: 'D+K2 MK-7 Form 193',
-    price: 35.01,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-194',
-    name: 'Extra Tumeric Platinum + Black Pepper 194',
-    price: 114.42,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-195',
-    name: 'Full Chea Detox Tea 195',
-    price: 62.15,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-196',
-    name: 'Iron Gummies 196',
-    price: 59.94,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-197',
-    name: 'Health Harmony Black Seed Oil 197',
-    price: 102.49,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-198',
-    name: 'Pure Marine Collagen 198',
-    price: 102.54,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-199',
-    name: 'Effective Appetite Suppresant 199',
-    price: 97.3,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-200',
-    name: 'L 200',
-    price: 9.3,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-201',
-    name: 'Senallis Hyaluronic Acid Serum 201',
-    price: 139.97,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-202',
-    name: 'Resveratrol  700 mg 202',
-    price: 149.28,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-203',
-    name: 'Day And Night Retinol Collagen 203',
-    price: 77.07,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-204',
-    name: 'Pure Marine Collagen 204',
-    price: 115.83,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-205',
-    name: 'Moonrin Retinol And Collagen 205',
-    price: 140.5,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-206',
-    name: 'Organika Collagen Type 1,2,3 206',
-    price: 142.35,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-207',
-    name: 'Senallis Hyaluronic Acid Serum 207',
-    price: 65.61,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-208',
-    name: 'Genacol Aminolock Collagen 208',
-    price: 24.54,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-209',
-    name: 'Ashwagandha with Black Pepper 209',
-    price: 66.73,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-210',
-    name: 'Pure And Charm Retinol Collagen 210',
-    price: 65.34,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-211',
-    name: 'Organika Collagen Type 1,2,3 211',
-    price: 112.96,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-212',
-    name: 'Health Harmony Black Seed Oil 212',
-    price: 26.63,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-213',
-    name: 'Arvesa Retinol Collagen Vitamin C 213',
-    price: 14.1,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-214',
-    name: 'Tumeric Bioperine Garlic Ginger 214',
-    price: 133.97,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-215',
-    name: 'Iron Gummies 215',
-    price: 76.8,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-216',
-    name: 'Organika Enhanced Collagen 216',
-    price: 133.54,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-217',
-    name: 'Multi Collagene Corps Entier 217',
-    price: 90.88,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-218',
-    name: 'L 218',
-    price: 81.79,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-219',
-    name: 'Server Cracked Heel Repair 219',
-    price: 126.96,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-220',
-    name: 'Multi Collagene Corps Entier 220',
-    price: 149.21,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-221',
-    name: 'Genacol Aminolock Collagen 221',
-    price: 39.14,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-222',
-    name: 'Pure Marine Collagen 222',
-    price: 95.17,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-223',
-    name: 'Full Chea Detox Tea 223',
-    price: 92.91,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-224',
-    name: 'Organika Collagen Type 1,2,3 224',
-    price: 66.8,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-225',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 225',
+    id: 'supplement-56',
+    name: 'Supplements Item 56',
+    price: 90.36,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-57',
+    name: 'Supplements Item 57',
+    price: 46.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-58',
+    name: 'Supplements Item 58',
+    price: 26.5,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-59',
+    name: 'Supplements Item 59',
+    price: 76.01,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-60',
+    name: 'Supplements Item 60',
+    price: 34.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-61',
+    name: 'Supplements Item 61',
+    price: 86.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-62',
+    name: 'Supplements Item 62',
+    price: 36.95,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-63',
+    name: 'Supplements Item 63',
+    price: 90.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-64',
+    name: 'Supplements Item 64',
+    price: 74.8,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-65',
+    name: 'Supplements Item 65',
+    price: 37.69,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-66',
+    name: 'Supplements Item 66',
+    price: 57.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-67',
+    name: 'Supplements Item 67',
+    price: 10.73,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-68',
+    name: 'Supplements Item 68',
+    price: 93.61,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-69',
+    name: 'Supplements Item 69',
+    price: 84.65,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-70',
+    name: 'Supplements Item 70',
+    price: 65.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-71',
+    name: 'Supplements Item 71',
+    price: 18.13,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-72',
+    name: 'Supplements Item 72',
+    price: 83.47,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-73',
+    name: 'Supplements Item 73',
+    price: 49.82,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-74',
+    name: 'Supplements Item 74',
+    price: 34.53,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-75',
+    name: 'Supplements Item 75',
+    price: 36.87,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-76',
+    name: 'Supplements Item 76',
+    price: 74.59,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-77',
+    name: 'Supplements Item 77',
+    price: 10.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-78',
+    name: 'Supplements Item 78',
+    price: 45.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-79',
+    name: 'Supplements Item 79',
+    price: 79.97,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-80',
+    name: 'Supplements Item 80',
+    price: 14.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-81',
+    name: 'Supplements Item 81',
+    price: 49.15,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-82',
+    name: 'Supplements Item 82',
+    price: 85.34,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-83',
+    name: 'Supplements Item 83',
+    price: 63.77,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-84',
+    name: 'Supplements Item 84',
+    price: 59.68,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-85',
+    name: 'Supplements Item 85',
+    price: 78.64,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-86',
+    name: 'Supplements Item 86',
+    price: 12.54,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-87',
+    name: 'Supplements Item 87',
+    price: 19.19,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-88',
+    name: 'Supplements Item 88',
+    price: 30.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-89',
+    name: 'Supplements Item 89',
+    price: 98.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-90',
+    name: 'Supplements Item 90',
+    price: 27.92,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-91',
+    name: 'Supplements Item 91',
+    price: 33.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-92',
+    name: 'Supplements Item 92',
+    price: 97.35,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-93',
+    name: 'Supplements Item 93',
+    price: 45.51,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-94',
+    name: 'Supplements Item 94',
+    price: 70.3,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-95',
+    name: 'Supplements Item 95',
+    price: 51.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-96',
+    name: 'Supplements Item 96',
+    price: 34.1,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-97',
+    name: 'Supplements Item 97',
+    price: 80.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-98',
+    name: 'Supplements Item 98',
+    price: 75.15,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-99',
+    name: 'Supplements Item 99',
+    price: 74.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-100',
+    name: 'Supplements Item 100',
+    price: 99.05,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-101',
+    name: 'Supplements Item 101',
+    price: 21.67,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-102',
+    name: 'Supplements Item 102',
+    price: 55.99,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-103',
+    name: 'Supplements Item 103',
+    price: 84.8,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-104',
+    name: 'Supplements Item 104',
+    price: 36.94,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-105',
+    name: 'Supplements Item 105',
+    price: 91.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-106',
+    name: 'Supplements Item 106',
+    price: 43.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-107',
+    name: 'Supplements Item 107',
+    price: 53.87,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-108',
+    name: 'Supplements Item 108',
+    price: 28.94,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-109',
+    name: 'Supplements Item 109',
+    price: 62.84,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-110',
+    name: 'Supplements Item 110',
+    price: 63.13,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-111',
+    name: 'Supplements Item 111',
+    price: 73.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-112',
+    name: 'Supplements Item 112',
+    price: 78.79,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-113',
+    name: 'Supplements Item 113',
+    price: 18.41,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-114',
+    name: 'Supplements Item 114',
+    price: 68.83,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-115',
+    name: 'Supplements Item 115',
+    price: 23.3,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-116',
+    name: 'Supplements Item 116',
+    price: 55.57,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-117',
+    name: 'Supplements Item 117',
+    price: 47.26,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-118',
+    name: 'Supplements Item 118',
+    price: 67.86,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-119',
+    name: 'Supplements Item 119',
+    price: 75.04,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-120',
+    name: 'Supplements Item 120',
+    price: 73.41,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-121',
+    name: 'Supplements Item 121',
+    price: 74.69,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-122',
+    name: 'Supplements Item 122',
+    price: 19.86,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-123',
+    name: 'Supplements Item 123',
+    price: 16.37,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-124',
+    name: 'Supplements Item 124',
+    price: 95.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-125',
+    name: 'Supplements Item 125',
+    price: 29.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-126',
+    name: 'Supplements Item 126',
+    price: 31.1,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-127',
+    name: 'Supplements Item 127',
+    price: 96.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-128',
+    name: 'Supplements Item 128',
+    price: 67.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-129',
+    name: 'Supplements Item 129',
+    price: 94.04,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-130',
+    name: 'Supplements Item 130',
+    price: 14.92,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-131',
+    name: 'Supplements Item 131',
+    price: 31.19,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-132',
+    name: 'Supplements Item 132',
+    price: 28.75,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-133',
+    name: 'Supplements Item 133',
     price: 86.73,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-226',
-    name: 'Iron Gummies 226',
-    price: 80.58,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-134',
+    name: 'Supplements Item 134',
+    price: 70.87,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-227',
-    name: 'Iron Gummies 227',
-    price: 26.32,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-135',
+    name: 'Supplements Item 135',
+    price: 41.39,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-228',
-    name: 'Day And Night Retinol Collagen 228',
-    price: 113.32,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
+    id: 'supplement-136',
+    name: 'Supplements Item 136',
+    price: 11.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-229',
-    name: 'Day And Night Retinol Collagen 229',
-    price: 116.89,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
+    id: 'supplement-137',
+    name: 'Supplements Item 137',
+    price: 89.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-230',
-    name: 'Server Cracked Heel Repair 230',
-    price: 7.71,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
+    id: 'supplement-138',
+    name: 'Supplements Item 138',
+    price: 52.64,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-231',
-    name: 'Pure Marine Collagen 231',
-    price: 97.69,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
+    id: 'supplement-139',
+    name: 'Supplements Item 139',
+    price: 42.68,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-232',
-    name: 'Purefuly Benfotiamine 232',
-    price: 134.57,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-140',
+    name: 'Supplements Item 140',
+    price: 27.72,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-233',
-    name: 'Health Harmony Black Seed Oil 233',
-    price: 26.26,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-234',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 234',
-    price: 21.22,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-235',
-    name: 'Iron Gummies 235',
-    price: 123.24,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-236',
-    name: 'Collagen Powder For Women 236',
-    price: 143.06,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-237',
-    name: 'Genacol Aminolock Collagen 237',
-    price: 23.78,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-238',
-    name: 'Organika Enhanced Collagen 238',
-    price: 135.24,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-239',
-    name: 'Purefuly Benfotiamine 239',
-    price: 43.56,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-240',
-    name: 'Sproos Marine Collagen 240',
-    price: 5.06,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-241',
-    name: 'Day And Night Retinol Collagen 241',
-    price: 30.54,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-242',
-    name: 'Purefuly Benfotiamine 242',
-    price: 39.94,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-243',
-    name: 'Nature 243',
-    price: 133.23,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-244',
-    name: 'Server Cracked Heel Repair 244',
-    price: 7.12,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-245',
-    name: 'Health Harmony Black Seed Oil 245',
-    price: 112.92,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-246',
-    name: 'Colgate Mouth Wash 246',
-    price: 119.97,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-247',
-    name: 'Senallis Hyaluronic Acid Serum 247',
-    price: 103.86,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-248',
-    name: 'Tumeric Bioperine Garlic Ginger 248',
-    price: 149.09,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-249',
-    name: 'Effective Appetite Suppresant 249',
-    price: 46.9,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-250',
-    name: 'Genacol Aminolock Collagen 250',
-    price: 105.25,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-251',
-    name: 'OEM/ODM Collagen +C 251',
-    price: 26.34,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-252',
-    name: 'Ashwagandha with Black Pepper 252',
-    price: 87.49,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-253',
-    name: 'Pure And Charm Retinol Collagen 253',
-    price: 84.56,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-254',
-    name: 'Senallis Hyaluronic Acid Serum 254',
-    price: 122.7,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-255',
-    name: 'Organika Enhanced Collagen 255',
-    price: 83.93,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-256',
-    name: 'Organika Collagen Type 1,2,3 256',
-    price: 148.66,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-257',
-    name: 'Effective Appetite Suppresant 257',
-    price: 69.35,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-258',
-    name: 'Full Chea Detox Tea 258',
-    price: 100.33,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-259',
-    name: 'Extra Tumeric Platinum + Black Pepper 259',
-    price: 9.52,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-260',
-    name: 'Iron Gummies 260',
-    price: 135.29,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-261',
-    name: 'Arvesa Retinol Collagen Vitamin C 261',
-    price: 55.21,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-262',
-    name: 'Pure And Charm Retinol Collagen 262',
-    price: 104.41,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-263',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 263',
-    price: 83.97,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-264',
-    name: 'Full Chea Detox Tea 264',
-    price: 143.8,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-265',
-    name: 'Pure Marine Collagen 265',
-    price: 32.25,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-266',
-    name: 'Moonrin Retinol And Collagen 266',
-    price: 122.09,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-267',
-    name: 'Organika Enhanced Collagen 267',
-    price: 68.12,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-268',
-    name: 'Ashwagandha with Black Pepper 268',
-    price: 78.71,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-269',
-    name: 'Resveratrol  700 mg 269',
-    price: 14.71,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-270',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 270',
-    price: 137.82,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-271',
-    name: 'Senallis Hyaluronic Acid Serum 271',
-    price: 32.12,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-272',
-    name: 'Genacol Aminolock Collagen 272',
-    price: 145.33,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-273',
-    name: 'L 273',
-    price: 57.95,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-274',
-    name: 'Senallis Hyaluronic Acid Serum 274',
-    price: 147.91,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-275',
-    name: 'Genacol Aminolock Collagen 275',
-    price: 113.38,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-276',
-    name: 'Extra Tumeric Platinum + Black Pepper 276',
-    price: 57.22,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-277',
-    name: 'Colgate Mouth Wash 277',
-    price: 76.57,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-278',
-    name: 'Nature 278',
-    price: 33.28,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-279',
-    name: 'Purefuly Benfotiamine 279',
-    price: 97.2,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-280',
-    name: 'Sproos Marine Collagen 280',
-    price: 114.12,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-281',
-    name: 'Iron Gummies 281',
-    price: 35.99,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-282',
-    name: 'L 282',
-    price: 70.03,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-283',
-    name: 'Ashwagandha with Black Pepper 283',
-    price: 57.09,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-284',
-    name: 'Tumeric Bioperine Garlic Ginger 284',
-    price: 81.01,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-285',
-    name: 'Extra Tumeric Platinum + Black Pepper 285',
-    price: 148.41,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-286',
-    name: 'High Patency Omega 3-6-9 286',
-    price: 64.46,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-287',
-    name: 'Ashwagandha with Black Pepper 287',
-    price: 66.57,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-288',
-    name: 'Nature 288',
-    price: 53.47,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-289',
-    name: 'Colgate Mouth Wash 289',
-    price: 50.0,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-290',
-    name: 'Extra Tumeric Platinum + Black Pepper 290',
-    price: 15.81,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-291',
-    name: 'Server Cracked Heel Repair 291',
-    price: 142.65,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-292',
-    name: 'All Max Grass Fed & Pasture raised collagen 292',
-    price: 16.09,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-293',
-    name: 'Organika Enhanced Collagen 293',
-    price: 141.28,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-294',
-    name: 'Pure And Charm Retinol Collagen 294',
-    price: 7.06,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-295',
-    name: 'Genacol Aminolock Collagen 295',
-    price: 132.12,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-296',
-    name: 'Senallis Hyaluronic Acid Serum 296',
-    price: 62.96,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-297',
-    name: 'Pure And Charm Retinol Collagen 297',
-    price: 69.06,
-    image: '/images/natural images/Pure And Charm Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Stress relief and energy support with enhanced absorption - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-298',
-    name: 'Full Chea Detox Tea 298',
-    price: 64.67,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-299',
-    name: 'Tumeric Bioperine Garlic Ginger 299',
-    price: 67.24,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-300',
-    name: 'Extra Tumeric Platinum + Black Pepper 300',
-    price: 87.62,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-301',
-    name: 'Organika Enhanced Collagen 301',
-    price: 145.46,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-302',
-    name: 'Well Bet X Berberine 302',
-    price: 134.57,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-303',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 303',
-    price: 65.24,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-304',
-    name: 'OEM/ODM Collagen +C 304',
-    price: 22.14,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-305',
-    name: 'Day And Night Retinol Collagen 305',
-    price: 74.56,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-306',
-    name: 'Well Bet X Berberine 306',
-    price: 80.61,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-307',
-    name: 'High Patency Omega 3-6-9 307',
-    price: 111.75,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-308',
-    name: 'Ashwagandha with Black Pepper 308',
-    price: 34.2,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-309',
-    name: 'Ashwagandha with Black Pepper 309',
-    price: 105.82,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-310',
-    name: 'Iron Gummies 310',
-    price: 31.5,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-311',
-    name: 'Purefuly Benfotiamine 311',
-    price: 104.92,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-312',
-    name: 'Day And Night Retinol Collagen 312',
-    price: 119.55,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-313',
-    name: 'Server Cracked Heel Repair 313',
-    price: 103.55,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-314',
-    name: 'Iron Gummies 314',
-    price: 41.8,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-315',
-    name: 'All Max Grass Fed & Pasture raised collagen 315',
-    price: 122.53,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-316',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 316',
-    price: 65.48,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-317',
-    name: 'Well Bet X Berberine 317',
-    price: 76.39,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-318',
-    name: 'Organika Enhanced Collagen 318',
-    price: 139.75,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-319',
-    name: 'Effective Appetite Suppresant 319',
-    price: 70.38,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-320',
-    name: 'Resveratrol  700 mg 320',
-    price: 128.57,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-321',
-    name: 'Colgate Mouth Wash 321',
-    price: 102.54,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-322',
-    name: 'Well Bet X Berberine 322',
-    price: 102.28,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-323',
-    name: 'Moonrin Retinol And Collagen 323',
+    id: 'supplement-141',
+    name: 'Supplements Item 141',
     price: 18.93,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-324',
-    name: 'Senallis Hyaluronic Acid Serum 324',
-    price: 63.03,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-142',
+    name: 'Supplements Item 142',
+    price: 48.88,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-325',
-    name: 'Multi Collagene Corps Entier 325',
-    price: 101.51,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-143',
+    name: 'Supplements Item 143',
+    price: 85.76,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-326',
-    name: 'Multi Collagene Corps Entier 326',
-    price: 16.82,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-144',
+    name: 'Supplements Item 144',
+    price: 60.76,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-327',
-    name: 'Naka Platinum Ultra Collagen 327',
-    price: 97.06,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
+    id: 'supplement-145',
+    name: 'Supplements Item 145',
+    price: 48.32,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-328',
-    name: 'Organika Collagen Type 1,2,3 328',
-    price: 85.91,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
+    id: 'supplement-146',
+    name: 'Supplements Item 146',
+    price: 77.3,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-329',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 329',
-    price: 68.51,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-147',
+    name: 'Supplements Item 147',
+    price: 66.14,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-330',
-    name: 'Health Harmony Black Seed Oil 330',
-    price: 59.96,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-148',
+    name: 'Supplements Item 148',
+    price: 54.84,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-331',
-    name: 'Day And Night Retinol Collagen 331',
-    price: 95.65,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
+    id: 'supplement-149',
+    name: 'Supplements Item 149',
+    price: 90.22,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-332',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 332',
-    price: 92.6,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-150',
+    name: 'Supplements Item 150',
+    price: 64.58,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-333',
-    name: 'Arvesa Retinol Collagen Vitamin C 333',
-    price: 63.91,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
+    id: 'supplement-151',
+    name: 'Supplements Item 151',
+    price: 32.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-334',
-    name: 'Effective Appetite Suppresant 334',
-    price: 26.04,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-152',
+    name: 'Supplements Item 152',
+    price: 45.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-335',
-    name: 'L 335',
-    price: 45.85,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-153',
+    name: 'Supplements Item 153',
+    price: 91.8,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-336',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 336',
+    id: 'supplement-154',
+    name: 'Supplements Item 154',
+    price: 98.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-155',
+    name: 'Supplements Item 155',
+    price: 51.59,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-156',
+    name: 'Supplements Item 156',
+    price: 85.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-157',
+    name: 'Supplements Item 157',
+    price: 62.73,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-158',
+    name: 'Supplements Item 158',
+    price: 29.42,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-159',
+    name: 'Supplements Item 159',
+    price: 13.23,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-160',
+    name: 'Supplements Item 160',
+    price: 86.28,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-161',
+    name: 'Supplements Item 161',
+    price: 72.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-162',
+    name: 'Supplements Item 162',
+    price: 76.16,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-163',
+    name: 'Supplements Item 163',
+    price: 81.81,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-164',
+    name: 'Supplements Item 164',
+    price: 73.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-165',
+    name: 'Supplements Item 165',
+    price: 58.13,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-166',
+    name: 'Supplements Item 166',
+    price: 27.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-167',
+    name: 'Supplements Item 167',
+    price: 96.57,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-168',
+    name: 'Supplements Item 168',
+    price: 47.67,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-169',
+    name: 'Supplements Item 169',
+    price: 14.57,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-170',
+    name: 'Supplements Item 170',
+    price: 74.4,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-171',
+    name: 'Supplements Item 171',
+    price: 41.49,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-172',
+    name: 'Supplements Item 172',
+    price: 37.94,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-173',
+    name: 'Supplements Item 173',
+    price: 93.55,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-174',
+    name: 'Supplements Item 174',
+    price: 99.64,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-175',
+    name: 'Supplements Item 175',
+    price: 66.42,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-176',
+    name: 'Supplements Item 176',
+    price: 82.23,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-177',
+    name: 'Supplements Item 177',
+    price: 52.65,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-178',
+    name: 'Supplements Item 178',
+    price: 36.01,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-179',
+    name: 'Supplements Item 179',
+    price: 65.78,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-180',
+    name: 'Supplements Item 180',
+    price: 97.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-181',
+    name: 'Supplements Item 181',
+    price: 54.28,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-182',
+    name: 'Supplements Item 182',
+    price: 21.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-183',
+    name: 'Supplements Item 183',
+    price: 33.05,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-184',
+    name: 'Supplements Item 184',
+    price: 63.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-185',
+    name: 'Supplements Item 185',
+    price: 50.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-186',
+    name: 'Supplements Item 186',
+    price: 69.13,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-187',
+    name: 'Supplements Item 187',
+    price: 25.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-188',
+    name: 'Supplements Item 188',
+    price: 20.49,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-189',
+    name: 'Supplements Item 189',
+    price: 82.45,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-190',
+    name: 'Supplements Item 190',
+    price: 24.7,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-191',
+    name: 'Supplements Item 191',
+    price: 12.78,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-192',
+    name: 'Supplements Item 192',
+    price: 55.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-193',
+    name: 'Supplements Item 193',
+    price: 90.33,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-194',
+    name: 'Supplements Item 194',
+    price: 52.01,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-195',
+    name: 'Supplements Item 195',
+    price: 44.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-196',
+    name: 'Supplements Item 196',
+    price: 66.96,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-197',
+    name: 'Supplements Item 197',
+    price: 16.65,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-198',
+    name: 'Supplements Item 198',
+    price: 38.08,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-199',
+    name: 'Supplements Item 199',
+    price: 21.14,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-200',
+    name: 'Supplements Item 200',
+    price: 26.18,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-201',
+    name: 'Supplements Item 201',
+    price: 81.47,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-202',
+    name: 'Supplements Item 202',
+    price: 59.8,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-203',
+    name: 'Supplements Item 203',
+    price: 43.65,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-204',
+    name: 'Supplements Item 204',
+    price: 54.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-205',
+    name: 'Supplements Item 205',
+    price: 34.55,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-206',
+    name: 'Supplements Item 206',
+    price: 36.16,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-207',
+    name: 'Supplements Item 207',
+    price: 53.2,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-208',
+    name: 'Supplements Item 208',
+    price: 42.41,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-209',
+    name: 'Supplements Item 209',
+    price: 82.97,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-210',
+    name: 'Supplements Item 210',
+    price: 50.92,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-211',
+    name: 'Supplements Item 211',
+    price: 24.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-212',
+    name: 'Supplements Item 212',
+    price: 47.08,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-213',
+    name: 'Supplements Item 213',
+    price: 23.03,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-214',
+    name: 'Supplements Item 214',
+    price: 58.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-215',
+    name: 'Supplements Item 215',
+    price: 23.1,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-216',
+    name: 'Supplements Item 216',
+    price: 29.93,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-217',
+    name: 'Supplements Item 217',
+    price: 37.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-218',
+    name: 'Supplements Item 218',
+    price: 68.47,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-219',
+    name: 'Supplements Item 219',
+    price: 55.06,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-220',
+    name: 'Supplements Item 220',
+    price: 89.53,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-221',
+    name: 'Supplements Item 221',
+    price: 35.57,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-222',
+    name: 'Supplements Item 222',
+    price: 87.23,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-223',
+    name: 'Supplements Item 223',
+    price: 77.26,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-224',
+    name: 'Supplements Item 224',
+    price: 95.49,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-225',
+    name: 'Supplements Item 225',
+    price: 56.59,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-226',
+    name: 'Supplements Item 226',
+    price: 24.86,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-227',
+    name: 'Supplements Item 227',
+    price: 40.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-228',
+    name: 'Supplements Item 228',
+    price: 50.08,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-229',
+    name: 'Supplements Item 229',
+    price: 15.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-230',
+    name: 'Supplements Item 230',
+    price: 48.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-231',
+    name: 'Supplements Item 231',
+    price: 97.94,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-232',
+    name: 'Supplements Item 232',
+    price: 93.4,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-233',
+    name: 'Supplements Item 233',
+    price: 98.71,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-234',
+    name: 'Supplements Item 234',
+    price: 24.88,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-235',
+    name: 'Supplements Item 235',
+    price: 81.6,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-236',
+    name: 'Supplements Item 236',
+    price: 32.62,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-237',
+    name: 'Supplements Item 237',
+    price: 62.01,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-238',
+    name: 'Supplements Item 238',
+    price: 11.32,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-239',
+    name: 'Supplements Item 239',
+    price: 30.32,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-240',
+    name: 'Supplements Item 240',
+    price: 96.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-241',
+    name: 'Supplements Item 241',
+    price: 34.41,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-242',
+    name: 'Supplements Item 242',
+    price: 71.82,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-243',
+    name: 'Supplements Item 243',
+    price: 32.71,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-244',
+    name: 'Supplements Item 244',
+    price: 25.25,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-245',
+    name: 'Supplements Item 245',
+    price: 90.88,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-246',
+    name: 'Supplements Item 246',
+    price: 97.69,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-247',
+    name: 'Supplements Item 247',
+    price: 68.49,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-248',
+    name: 'Supplements Item 248',
+    price: 82.04,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-249',
+    name: 'Supplements Item 249',
+    price: 44.97,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-250',
+    name: 'Supplements Item 250',
+    price: 43.47,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-251',
+    name: 'Supplements Item 251',
+    price: 54.62,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-252',
+    name: 'Supplements Item 252',
+    price: 78.14,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-253',
+    name: 'Supplements Item 253',
+    price: 48.58,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-254',
+    name: 'Supplements Item 254',
+    price: 29.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-255',
+    name: 'Supplements Item 255',
+    price: 63.08,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-256',
+    name: 'Supplements Item 256',
+    price: 78.99,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-257',
+    name: 'Supplements Item 257',
+    price: 45.73,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-258',
+    name: 'Supplements Item 258',
+    price: 49.69,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-259',
+    name: 'Supplements Item 259',
+    price: 31.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-260',
+    name: 'Supplements Item 260',
+    price: 15.8,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-261',
+    name: 'Supplements Item 261',
+    price: 53.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-262',
+    name: 'Supplements Item 262',
+    price: 68.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-263',
+    name: 'Supplements Item 263',
+    price: 67.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-264',
+    name: 'Supplements Item 264',
+    price: 24.36,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-265',
+    name: 'Supplements Item 265',
+    price: 60.15,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-266',
+    name: 'Supplements Item 266',
+    price: 58.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-267',
+    name: 'Supplements Item 267',
+    price: 85.34,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-268',
+    name: 'Supplements Item 268',
+    price: 40.91,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-269',
+    name: 'Supplements Item 269',
+    price: 94.83,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-270',
+    name: 'Supplements Item 270',
+    price: 18.81,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-271',
+    name: 'Supplements Item 271',
+    price: 59.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-272',
+    name: 'Supplements Item 272',
+    price: 91.67,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-273',
+    name: 'Supplements Item 273',
+    price: 18.1,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-274',
+    name: 'Supplements Item 274',
+    price: 75.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-275',
+    name: 'Supplements Item 275',
+    price: 33.5,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-276',
+    name: 'Supplements Item 276',
+    price: 16.39,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-277',
+    name: 'Supplements Item 277',
+    price: 80.94,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-278',
+    name: 'Supplements Item 278',
+    price: 85.2,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-279',
+    name: 'Supplements Item 279',
+    price: 68.84,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-280',
+    name: 'Supplements Item 280',
+    price: 42.26,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-281',
+    name: 'Supplements Item 281',
+    price: 62.4,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-282',
+    name: 'Supplements Item 282',
+    price: 20.6,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-283',
+    name: 'Supplements Item 283',
+    price: 48.5,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-284',
+    name: 'Supplements Item 284',
+    price: 10.37,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-285',
+    name: 'Supplements Item 285',
+    price: 70.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-286',
+    name: 'Supplements Item 286',
+    price: 12.75,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-287',
+    name: 'Supplements Item 287',
+    price: 58.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-288',
+    name: 'Supplements Item 288',
+    price: 89.95,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-289',
+    name: 'Supplements Item 289',
+    price: 80.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-290',
+    name: 'Supplements Item 290',
+    price: 58.46,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-291',
+    name: 'Supplements Item 291',
+    price: 50.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-292',
+    name: 'Supplements Item 292',
+    price: 31.08,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-293',
+    name: 'Supplements Item 293',
+    price: 13.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-294',
+    name: 'Supplements Item 294',
+    price: 53.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-295',
+    name: 'Supplements Item 295',
+    price: 91.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-296',
+    name: 'Supplements Item 296',
+    price: 11.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-297',
+    name: 'Supplements Item 297',
+    price: 13.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-298',
+    name: 'Supplements Item 298',
+    price: 36.79,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-299',
+    name: 'Supplements Item 299',
+    price: 80.58,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-300',
+    name: 'Supplements Item 300',
+    price: 34.95,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-301',
+    name: 'Supplements Item 301',
+    price: 61.96,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-302',
+    name: 'Supplements Item 302',
+    price: 42.59,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-303',
+    name: 'Supplements Item 303',
+    price: 16.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-304',
+    name: 'Supplements Item 304',
+    price: 99.37,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-305',
+    name: 'Supplements Item 305',
+    price: 85.68,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-306',
+    name: 'Supplements Item 306',
+    price: 27.64,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-307',
+    name: 'Supplements Item 307',
+    price: 72.14,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-308',
+    name: 'Supplements Item 308',
+    price: 36.95,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-309',
+    name: 'Supplements Item 309',
+    price: 98.45,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-310',
+    name: 'Supplements Item 310',
+    price: 91.3,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-311',
+    name: 'Supplements Item 311',
+    price: 13.34,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-312',
+    name: 'Supplements Item 312',
+    price: 92.35,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-313',
+    name: 'Supplements Item 313',
+    price: 81.64,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-314',
+    name: 'Supplements Item 314',
+    price: 16.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-315',
+    name: 'Supplements Item 315',
+    price: 68.19,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-316',
+    name: 'Supplements Item 316',
+    price: 97.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-317',
+    name: 'Supplements Item 317',
+    price: 49.84,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-318',
+    name: 'Supplements Item 318',
+    price: 47.77,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-319',
+    name: 'Supplements Item 319',
+    price: 96.55,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-320',
+    name: 'Supplements Item 320',
+    price: 44.62,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-321',
+    name: 'Supplements Item 321',
+    price: 58.28,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-322',
+    name: 'Supplements Item 322',
+    price: 85.69,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-323',
+    name: 'Supplements Item 323',
+    price: 31.84,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-324',
+    name: 'Supplements Item 324',
+    price: 52.35,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-325',
+    name: 'Supplements Item 325',
+    price: 57.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-326',
+    name: 'Supplements Item 326',
+    price: 79.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-327',
+    name: 'Supplements Item 327',
+    price: 76.93,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-328',
+    name: 'Supplements Item 328',
+    price: 94.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-329',
+    name: 'Supplements Item 329',
+    price: 21.81,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-330',
+    name: 'Supplements Item 330',
+    price: 47.53,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-331',
+    name: 'Supplements Item 331',
+    price: 34.73,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-332',
+    name: 'Supplements Item 332',
+    price: 59.04,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-333',
+    name: 'Supplements Item 333',
+    price: 57.78,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-334',
+    name: 'Supplements Item 334',
+    price: 44.86,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-335',
+    name: 'Supplements Item 335',
+    price: 70.28,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-336',
+    name: 'Supplements Item 336',
+    price: 98.45,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-337',
+    name: 'Supplements Item 337',
+    price: 17.48,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-338',
+    name: 'Supplements Item 338',
+    price: 43.39,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-339',
+    name: 'Supplements Item 339',
+    price: 61.77,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-340',
+    name: 'Supplements Item 340',
+    price: 16.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-341',
+    name: 'Supplements Item 341',
+    price: 81.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-342',
+    name: 'Supplements Item 342',
+    price: 32.14,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-343',
+    name: 'Supplements Item 343',
+    price: 90.45,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-344',
+    name: 'Supplements Item 344',
+    price: 95.52,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-345',
+    name: 'Supplements Item 345',
+    price: 72.35,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-346',
+    name: 'Supplements Item 346',
+    price: 46.67,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-347',
+    name: 'Supplements Item 347',
+    price: 88.97,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-348',
+    name: 'Supplements Item 348',
+    price: 49.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-349',
+    name: 'Supplements Item 349',
+    price: 93.33,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-350',
+    name: 'Supplements Item 350',
+    price: 36.83,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-351',
+    name: 'Supplements Item 351',
+    price: 32.74,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-352',
+    name: 'Supplements Item 352',
+    price: 13.65,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-353',
+    name: 'Supplements Item 353',
+    price: 20.95,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-354',
+    name: 'Supplements Item 354',
+    price: 87.83,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-355',
+    name: 'Supplements Item 355',
+    price: 18.37,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-356',
+    name: 'Supplements Item 356',
+    price: 85.74,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-357',
+    name: 'Supplements Item 357',
+    price: 12.41,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-358',
+    name: 'Supplements Item 358',
+    price: 64.69,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-359',
+    name: 'Supplements Item 359',
+    price: 50.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-360',
+    name: 'Supplements Item 360',
+    price: 49.4,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-361',
+    name: 'Supplements Item 361',
+    price: 31.51,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-362',
+    name: 'Supplements Item 362',
+    price: 25.9,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-363',
+    name: 'Supplements Item 363',
+    price: 80.99,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-364',
+    name: 'Supplements Item 364',
+    price: 50.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-365',
+    name: 'Supplements Item 365',
+    price: 89.15,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-366',
+    name: 'Supplements Item 366',
     price: 57.94,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-337',
-    name: 'Extra Tumeric Platinum + Black Pepper 337',
-    price: 149.7,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-367',
+    name: 'Supplements Item 367',
+    price: 65.4,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-338',
-    name: 'Pure Marine Collagen 338',
-    price: 67.69,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
+    id: 'supplement-368',
+    name: 'Supplements Item 368',
+    price: 42.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-339',
-    name: 'Health Harmony Black Seed Oil 339',
-    price: 136.72,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-369',
+    name: 'Supplements Item 369',
+    price: 68.49,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-340',
-    name: 'Well Bet X Berberine 340',
-    price: 15.95,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-370',
+    name: 'Supplements Item 370',
+    price: 67.46,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-341',
-    name: 'All Max Grass Fed & Pasture raised collagen 341',
-    price: 29.6,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-371',
+    name: 'Supplements Item 371',
+    price: 46.61,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-342',
-    name: 'All Max Grass Fed & Pasture raised collagen 342',
-    price: 37.58,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-372',
+    name: 'Supplements Item 372',
+    price: 63.25,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-343',
-    name: 'Well Bet X Berberine 343',
-    price: 125.76,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-373',
+    name: 'Supplements Item 373',
+    price: 16.15,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-344',
-    name: 'Arvesa Retinol Collagen Vitamin C 344',
-    price: 146.89,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
+    id: 'supplement-374',
+    name: 'Supplements Item 374',
+    price: 54.58,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-345',
-    name: 'L 345',
-    price: 24.93,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-375',
+    name: 'Supplements Item 375',
+    price: 78.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-346',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 346',
-    price: 30.17,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-376',
+    name: 'Supplements Item 376',
+    price: 14.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-347',
-    name: 'OEM/ODM Collagen +C 347',
-    price: 50.56,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
+    id: 'supplement-377',
+    name: 'Supplements Item 377',
+    price: 72.84,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-348',
-    name: 'Genacol Aminolock Collagen 348',
-    price: 11.86,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-378',
+    name: 'Supplements Item 378',
+    price: 69.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-349',
-    name: 'All Max Grass Fed & Pasture raised collagen 349',
-    price: 117.69,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-379',
+    name: 'Supplements Item 379',
+    price: 97.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-350',
-    name: 'OEM/ODM Collagen +C 350',
-    price: 105.47,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
+    id: 'supplement-380',
+    name: 'Supplements Item 380',
+    price: 76.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-351',
-    name: 'Arvesa Retinol Collagen Vitamin C 351',
-    price: 58.91,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
+    id: 'supplement-381',
+    name: 'Supplements Item 381',
+    price: 91.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-352',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 352',
-    price: 124.63,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-382',
+    name: 'Supplements Item 382',
+    price: 74.22,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-353',
-    name: 'Multi Collagene Corps Entier 353',
-    price: 10.21,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-383',
+    name: 'Supplements Item 383',
+    price: 55.77,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-354',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 354',
-    price: 36.25,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-384',
+    name: 'Supplements Item 384',
+    price: 30.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-355',
-    name: 'Iron Gummies 355',
-    price: 141.12,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-385',
+    name: 'Supplements Item 385',
+    price: 40.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-356',
-    name: 'Naka Platinum Ultra Collagen 356',
-    price: 97.09,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
+    id: 'supplement-386',
+    name: 'Supplements Item 386',
+    price: 24.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-357',
-    name: 'Moonrin Retinol And Collagen 357',
-    price: 109.41,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
+    id: 'supplement-387',
+    name: 'Supplements Item 387',
+    price: 30.03,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-358',
-    name: 'Multi Collagene Corps Entier 358',
-    price: 72.62,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-388',
+    name: 'Supplements Item 388',
+    price: 86.99,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-359',
-    name: 'Centrum Forte Essentials 359',
-    price: 63.65,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
+    id: 'supplement-389',
+    name: 'Supplements Item 389',
+    price: 93.44,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-360',
-    name: 'Multi Collagene Corps Entier 360',
-    price: 62.6,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-390',
+    name: 'Supplements Item 390',
+    price: 38.6,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-361',
-    name: 'Genacol Aminolock Collagen 361',
-    price: 61.33,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-391',
+    name: 'Supplements Item 391',
+    price: 25.45,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-362',
-    name: 'Effective Appetite Suppresant 362',
+    id: 'supplement-392',
+    name: 'Supplements Item 392',
+    price: 87.19,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-393',
+    name: 'Supplements Item 393',
+    price: 95.01,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-394',
+    name: 'Supplements Item 394',
+    price: 82.9,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-395',
+    name: 'Supplements Item 395',
+    price: 69.59,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-396',
+    name: 'Supplements Item 396',
+    price: 81.47,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-397',
+    name: 'Supplements Item 397',
+    price: 67.1,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-398',
+    name: 'Supplements Item 398',
+    price: 77.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-399',
+    name: 'Supplements Item 399',
+    price: 76.03,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-400',
+    name: 'Supplements Item 400',
+    price: 55.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-401',
+    name: 'Supplements Item 401',
+    price: 26.61,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-402',
+    name: 'Supplements Item 402',
+    price: 83.38,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-403',
+    name: 'Supplements Item 403',
+    price: 29.46,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-404',
+    name: 'Supplements Item 404',
+    price: 14.9,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-405',
+    name: 'Supplements Item 405',
+    price: 56.04,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-406',
+    name: 'Supplements Item 406',
+    price: 63.28,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-407',
+    name: 'Supplements Item 407',
+    price: 85.81,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-408',
+    name: 'Supplements Item 408',
+    price: 53.54,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-409',
+    name: 'Supplements Item 409',
+    price: 67.54,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-410',
+    name: 'Supplements Item 410',
+    price: 26.06,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-411',
+    name: 'Supplements Item 411',
+    price: 76.2,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-412',
+    name: 'Supplements Item 412',
+    price: 93.19,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-413',
+    name: 'Supplements Item 413',
+    price: 30.83,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-414',
+    name: 'Supplements Item 414',
+    price: 17.9,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-415',
+    name: 'Supplements Item 415',
+    price: 88.85,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-416',
+    name: 'Supplements Item 416',
+    price: 18.3,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-417',
+    name: 'Supplements Item 417',
+    price: 38.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-418',
+    name: 'Supplements Item 418',
+    price: 81.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-419',
+    name: 'Supplements Item 419',
+    price: 65.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-420',
+    name: 'Supplements Item 420',
+    price: 43.22,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-421',
+    name: 'Supplements Item 421',
+    price: 67.7,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-422',
+    name: 'Supplements Item 422',
+    price: 80.9,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-423',
+    name: 'Supplements Item 423',
+    price: 15.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-424',
+    name: 'Supplements Item 424',
+    price: 64.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-425',
+    name: 'Supplements Item 425',
+    price: 63.55,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-426',
+    name: 'Supplements Item 426',
+    price: 44.03,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-427',
+    name: 'Supplements Item 427',
+    price: 63.99,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-428',
+    name: 'Supplements Item 428',
+    price: 99.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-429',
+    name: 'Supplements Item 429',
+    price: 51.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-430',
+    name: 'Supplements Item 430',
+    price: 83.73,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-431',
+    name: 'Supplements Item 431',
+    price: 97.32,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-432',
+    name: 'Supplements Item 432',
+    price: 24.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-433',
+    name: 'Supplements Item 433',
+    price: 37.54,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-434',
+    name: 'Supplements Item 434',
+    price: 52.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-435',
+    name: 'Supplements Item 435',
+    price: 45.57,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-436',
+    name: 'Supplements Item 436',
+    price: 24.33,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-437',
+    name: 'Supplements Item 437',
+    price: 75.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-438',
+    name: 'Supplements Item 438',
+    price: 12.68,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-439',
+    name: 'Supplements Item 439',
+    price: 52.6,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-440',
+    name: 'Supplements Item 440',
+    price: 28.87,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-441',
+    name: 'Supplements Item 441',
+    price: 74.0,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-442',
+    name: 'Supplements Item 442',
+    price: 61.91,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-443',
+    name: 'Supplements Item 443',
+    price: 91.93,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-444',
+    name: 'Supplements Item 444',
+    price: 23.77,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-445',
+    name: 'Supplements Item 445',
+    price: 99.27,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-446',
+    name: 'Supplements Item 446',
+    price: 92.97,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-447',
+    name: 'Supplements Item 447',
+    price: 44.81,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-448',
+    name: 'Supplements Item 448',
+    price: 73.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-449',
+    name: 'Supplements Item 449',
+    price: 11.87,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-450',
+    name: 'Supplements Item 450',
     price: 65.38,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-363',
-    name: 'Centrum Forte Essentials 363',
-    price: 89.7,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
+    id: 'supplement-451',
+    name: 'Supplements Item 451',
+    price: 71.07,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-364',
-    name: 'All Max Grass Fed & Pasture raised collagen 364',
-    price: 68.54,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-452',
+    name: 'Supplements Item 452',
+    price: 31.17,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-365',
-    name: 'High Patency Omega 3-6-9 365',
-    price: 50.32,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-453',
+    name: 'Supplements Item 453',
+    price: 98.13,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-366',
-    name: 'D+K2 MK-7 Form 366',
-    price: 25.24,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-367',
-    name: 'Organika Enhanced Collagen 367',
-    price: 110.58,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-368',
-    name: 'OEM/ODM Collagen +C 368',
-    price: 48.41,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-369',
-    name: 'Full Chea Detox Tea 369',
-    price: 113.5,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-370',
-    name: 'Genacol Aminolock Collagen 370',
-    price: 28.02,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-371',
-    name: 'Centrum Forte Essentials 371',
-    price: 39.2,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-372',
-    name: 'Server Cracked Heel Repair 372',
-    price: 83.79,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-373',
-    name: 'Collagen Powder For Women 373',
-    price: 111.05,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-374',
-    name: 'D+K2 MK-7 Form 374',
-    price: 141.74,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-375',
-    name: 'Nature 375',
-    price: 21.98,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-376',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 376',
-    price: 13.13,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-377',
-    name: 'Naka Platinum Ultra Collagen 377',
-    price: 28.26,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-378',
-    name: 'Tumeric Bioperine Garlic Ginger 378',
-    price: 55.26,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-379',
-    name: 'Genacol Aminolock Collagen 379',
-    price: 64.06,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-380',
-    name: 'Multi Collagene Corps Entier 380',
-    price: 78.34,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-381',
-    name: 'Tumeric Bioperine Garlic Ginger 381',
-    price: 107.47,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-382',
-    name: 'OEM/ODM Collagen +C 382',
-    price: 76.43,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-383',
-    name: 'Naka Platinum Ultra Collagen 383',
-    price: 106.08,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-384',
-    name: 'Moonrin Retinol And Collagen 384',
-    price: 18.61,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-385',
-    name: 'Multi Collagene Corps Entier 385',
-    price: 126.71,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-386',
-    name: 'L 386',
-    price: 118.41,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-387',
-    name: 'Health Harmony Black Seed Oil 387',
-    price: 115.17,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-388',
-    name: 'Well Bet X Berberine 388',
-    price: 125.82,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-389',
-    name: 'Organika Enhanced Collagen 389',
-    price: 122.39,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-390',
-    name: 'Centrum Forte Essentials 390',
+    id: 'supplement-454',
+    name: 'Supplements Item 454',
     price: 94.32,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-391',
-    name: 'Centrum Forte Essentials 391',
-    price: 85.86,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
+    id: 'supplement-455',
+    name: 'Supplements Item 455',
+    price: 57.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-392',
-    name: 'Arvesa Retinol Collagen Vitamin C 392',
-    price: 120.33,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
+    id: 'supplement-456',
+    name: 'Supplements Item 456',
+    price: 89.68,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-393',
-    name: 'Ashwagandha with Black Pepper 393',
-    price: 39.54,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-457',
+    name: 'Supplements Item 457',
+    price: 38.63,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-394',
-    name: 'Well Bet X Berberine 394',
-    price: 60.97,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-458',
+    name: 'Supplements Item 458',
+    price: 33.47,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-395',
-    name: 'Ashwagandha with Black Pepper 395',
-    price: 148.28,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-459',
+    name: 'Supplements Item 459',
+    price: 13.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-396',
-    name: 'OEM/ODM Collagen +C 396',
-    price: 84.55,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
+    id: 'supplement-460',
+    name: 'Supplements Item 460',
+    price: 90.21,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-397',
-    name: 'Genacol Aminolock Collagen 397',
-    price: 117.64,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-461',
+    name: 'Supplements Item 461',
+    price: 71.78,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-398',
-    name: 'Genacol Aminolock Collagen 398',
-    price: 67.56,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-462',
+    name: 'Supplements Item 462',
+    price: 92.44,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-399',
-    name: 'Moonrin Retinol And Collagen 399',
-    price: 77.57,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
+    id: 'supplement-463',
+    name: 'Supplements Item 463',
+    price: 53.88,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-400',
-    name: 'Ashwagandha with Black Pepper 400',
-    price: 67.85,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-464',
+    name: 'Supplements Item 464',
+    price: 14.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-401',
-    name: 'Pure Marine Collagen 401',
-    price: 74.92,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
+    id: 'supplement-465',
+    name: 'Supplements Item 465',
+    price: 90.81,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-402',
-    name: 'Pure Marine Collagen 402',
-    price: 139.29,
-    image: '/images/natural images/Pure Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ashwagandha for stress management and vitality - Specially formulated for your needs.'
+    id: 'supplement-466',
+    name: 'Supplements Item 466',
+    price: 86.42,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-403',
-    name: 'Purefuly Benfotiamine 403',
-    price: 52.71,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-467',
+    name: 'Supplements Item 467',
+    price: 90.71,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-404',
-    name: 'Centrum Forte Essentials 404',
-    price: 48.19,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
+    id: 'supplement-468',
+    name: 'Supplements Item 468',
+    price: 75.12,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-405',
-    name: 'Genacol Aminolock Collagen 405',
-    price: 118.45,
-    image: '/images/natural images/Genacol Amino lock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-469',
+    name: 'Supplements Item 469',
+    price: 43.54,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-406',
-    name: 'Naka Platinum Ultra Collagen 406',
-    price: 31.39,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
+    id: 'supplement-470',
+    name: 'Supplements Item 470',
+    price: 65.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-407',
-    name: 'Sproos Marine Collagen 407',
-    price: 24.24,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
+    id: 'supplement-471',
+    name: 'Supplements Item 471',
+    price: 44.26,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-408',
-    name: 'Moonrin Retinol And Collagen 408',
-    price: 58.84,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
+    id: 'supplement-472',
+    name: 'Supplements Item 472',
+    price: 70.76,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-409',
-    name: 'Well Bet X Berberine 409',
-    price: 77.93,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-473',
+    name: 'Supplements Item 473',
+    price: 68.89,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-410',
-    name: 'Sproos Marine Collagen 410',
-    price: 39.21,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
+    id: 'supplement-474',
+    name: 'Supplements Item 474',
+    price: 89.79,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-411',
-    name: 'Multi Collagene Corps Entier 411',
-    price: 85.94,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-475',
+    name: 'Supplements Item 475',
+    price: 66.51,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-412',
-    name: 'Arvesa Retinol Collagen Vitamin C 412',
-    price: 141.24,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
+    id: 'supplement-476',
+    name: 'Supplements Item 476',
+    price: 43.24,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-413',
-    name: 'Purefuly Benfotiamine 413',
-    price: 146.61,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-477',
+    name: 'Supplements Item 477',
+    price: 96.59,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-414',
-    name: 'Sproos Marine Collagen 414',
-    price: 125.7,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
+    id: 'supplement-478',
+    name: 'Supplements Item 478',
+    price: 93.99,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-415',
-    name: 'Purefuly Benfotiamine 415',
-    price: 124.51,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-479',
+    name: 'Supplements Item 479',
+    price: 47.95,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-416',
-    name: 'L 416',
-    price: 38.06,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-480',
+    name: 'Supplements Item 480',
+    price: 15.92,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-417',
-    name: 'Health Harmony Black Seed Oil 417',
-    price: 129.61,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-481',
+    name: 'Supplements Item 481',
+    price: 52.26,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-418',
-    name: 'Multi Collagene Corps Entier 418',
-    price: 112.55,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-482',
+    name: 'Supplements Item 482',
+    price: 89.91,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-419',
-    name: 'Day And Night Retinol Collagen 419',
-    price: 33.34,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
+    id: 'supplement-483',
+    name: 'Supplements Item 483',
+    price: 78.16,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-420',
-    name: 'Iron Gummies 420',
-    price: 134.56,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-484',
+    name: 'Supplements Item 484',
+    price: 24.39,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-421',
-    name: 'Tumeric Bioperine Garlic Ginger 421',
-    price: 99.72,
-    image: '/images/natural images/Tumeric Bioperine Garlic Ginger.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-485',
+    name: 'Supplements Item 485',
+    price: 79.66,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-422',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 422',
-    price: 43.02,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
+    id: 'supplement-486',
+    name: 'Supplements Item 486',
+    price: 49.11,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-423',
-    name: 'Server Cracked Heel Repair 423',
-    price: 71.23,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
+    id: 'supplement-487',
+    name: 'Supplements Item 487',
+    price: 44.44,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   },
   {
-    id: 'health-424',
-    name: 'Naka Platinum Ultra Collagen 424',
-    price: 133.15,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-425',
-    name: 'Day And Night Retinol Collagen 425',
-    price: 87.88,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-426',
-    name: 'Moonrin Retinol And Collagen 426',
-    price: 73.26,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-427',
-    name: 'Full Chea Detox Tea 427',
-    price: 87.24,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-428',
-    name: 'Colgate Mouth Wash 428',
-    price: 61.16,
-    image: '/images/natural images/Colagate MouthWash.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-429',
-    name: 'Naka Platinum Ultra Collagen 429',
-    price: 72.69,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-430',
-    name: 'Collagen Powder For Women 430',
-    price: 26.1,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-431',
-    name: 'Effective Appetite Suppresant 431',
-    price: 15.65,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-432',
-    name: 'Day And Night Retinol Collagen 432',
-    price: 15.57,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-433',
-    name: 'L 433',
-    price: 86.53,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-434',
-    name: 'Genacol Aminolock Collagen 434',
-    price: 40.2,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-435',
-    name: 'D+K2 MK-7 Form 435',
-    price: 84.25,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-436',
-    name: 'Genacol Aminolock Collagen 436',
-    price: 101.36,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-437',
-    name: 'Health Harmony Black Seed Oil 437',
-    price: 31.79,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-438',
-    name: 'Health Harmony Black Seed Oil 438',
-    price: 5.41,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-439',
-    name: 'Nature 439',
-    price: 113.55,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-440',
-    name: 'Arvesa Retinol Collagen Vitamin C 440',
-    price: 54.33,
-    image: '/images/natural images/Arvesa Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Blood sugar support and metabolic health supplement - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-441',
-    name: 'Iron Gummies 441',
-    price: 94.8,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-442',
-    name: 'Naka Ultra Collagen High Potency Ashwagandha 442',
-    price: 48.75,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-443',
-    name: 'OEM/ODM Collagen +C 443',
-    price: 107.64,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-444',
-    name: 'Resveratrol  700 mg 444',
-    price: 80.78,
-    image: '/images/natural images/Resveratrol 700mg.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-445',
-    name: 'Day And Night Retinol Collagen 445',
-    price: 114.97,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-446',
-    name: 'Genacol Aminolock Collagen 446',
-    price: 84.24,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-447',
-    name: 'OEM/ODM Collagen +C 447',
-    price: 142.77,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-448',
-    name: 'Moonrin Retinol And Collagen 448',
-    price: 142.45,
-    image: '/images/natural images/Moon Rin Retinol And Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure black seed oil for immune system support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-449',
-    name: 'Effective Appetite Suppresant 449',
-    price: 108.22,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-450',
-    name: 'Server Cracked Heel Repair 450',
-    price: 26.95,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-451',
-    name: 'Day And Night Retinol Collagen 451',
-    price: 20.04,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-452',
-    name: 'Organika Collagen Type 1,2,3 452',
-    price: 82.19,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-453',
-    name: 'Extra Tumeric Platinum + Black Pepper 453',
-    price: 107.2,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-454',
-    name: 'Genacol Aminolock Collagen 454',
-    price: 149.13,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-455',
-    name: 'Well Bet X Berberine 455',
-    price: 90.82,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-456',
-    name: 'Health Harmony Black Seed Oil 456',
-    price: 52.56,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-457',
-    name: 'Ashwagandha with Black Pepper 457',
-    price: 116.01,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-458',
-    name: 'D+K2 MK-7 Form 458',
-    price: 52.67,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-459',
-    name: 'Full Chea Detox Tea 459',
-    price: 6.24,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-460',
-    name: 'All Max Grass Fed & Pasture raised collagen 460',
-    price: 132.01,
-    image: '/images/natural images/All Max Grass Fed and Pasture Raised Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-461',
-    name: 'Centrum Forte Essentials 461',
-    price: 8.68,
-    image: '/images/natural images/Centrum Forte Essentials.jpg',
-    category: 'Health Products',
-    description: 'Complete multivitamin for daily nutritional support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-462',
-    name: 'Naka Platinum Ultra Collagen 462',
-    price: 102.69,
-    image: '/images/natural images/Naka Ultra Collagen.jpg',
-    category: 'Health Products',
-    description: 'Premium ultra collagen for maximum absorption and benefits - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-463',
-    name: 'Extra Tumeric Platinum + Black Pepper 463',
-    price: 129.11,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-464',
-    name: 'Organika Collagen Type 1,2,3 464',
-    price: 88.64,
-    image: '/images/natural images/Organika Collagen Type 1,2,3.jpg',
-    category: 'Health Products',
-    description: 'Complete collagen complex for skin, joints, and overall health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-465',
-    name: 'Senallis Hyaluronic Acid Serum 465',
-    price: 106.15,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-466',
-    name: 'Ashwagandha with Black Pepper 466',
-    price: 79.68,
-    image: '/images/natural images/Ashwagandha with black pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-467',
-    name: 'OEM/ODM Collagen +C 467',
-    price: 97.73,
-    image: '/images/natural images/OEM-ODM Collagen +c.jpg',
-    category: 'Health Products',
-    description: 'Delicious collagen gummies for skin elasticity and hydration - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-468',
-    name: 'Well Bet X Berberine 468',
-    price: 143.08,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-469',
-    name: 'Nature 469',
-    price: 95.53,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-470',
-    name: 'Well Bet X Berberine 470',
-    price: 11.69,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-471',
-    name: 'Day And Night Retinol Collagen 471',
-    price: 79.64,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-472',
-    name: 'Purefuly Benfotiamine 472',
-    price: 131.49,
-    image: '/images/natural images/Purefully Benfotiamine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-473',
-    name: 'Extra Tumeric Platinum + Black Pepper 473',
-    price: 21.11,
-    image: '/images/natural images/Extra Tumeric Platinum + Black Pepper.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-474',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 474',
-    price: 137.21,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-475',
-    name: 'Collagen Powder For Women 475',
-    price: 36.78,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-476',
-    name: 'High Patency Omega 3-6-9 476',
-    price: 82.35,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-477',
-    name: 'Senallis Hyaluronic Acid Serum 477',
-    price: 125.01,
-    image: '/images/natural images/Senallis Hyaluronic  Acid Serum.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-478',
-    name: 'Multi Collagene Corps Entier 478',
-    price: 46.22,
-    image: '/images/natural images/Multi Collagene Corps Entier.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-479',
-    name: 'Collagen Powder For Women 479',
-    price: 6.38,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-480',
-    name: 'Server Cracked Heel Repair 480',
-    price: 127.97,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-481',
-    name: 'D+K2 MK-7 Form 481',
-    price: 69.77,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-482',
-    name: 'Sproos Marine Collagen 482',
-    price: 109.45,
-    image: '/images/natural images/Sproos Marine Collagen.jpg',
-    category: 'Health Products',
-    description: 'Pure marine collagen for skin and joint support - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-483',
-    name: 'Day And Night Retinol Collagen 483',
-    price: 143.44,
-    image: '/images/natural images/Day And Night Retinol Collagen.jpg',
-    category: 'Health Products',
-    description: 'Essential fatty acids for heart and brain health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-484',
-    name: 'Genacol Aminolock Collagen 484',
-    price: 17.42,
-    image: '/images/natural images/Genacol Aminolock Collagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-485',
-    name: 'Effective Appetite Suppresant 485',
-    price: 147.67,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-486',
-    name: 'Iron Gummies 486',
-    price: 40.68,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-487',
-    name: 'Server Cracked Heel Repair 487',
-    price: 41.83,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-488',
-    name: 'L 488',
-    price: 26.77,
-    image: '/images/natural images/Loreal Paris Vitamin c.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-489',
-    name: 'Organika Enhanced Collagen 489',
-    price: 65.53,
-    image: '/images/natural images/Organika Enhanced Colagen.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-490',
-    name: 'Iron Gummies 490',
-    price: 66.82,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-491',
-    name: 'Tumeric Curcumin Super Vitamin C Serum 491',
-    price: 106.95,
-    image: '/images/natural images/Well Bet X Berberine.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-492',
-    name: 'Full Chea Detox Tea 492',
-    price: 78.04,
-    image: '/images/natural images/Full Chea Detox Tea.jpg',
-    category: 'Health Products',
-    description: 'Natural detox tea for cleansing and weight management - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-493',
-    name: 'Iron Gummies 493',
-    price: 110.32,
-    image: '/images/natural images/Iron Gummies.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-494',
-    name: 'Server Cracked Heel Repair 494',
-    price: 138.54,
-    image: '/images/natural images/Server Cracked Heel Repair.jpg',
-    category: 'Health Products',
-    description: 'High-quality marine collagen for beauty and wellness - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-495',
-    name: 'Health Harmony Black Seed Oil 495',
-    price: 113.12,
-    image: '/images/natural images/Healths Harmony Black Seed Oil.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-496',
-    name: 'Nature 496',
-    price: 112.34,
-    image: '/images/natural images/Nature',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-497',
-    name: 'High Patency Omega 3-6-9 497',
-    price: 23.63,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-498',
-    name: 'Collagen Powder For Women 498',
-    price: 43.98,
-    image: '/images/natural images/Collagen Powder For Women.jpg',
-    category: 'Health Products',
-    description: 'Specialized collagen formula designed for women\'s health - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-499',
-    name: 'High Patency Omega 3-6-9 499',
-    price: 9.43,
-    image: '/images/natural images/High Patency Omega 3-6-9.jpg',
-    category: 'Health Products',
-    description: 'Anti-inflammatory support with turmeric and curcumin - Specially formulated for your needs.'
-  },
-  {
-    id: 'health-500',
-    name: 'D+K2 MK-7 Form 500',
-    price: 135.2,
-    image: '/images/natural images/D+K2 MK-7 form.jpg',
-    category: 'Health Products',
-    description: 'Essential vitamins D3 and K2 for bone and heart health - Specially formulated for your needs.'
+    id: 'supplement-488',
+    name: 'Supplements Item 488',
+    price: 19.31,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-489',
+    name: 'Supplements Item 489',
+    price: 65.09,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-490',
+    name: 'Supplements Item 490',
+    price: 92.43,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-491',
+    name: 'Supplements Item 491',
+    price: 36.98,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-492',
+    name: 'Supplements Item 492',
+    price: 98.02,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-493',
+    name: 'Supplements Item 493',
+    price: 66.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-494',
+    name: 'Supplements Item 494',
+    price: 62.08,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-495',
+    name: 'Supplements Item 495',
+    price: 59.1,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-496',
+    name: 'Supplements Item 496',
+    price: 16.71,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-497',
+    name: 'Supplements Item 497',
+    price: 38.26,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-498',
+    name: 'Supplements Item 498',
+    price: 94.29,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-499',
+    name: 'Supplements Item 499',
+    price: 21.96,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
+  },
+  {
+    id: 'supplement-500',
+    name: 'Supplements Item 500',
+    price: 41.01,
+    image: '/images/placeholder.jpg',
+    category: 'Supplements',
+    description: 'Generic supplements product - Specially formulated for your needs.'
   }
 ];
