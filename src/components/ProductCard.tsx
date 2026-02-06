@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, ShoppingCart } from 'lucide-react';
+import ProductImage from './ProductImage';
 
 interface ProductCardProps {
   id: string;
@@ -25,21 +26,17 @@ export default function ProductCard({
   isInWishlist, 
   isAddedToCart 
 }: ProductCardProps) {
-  // Calculate UGX prices (1 USD = 3700 UGX)
-  const ugxPrice3pcs = (price * 3700).toLocaleString();
-  const ugxPrice12pcs = (price * 3700 * 12).toLocaleString();
-
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
       {/* Product Image Container */}
       <div className="relative p-4 pb-2">
         <div className="relative bg-gray-50 rounded-lg overflow-hidden">
           <Link to={`/shop-detail/${id}`} className="block">
-            <img 
+            <ProductImage 
               src={image} 
               alt={name} 
+              category={category}
               className="w-full h-auto object-contain max-h-48 mx-auto block"
-              style={{ aspectRatio: 'auto' }}
             />
           </Link>
           

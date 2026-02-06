@@ -86,10 +86,11 @@ export default function Products() {
     setCurrentPromoSlide(0);
   }, [selectedCategory]);
 
-  // Filter products by category
-  const filteredProducts = selectedCategory === 'All'
+  // Filter products by category and ensure they have a valid image
+  const filteredProducts = (selectedCategory === 'All'
     ? allProducts
-    : getProductsByCategory(selectedCategory);
+    : getProductsByCategory(selectedCategory)
+  ).filter(p => p.image && p.image.trim() !== '' && !p.image.includes('undefined'));
 
   // Sort products
   const sortedProducts = [...filteredProducts].sort((a, b) => {
