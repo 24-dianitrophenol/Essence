@@ -90,13 +90,13 @@ export default function Products() {
   ).filter(p => {
     // A real product should have a non-placeholder image
     const hasRealImage = p.image && p.image.trim() !== '' && !p.image.toLowerCase().includes('placeholder') && !p.image.toLowerCase().includes('undefined');
-    
+
     // Test items often have names like "Category Item XX"
     const isTestName = p.name.includes('Item ') || p.name.match(new RegExp(`${p.category} \\d+`, 'i'));
-    
+
     // Suspect very low prices (anything less than ~0.10 USD / 370 UGX)
     const hasRealisticPrice = p.price > 370;
-    
+
     return hasRealImage && !isTestName && hasRealisticPrice;
   });
 
@@ -130,6 +130,28 @@ export default function Products() {
 
   return (
     <div className="pt-16">
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://pureesssense.com/"
+            }, {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Products",
+              "item": "https://pureesssense.com/products"
+            }]
+          })
+        }}
+      />
+
       {/* Full Width Hero Image */}
       <div className="relative w-full mb-8 overflow-hidden" style={{ aspectRatio: '1351/353' }}>
         <div className="flex transition-transform duration-1000 ease-in-out h-full"
@@ -176,8 +198,8 @@ export default function Products() {
                 <button
                   onClick={() => setSelectedCategory('All')}
                   className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 text-sm ${selectedCategory === 'All'
-                      ? 'bg-[#dd2581] text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-[#f98203] hover:text-white'
+                    ? 'bg-[#dd2581] text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-[#f98203] hover:text-white'
                     }`}
                 >
                   All Products
@@ -187,8 +209,8 @@ export default function Products() {
                     key={category}
                     onClick={() => setSelectedCategory(category)}
                     className={`w-full text-left px-4 py-2 rounded-md transition-colors duration-200 text-sm ${selectedCategory === category
-                        ? 'bg-[#dd2581] text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-[#f98203] hover:text-white'
+                      ? 'bg-[#dd2581] text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-[#f98203] hover:text-white'
                       }`}
                   >
                     {category}

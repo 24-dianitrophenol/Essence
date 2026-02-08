@@ -45,10 +45,10 @@ type Product = {
 
 // Get trending products (10 random products from Supplements category)
 const trendingProducts: Product[] = allProducts
-  .filter(p => 
-    p.category === 'Supplements' && 
-    p.image && 
-    p.image.trim() !== '' && 
+  .filter(p =>
+    p.category === 'Supplements' &&
+    p.image &&
+    p.image.trim() !== '' &&
     !p.image.toLowerCase().includes('placeholder') &&
     !p.name.includes('Item ') &&
     p.price > 370
@@ -58,10 +58,10 @@ const trendingProducts: Product[] = allProducts
 
 const getCategoryImage = (category: string) => {
   // Find a product with a valid image (not empty and not a placeholder)
-  const product = allProducts.find(p => 
-    p.category === category && 
-    p.image && 
-    p.image !== '' && 
+  const product = allProducts.find(p =>
+    p.category === category &&
+    p.image &&
+    p.image !== '' &&
     !p.image.toLowerCase().includes('placeholder')
   );
   return product?.image || '/images/placeholder.jpg';
@@ -154,8 +154,8 @@ const features = [
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { addToCart } = useCart();
-  const [addedToCart, setAddedToCart] = useState<{[key: string]: boolean}>({});
-  const [wishlist, setWishlist] = useState<{[key: string]: boolean}>({});
+  const [addedToCart, setAddedToCart] = useState<{ [key: string]: boolean }>({});
+  const [wishlist, setWishlist] = useState<{ [key: string]: boolean }>({});
 
   // Carousel refs for sliding
   const testimonialsRef = useRef<HTMLDivElement>(null);
@@ -189,7 +189,7 @@ export default function Home() {
       quantity: 1
     });
     setAddedToCart(prev => ({ ...prev, [product.id]: true }));
-    
+
     // Reset button after 2 seconds
     setTimeout(() => {
       setAddedToCart(prev => ({ ...prev, [product.id]: false }));
@@ -202,10 +202,27 @@ export default function Home() {
 
   return (
     <div className="pt-0">
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://pureesssense.com/"
+            }]
+          })
+        }}
+      />
+
       {/* Hero Slider - Clean images sliding left */}
       <div className="relative w-full overflow-hidden" style={{ aspectRatio: '1351/353' }}>
         <div className="flex transition-transform duration-3000 ease-in-out h-full"
-             style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
           {slides.map((slide, index) => (
             <div key={index} className="min-w-full h-full">
               <img
@@ -248,14 +265,14 @@ export default function Home() {
         {/* Header - Centered Layout */}
         <div className="flex justify-center items-center gap-6 mb-6">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Shop by Category</h2>
-          <Link 
-            to="/products" 
+          <Link
+            to="/products"
             className="border border-[#dd2581] text-[#dd2581] px-3 py-1 rounded-full text-xs font-medium hover:bg-[#dd2581] hover:text-white transition-all duration-300"
           >
             View More
           </Link>
         </div>
-        
+
         {/* Horizontal Scrollable Categories */}
         <div className="relative bg-white rounded-2xl shadow-lg p-4 sm:p-6">
           <motion.button
@@ -269,7 +286,7 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
             </svg>
           </motion.button>
-          
+
           <div
             ref={categoryRef}
             className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 px-10"
@@ -296,7 +313,7 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-          
+
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -316,14 +333,14 @@ export default function Home() {
         {/* Header - Centered Layout */}
         <div className="flex justify-center items-center gap-6 mb-6">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Trending Items</h2>
-          <Link 
-            to="/products" 
+          <Link
+            to="/products"
             className="border border-[#dd2581] text-[#dd2581] px-3 py-1 rounded-full text-xs font-medium hover:bg-[#dd2581] hover:text-white transition-all duration-300"
           >
             View More
           </Link>
         </div>
-        
+
         {/* Horizontal Scrollable Trending Products */}
         <div className="relative">
           <motion.button
@@ -337,7 +354,7 @@ export default function Home() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
             </svg>
           </motion.button>
-          
+
           <div
             ref={trendingRef}
             className="flex gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 px-10"
@@ -352,36 +369,35 @@ export default function Home() {
                 <div className="relative p-3">
                   <div className="relative bg-gray-50 rounded-lg overflow-hidden aspect-square flex items-center justify-center">
                     <Link to={`/shop-detail/${product.id}`} className="w-full h-full flex items-center justify-center p-4">
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
+                      <img
+                        src={product.image}
+                        alt={product.name}
                         className="max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-110"
                       />
                     </Link>
-                    
+
                     {/* TRENDING Badge */}
                     <div className="absolute top-2 left-2">
                       <span className="bg-[#f98203] text-white px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider shadow-sm">
                         NEW
                       </span>
                     </div>
-                    
+
                     {/* Wishlist Heart */}
                     <button
                       onClick={() => toggleWishlist(product.id)}
                       className="absolute top-2 right-2 p-1.5 bg-white/90 backdrop-blur-sm rounded-full shadow-sm hover:bg-white transition-colors z-10"
                     >
-                      <Heart 
-                        className={`w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 ${
-                          wishlist[product.id] 
-                            ? 'fill-red-500 text-red-500' 
+                      <Heart
+                        className={`w-3.5 h-3.5 sm:w-4.5 sm:h-4.5 ${wishlist[product.id]
+                            ? 'fill-red-500 text-red-500'
                             : 'text-gray-400'
-                        }`}
+                          }`}
                       />
                     </button>
                   </div>
                 </div>
-                
+
                 {/* Product Info */}
                 <div className="p-4 pt-0 flex-1 flex flex-col">
                   <div className="mb-3">
@@ -390,23 +406,22 @@ export default function Home() {
                         {product.name}
                       </h3>
                     </Link>
-                    
+
                     <div className="mt-2 text-center">
                       <span className="text-sm sm:text-lg font-extrabold text-[#dd2581]">
                         ${((product.price / 3600) * 1.55).toFixed(2)}
                       </span>
                     </div>
                   </div>
-                  
+
                   {/* Add to Cart Button */}
                   <div className="mt-auto">
                     <button
                       onClick={() => handleAddToCart(product)}
-                      className={`w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg font-bold text-[10px] sm:text-xs tracking-wider transition-all duration-300 ${
-                        addedToCart[product.id] 
-                          ? 'bg-green-600 text-white shadow-inner scale-[0.98]' 
+                      className={`w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg font-bold text-[10px] sm:text-xs tracking-wider transition-all duration-300 ${addedToCart[product.id]
+                          ? 'bg-green-600 text-white shadow-inner scale-[0.98]'
                           : 'bg-[#dd2581] text-white hover:bg-[#f98203] hover:shadow-lg active:scale-95'
-                      }`}
+                        }`}
                     >
                       <ShoppingCart className="w-3.5 h-3.5" />
                       <span className="uppercase">{addedToCart[product.id] ? 'ADDED!' : 'ADD TO CART'}</span>
@@ -416,7 +431,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          
+
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
