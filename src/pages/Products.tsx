@@ -223,10 +223,7 @@ export default function Products() {
           {/* Main Content */}
           <div className="lg:col-span-3">
             {/* Page Header */}
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-xl font-semibold text-gray-800">
-                {sortedProducts.length} Products
-              </h2>
+            <div className="flex justify-end items-center mb-6">
               <div className="flex items-center space-x-2">
                 <span className="text-gray-600 text-sm">Sort by</span>
                 <select
