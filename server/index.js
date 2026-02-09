@@ -5,6 +5,8 @@ const cors = require('cors');
 const passport = require('passport');
 
 const authRoutes = require('./routes/auth');
+const productRoutes = require('./routes/products');
+const notificationRoutes = require('./routes/notifications');
 
 const app = express();
 
@@ -15,6 +17,8 @@ app.use(passport.initialize());
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/notifications', notificationRoutes);
 
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)

@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { allProducts } from '../data/allProducts';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
 
 const categories = [
   'All Categories',
@@ -25,6 +26,7 @@ export default function Navbar() {
   const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   const location = useLocation();
   const { cartCount } = useCart();
+  const { user } = useAuth();
 
   const isActive = (path: string) => {
     return location.pathname === (path === 'Home' ? '/' : `/${path.toLowerCase()}`);
@@ -89,6 +91,19 @@ export default function Navbar() {
                     </Link>
                   </motion.div>
                 ))}
+                {user?.role === 'admin' && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                  >
+                    <Link
+                      to="/admin"
+                      className="bg-white text-[#dd2581] px-4 py-2 rounded-full text-xs font-bold hover:bg-[#f98203] hover:text-white transition-all shadow-lg"
+                    >
+                      DASHBOARD
+                    </Link>
+                  </motion.div>
+                )}
               </div>
               <motion.button
                 whileHover={{ scale: 1.1 }}
