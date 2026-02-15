@@ -47,7 +47,7 @@ async function scrapeCategory() {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
         let scrolls = 0;
-        const maxPages = 100; // Deep scrape for large catalogs
+        const maxPages = 500; // Increased for large catalogs (targeting ~2500 per cat)
 
         while (allProducts.size < limit && scrolls < maxPages) {
             console.log(`\n📄 Processing page ${scrolls + 1}... URL: ${page.url()}`);
@@ -92,10 +92,17 @@ async function scrapeCategory() {
                     const id = link.split('/').pop().split('?')[0] || `auto-${Math.random()}`;
 
                     if (title && price > 0) {
+                        // Conversion & Markup Logic
+                        // 1. Convert UGX to USD (1 USD = 3600 UGX)
+                        // 2. Add 55% markup (multiply by 1.55)
+                        // 3. Round to 2 decimal places
+                        const priceInUSD = (price / 3600) * 1.55;
+                        const finalPrice = Math.round(priceInUSD * 100) / 100;
+
                         results.push({
                             id: id,
                             name: title,
-                            price: price,
+                            price: finalPrice,
                             image: image,
                             category: category,
                             description: `${title} - High quality product from ${category}.`,

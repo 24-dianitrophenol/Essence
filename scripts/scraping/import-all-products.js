@@ -30,8 +30,8 @@ for (const cat of categories) {
         console.log(`\n----------------------------------------`);
         console.log(`Processing: ${cat.name}`);
         // Run the scrape script synchronously
-        // Limit to 48 products per category
-        execSync(`node scripts/scraping/scrape-category.js "${cat.name}" "${cat.url}" 240`, {
+        // Limit to 2500 products per category (8 categories * 2500 = 20,000)
+        execSync(`node scripts/scraping/scrape-category.js "${cat.name}" "${cat.url}" 2500`, {
             stdio: 'inherit',
             cwd: process.cwd()
         });

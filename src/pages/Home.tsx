@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Truck, ShieldCheck, Phone, Package, Smile, ShoppingCart, Heart } from 'lucide-react';
+import { ShoppingCart, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { allProducts } from '../data/allProducts';
 import { useCart } from '../context/CartContext';
@@ -112,44 +112,7 @@ const categoryProducts = [
 
 
 
-const features = [
-  {
-    icon: Leaf,
-    title: "100% Natural Ingredients",
-    description: "Pure, safe, and effective for all skin types.",
-    backDescription: "Our products are made with certified organic ingredients sourced from sustainable farms worldwide."
-  },
-  {
-    icon: Truck,
-    title: "Fast Delivery",
-    description: "Get your order quickly, wherever you are in Uganda.",
-    backDescription: "Same-day delivery in Kampala and 2-3 days nationwide with real-time tracking."
-  },
-  {
-    icon: ShieldCheck,
-    title: "Secure Payments",
-    description: "Your transactions are always safe and protected.",
-    backDescription: "Bank-level encryption and multiple payment options including mobile money and cards."
-  },
-  {
-    icon: Phone,
-    title: "Customer Support",
-    description: "Friendly help whenever you need it.",
-    backDescription: "24/7 WhatsApp support and expert skincare consultations available."
-  },
-  {
-    icon: Package,
-    title: "Eco-Friendly Packaging",
-    description: "We care for the planet as much as your skin.",
-    backDescription: "100% recyclable packaging made from biodegradable materials."
-  },
-  {
-    icon: Smile,
-    title: "Satisfaction Guarantee",
-    description: "We promise you'll love your purchase.",
-    backDescription: "30-day money-back guarantee and free product exchanges."
-  }
-];
+
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -475,42 +438,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Shop With Us - Pink front, Orange back, no gradient */}
-      <section id="why-shop-with-us" className="max-w-7xl mx-auto px-4 py-16">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-3xl font-bold text-[#f98203] mb-12 text-center"
-        >
-          Why Shop With Us?
-        </motion.h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="flip-card h-64"
-            >
-              <div className="flip-card-inner">
-                {/* Front of card - Pink */}
-                <div className="flip-card-front bg-[#dd2581] text-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center">
-                  {React.createElement(feature.icon, { className: "h-12 w-12 mb-4" })}
-                  <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
-                  <p className="text-white/90">{feature.description}</p>
-                </div>
-                {/* Back of card - Orange */}
-                <div className="flip-card-back bg-[#f98203] text-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center">
-                  {React.createElement(feature.icon, { className: "h-12 w-12 mb-4" })}
-                  <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
-                  <p className="text-white/90">{feature.backDescription}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+
 
       {/* Testimonials Section - Horizontal Slider */}
       <section className="max-w-7xl mx-auto px-4 py-16">
