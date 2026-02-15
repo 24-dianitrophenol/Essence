@@ -9331,5 +9331,41 @@
     "category": "Supplements",
     "description": "Pantry, Allulose, 1 lb (454 g) - High quality product from Supplements.",
     "originalLink": "https://ug.iherb.com/pr/nutricost-pantry-allulose-1-lb-454-g/132294"
+  },
+  {
+    "id": "140610",
+    "name": "Syntha-6®, Protein Powder Drink Mix, Blueberry Pancake, 2.91 lb (1.32 kg)",
+    "price": 95.14,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/bsn/bsn01109/r/8.jpg",
+    "category": "Supplements",
+    "description": "Syntha-6®, Protein Powder Drink Mix, Blueberry Pancake, 2.91 lb (1.32 kg) - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/bsn-syntha-6-protein-powder-drink-mix-blueberry-pancake-2-91-lb-1-32-kg/140610"
+  },
+  {
+    "id": "111463",
+    "name": "PC, Liposomal Phospholipid Complex, 8 fl oz (236 ml)",
+    "price": 164.01,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/dio/dio91500/r/33.jpg",
+    "category": "Supplements",
+    "description": "PC, Liposomal Phospholipid Complex, 8 fl oz (236 ml) - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/bodybio-pc-liposomal-phospholipid-complex-8-fl-oz-236-ml/111463"
+  },
+  {
+    "id": "2857",
+    "name": "Freeze Dried, Bitter Melon, 200 mg, 90 Veg Caps",
+    "price": 36.25,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/ecl/ecl30924/r/57.jpg",
+    "category": "Supplements",
+    "description": "Freeze Dried, Bitter Melon, 200 mg, 90 Veg Caps - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/eclectic-herb-freeze-dried-bitter-melon-200-mg-90-veg-caps/2857"
+  },
+  {
+    "id": "14497",
+    "name": "Sports, ZMA®, 180 Veg Capsules",
+    "price": 58.5,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now02201/r/156.jpg",
+    "category": "Supplements",
+    "description": "Sports, ZMA®, 180 Veg Capsules - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-sports-zma-180-veg-capsules/14497"
   }
 ]
