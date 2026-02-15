@@ -5,6 +5,12 @@ export interface Product {
   image: string;
   category: string;
   description: string;
+  details?: {
+    ingredients?: string;
+    size?: string;
+    usage?: string;
+    benefits?: string;
+  };
 }
 
 export interface CartItem extends Pick<Product, 'id' | 'name' | 'price' | 'image'> {

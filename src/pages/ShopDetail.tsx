@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { Star } from 'lucide-react';
 import { allProducts } from '../data/allProducts';
+import { Product } from '../types';
 
 export default function ShopDetail() {
   const { id } = useParams();
@@ -10,7 +11,7 @@ export default function ShopDetail() {
   const [quantity, setQuantity] = useState(1);
 
   // Find product in all products
-  const product = allProducts.find(p => String(p.id) === String(id));
+  const product = allProducts.find(p => String(p.id) === String(id)) as Product | undefined;
 
   if (!product) {
     return (
@@ -51,7 +52,7 @@ export default function ShopDetail() {
     addToCart({
       id: product.id,
       name: product.name,
-      price: (product.price / 3600) * 1.55,
+      price: product.price,
       image: product.image,
       quantity: quantity
     });
@@ -87,7 +88,7 @@ export default function ShopDetail() {
           </div>
 
           <p className="text-2xl sm:text-3xl font-bold text-[#dd2581]">
-            ${((product.price / 3600) * 1.55).toFixed(2)}
+            ${product.price.toFixed(2)}
           </p>
 
           <p className="text-gray-600 text-sm sm:text-base">{product.description}</p>

@@ -94,8 +94,8 @@ export default function Products() {
     // Test items often have names like "Category Item XX"
     const isTestName = p.name.includes('Item ') || p.name.match(new RegExp(`${p.category} \\d+`, 'i'));
 
-    // Suspect very low prices (anything less than ~0.10 USD / 370 UGX)
-    const hasRealisticPrice = p.price > 370;
+    // Suspect very low prices
+    const hasRealisticPrice = p.price > 0.1;
 
     return hasRealImage && !isTestName && hasRealisticPrice;
   });
@@ -119,7 +119,7 @@ export default function Products() {
   };
 
   const handleAddToCart = (product: Product) => {
-    addToCart({ ...product, price: (product.price / 3600) * 1.55, quantity: 1 });
+    addToCart({ ...product, price: product.price, quantity: 1 });
     setAddedToCart(prev => ({ ...prev, [product.id]: true }));
 
     // Reset button after 2 seconds

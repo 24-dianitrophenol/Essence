@@ -66,7 +66,7 @@ export default function ProductCard({
         {/* Pricing Section */}
         <div className="mb-4 flex-1 text-center">
           <div className="text-lg font-bold text-[#dd2581] text-center">
-            ${((price / 3600) * 1.55).toFixed(2)}
+            ${price.toFixed(2)}
           </div>
         </div>
         

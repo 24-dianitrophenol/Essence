@@ -40,7 +40,13 @@ type Product = {
   price: number;
   image: string;
   category: string;
-  // add other fields as needed
+  description: string;
+  details?: {
+    ingredients?: string;
+    size?: string;
+    usage?: string;
+    benefits?: string;
+  };
 };
 
 // Get trending products (10 random products from Supplements category)
@@ -51,7 +57,7 @@ const trendingProducts: Product[] = allProducts
     p.image.trim() !== '' &&
     !p.image.toLowerCase().includes('placeholder') &&
     !p.name.includes('Item ') &&
-    p.price > 370
+    p.price > 0.1
   )
   .sort(() => 0.5 - Math.random())
   .slice(0, 10);
@@ -147,7 +153,7 @@ export default function Home() {
     addToCart({
       id: product.id,
       name: product.name,
-      price: (product.price / 3600) * 1.55,
+      price: product.price,
       image: product.image,
       quantity: 1
     });
@@ -372,7 +378,7 @@ export default function Home() {
 
                     <div className="mt-2 text-center">
                       <span className="text-sm sm:text-lg font-extrabold text-[#dd2581]">
-                        ${((product.price / 3600) * 1.55).toFixed(2)}
+                        ${product.price.toFixed(2)}
                       </span>
                     </div>
                   </div>
