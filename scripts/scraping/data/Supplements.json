@@ -9412,5 +9412,32 @@
     "category": "Supplements",
     "description": "Nattokinase, 200 mg, 30 Capsules - High quality product from Supplements.",
     "originalLink": "https://ug.iherb.com/pr/swanson-nattokinase-200-mg-30-capsules/118163"
+  },
+  {
+    "id": "417",
+    "name": "B-12, 250 Lozenges",
+    "price": 23.09,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00468/r/64.jpg",
+    "category": "Supplements",
+    "description": "B-12, 250 Lozenges - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-b-12-250-lozenges/417"
+  },
+  {
+    "id": "6688",
+    "name": "L-Citrulline, 750 mg, 90 Veg Capsules",
+    "price": 29.29,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/now/now00083/r/46.jpg",
+    "category": "Supplements",
+    "description": "L-Citrulline, 750 mg, 90 Veg Capsules - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/now-foods-l-citrulline-750-mg-90-veg-capsules/6688"
+  },
+  {
+    "id": "72130",
+    "name": "HeartBeat®, Cardiovascular Support, 90 Heart-Shaped Tablets",
+    "price": 20.16,
+    "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/nap/nap47421/r/38.jpg",
+    "category": "Supplements",
+    "description": "HeartBeat®, Cardiovascular Support, 90 Heart-Shaped Tablets - High quality product from Supplements.",
+    "originalLink": "https://ug.iherb.com/pr/naturesplus-heartbeat-cardiovascular-support-90-heart-shaped-tablets/72130"
   }
 ]
