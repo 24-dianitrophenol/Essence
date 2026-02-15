@@ -19,40 +19,42 @@ import Shipping from './pages/help/Shipping';
 import Returns from './pages/help/Returns';
 import Payments from './pages/help/Payments';
 import ProductCare from './pages/help/ProductCare';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
     <AuthProvider>
       <CartProvider>
-      <Router>
+        <Router>
           <ScrollToTop />
-        <div className="min-h-screen bg-gray-50 flex flex-col">
-          <Navbar />
+          <div className="min-h-screen bg-gray-50 flex flex-col">
+            <Navbar />
             <main className="flex-grow w-full overflow-x-hidden pt-16">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/login" element={<LoginForm />} />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/login" element={<LoginForm />} />
                 <Route path="/help" element={<Help />} />
+                <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/help/shipping" element={<Shipping />} />
                 <Route path="/help/returns" element={<Returns />} />
                 <Route path="/help/payments" element={<Payments />} />
                 <Route path="/help/product-care" element={<ProductCare />} />
-              <Route path="/register" element={
+                <Route path="/register" element={
                   <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
-                  <RegistrationForm />
-                </div>
-              } />
-              <Route path="/shop-detail/:id" element={<ShopDetail />} />
-            </Routes>
-          </main>
-          <WhatsAppButton />
-          <Footer />
-        </div>
-      </Router>
+                    <RegistrationForm />
+                  </div>
+                } />
+                <Route path="/shop-detail/:id" element={<ShopDetail />} />
+              </Routes>
+            </main>
+            <WhatsAppButton />
+            <Footer />
+          </div>
+        </Router>
       </CartProvider>
     </AuthProvider>
   );

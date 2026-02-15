@@ -1,13 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pure Essence</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pure Essence - Best Natural Products</title>
+  <meta name="description"
+    content="Discover Pure Essence - Your one-stop shop for the best natural products, supplements, and wellness essentials." />
+  <meta name="keywords" content="natural products, wellness, supplements, essence, pure essence" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pureesssense.com/" />
+  <meta property="og:title" content="Pure Essence - Best Natural Products" />
+  <meta property="og:description"
+    content="Discover Pure Essence - Your one-stop shop for the best natural products, supplements, and wellness essentials." />
+  <meta property="og:image" content="https://pureesssense.com/images/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://pureesssense.com/" />
+  <meta property="twitter:title" content="Pure Essence - Best Natural Products" />
+  <meta property="twitter:description"
+    content="Discover Pure Essence - Your one-stop shop for the best natural products, supplements, and wellness essentials." />
+  <meta property="twitter:image" content="https://pureesssense.com/images/og-image.jpg" />
+
+  <!-- Structured Data for Sitelinks -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pure Essence",
+    "url": "https://pureesssense.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pureesssense.com/products?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "hasPart": [
+      {
+        "@type": "WebPage",
+        "name": "Our Products",
+        "url": "https://pureesssense.com/products"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Contact Us",
+        "url": "https://pureesssense.com/contact"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Help & Support",
+        "url": "https://pureesssense.com/help"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

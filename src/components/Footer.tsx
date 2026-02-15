@@ -33,22 +33,29 @@ export default function Footer() {
           <ul className="space-y-2 text-white/80">
             <li><Link to="/about" className="hover:text-[#f98203] transition-colors">About Us</Link></li>
             <li><Link to="/contact" className="hover:text-[#f98203] transition-colors">Contact Us</Link></li>
+            <li><Link to="/help" className="hover:text-[#f98203] transition-colors">Help Center</Link></li>
             <li><Link to="/privacy" className="hover:text-[#f98203] transition-colors">Privacy Policy</Link></li>
             <li><Link to="/terms" className="hover:text-[#f98203] transition-colors">Terms & Condition</Link></li>
-            <li><Link to="/returns" className="hover:text-[#f98203] transition-colors">Return Policy</Link></li>
-            <li><Link to="/faq" className="hover:text-[#f98203] transition-colors">FAQs & Help</Link></li>
+          </ul>
+        </div>
+        {/* Categories */}
+        <div>
+          <h3 className="text-2xl font-bold mb-4">Categories</h3>
+          <ul className="space-y-2 text-white/80">
+            <li><Link to="/products" className="hover:text-[#f98203] transition-colors">Supplements</Link></li>
+            <li><Link to="/products" className="hover:text-[#f98203] transition-colors">Beauty & Bath</Link></li>
+            <li><Link to="/products" className="hover:text-[#f98203] transition-colors">Grocery</Link></li>
+            <li><Link to="/products" className="hover:text-[#f98203] transition-colors">Baby & Pets</Link></li>
+            <li><Link to="/products" className="hover:text-[#f98203] transition-colors">Bedroom Products</Link></li>
           </ul>
         </div>
         {/* Account */}
         <div>
           <h3 className="text-2xl font-bold mb-4">Account</h3>
           <ul className="space-y-2 text-white/80">
-            <li><Link to="/account" className="hover:text-[#f98203] transition-colors">My Account</Link></li>
-            <li><Link to="/shop-details" className="hover:text-[#f98203] transition-colors">Shop details</Link></li>
+            <li><Link to="/login" className="hover:text-[#f98203] transition-colors">My Account</Link></li>
             <li><Link to="/cart" className="hover:text-[#f98203] transition-colors">Shopping Cart</Link></li>
-            <li><Link to="/wishlist" className="text-[#f98203] hover:text-white transition-colors">Wishlist</Link></li>
-            <li><Link to="/orders" className="hover:text-[#f98203] transition-colors">Order History</Link></li>
-            <li><Link to="/international-orders" className="hover:text-[#f98203] transition-colors">International Orders</Link></li>
+            <li><Link to="/checkout" className="hover:text-[#f98203] transition-colors">Checkout</Link></li>
           </ul>
         </div>
         {/* Contact */}
