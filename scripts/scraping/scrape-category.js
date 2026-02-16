@@ -154,6 +154,7 @@ async function scrapeCategory() {
                     const allLinks = Array.from(document.querySelectorAll('a, button'));
                     const nextLink = allLinks.find(el =>
                         el.textContent.trim().toLowerCase().includes('next') ||
+                        el.textContent.trim().toLowerCase().includes('load more') ||
                         (el.getAttribute('aria-label') && el.getAttribute('aria-label').toLowerCase().includes('next'))
                     );
 
