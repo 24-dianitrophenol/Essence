@@ -1,4 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import { supabase, isConfigured } from '../utils/supabaseClient';
+import { User as SupabaseUser } from '@supabase/supabase-js';
 
 interface User {
   email: string;
@@ -10,61 +12,107 @@ interface AuthContextType {
   isAuthenticated: boolean;
   user: User | null;
   login: (email: string, password: string) => Promise<void>;
+  loginWithGoogle: () => Promise<void>;
   register: (email: string, password: string, name?: string) => Promise<void>;
-  logout: () => void;
+  logout: () => Promise<void>;
   loading: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
-
-const API_URL = 'http://localhost:5000/api/auth';
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const savedUser = localStorage.getItem('user');
-    const token = localStorage.getItem('token');
-    if (savedUser && token) {
-      setUser(JSON.parse(savedUser));
+    if (!isConfigured) {
+      setLoading(false);
+      return;
     }
-    setLoading(false);
+
+    // Check active sessions and sets the user
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user) {
+        setUser({
+          email: session.user.email || '',
+          name: session.user.user_metadata?.name || session.user.user_metadata?.full_name,
+          role: session.user.user_metadata?.role || 'user'
+        });
+      }
+      setLoading(false);
+    });
+
+    // Listen for changes on auth state (logged in, signed out, etc.)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user) {
+        setUser({
+          email: session.user.email || '',
+          name: session.user.user_metadata?.name || session.user.user_metadata?.full_name,
+          role: session.user.user_metadata?.role || 'user'
+        });
+      } else {
+        setUser(null);
+      }
+      setLoading(false);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
   const login = async (email: string, password: string) => {
-    const res = await fetch(`${API_URL}/login`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password }),
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
     });
 
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.message || 'Login failed');
+    if (error) throw error;
+    
+    if (data.user) {
+      setUser({
+        email: data.user.email || '',
+        name: data.user.user_metadata?.name,
+        role: data.user.user_metadata?.role || 'user'
+      });
+    }
+  };
 
-    localStorage.setItem('token', data.token);
-    localStorage.setItem('user', JSON.stringify(data.user));
-    setUser(data.user);
+  const loginWithGoogle = async () => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: window.location.origin
+      }
+    });
+
+    if (error) throw error;
   };
 
   const register = async (email: string, password: string, name?: string) => {
-    const res = await fetch(`${API_URL}/register`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password, name }),
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        data: {
+          name: name,
+          role: 'user' // Default role
+        }
+      }
     });
 
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.message || 'Registration failed');
+    if (error) throw error;
 
-    localStorage.setItem('token', data.token);
-    localStorage.setItem('user', JSON.stringify(data.user));
-    setUser(data.user);
+    if (data.user) {
+      setUser({
+        email: data.user.email || '',
+        name: data.user.user_metadata?.name,
+        role: data.user.user_metadata?.role || 'user'
+      });
+    }
   };
 
-  const logout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
+  const logout = async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) throw error;
     setUser(null);
   };
 
@@ -74,6 +122,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         isAuthenticated: !!user,
         user,
         login,
+        loginWithGoogle,
         register,
         logout,
         loading

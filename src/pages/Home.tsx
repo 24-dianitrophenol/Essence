@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { allProducts } from '../data/allProducts';
 import { useCart } from '../context/CartContext';
 import { customerReviews } from '../data/customerReviews';
+import { supabase, isConfigured } from '../utils/supabaseClient';
 
 const slides = [
   {
@@ -48,19 +49,6 @@ type Product = {
     benefits?: string;
   };
 };
-
-// Get trending products (10 random products from Supplements category)
-const trendingProducts: Product[] = allProducts
-  .filter(p =>
-    p.category === 'Supplements' &&
-    p.image &&
-    p.image.trim() !== '' &&
-    !p.image.toLowerCase().includes('placeholder') &&
-    !p.name.includes('Item ') &&
-    p.price > 0.1
-  )
-  .sort(() => 0.5 - Math.random())
-  .slice(0, 10);
 
 const getCategoryImage = (category: string) => {
   // Find a product with a valid image (not empty and not a placeholder)
@@ -116,15 +104,12 @@ const categoryProducts = [
   }
 ];
 
-
-
-
-
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const { addToCart } = useCart();
   const [addedToCart, setAddedToCart] = useState<{ [key: string]: boolean }>({});
   const [wishlist, setWishlist] = useState<{ [key: string]: boolean }>({});
+  const [trendingProducts, setTrendingProducts] = useState<Product[]>([]);
 
   // Carousel refs for sliding
   const testimonialsRef = useRef<HTMLDivElement>(null);
@@ -136,10 +121,30 @@ export default function Home() {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 4000);
 
-    return () => {
-      clearInterval(timer);
-    };
+    if (isConfigured) {
+      fetchTrendingProducts();
+    } else {
+      // Fallback to static if not configured
+      const fallback = allProducts
+        .filter(p => p.category === 'Supplements' && p.image && !p.image.toLowerCase().includes('placeholder'))
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 10);
+      setTrendingProducts(fallback as any);
+    }
+
+    return () => clearInterval(timer);
   }, []);
+
+  const fetchTrendingProducts = async () => {
+    const { data, error } = await supabase
+      .from('products')
+      .select('*')
+      .eq('category', 'Supplements')
+      .limit(10);
+    
+    if (error) console.error('Error fetching trending:', error);
+    else if (data) setTrendingProducts(data);
+  };
 
   // Carousel navigation handlers
   const scrollCarousel = (ref: React.RefObject<HTMLDivElement>, dir: number) => {
@@ -447,7 +452,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="relative rounded-2xl overflow-hidden group cursor-pointer full-width-bottom"
+            className="relative rounded-2xl overflow-hidden group full-width-bottom"
             style={{ aspectRatio: '1001/254' }}
           >
             <img
@@ -458,8 +463,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
-
 
       {/* Testimonials Section - Horizontal Slider */}
       <section className="max-w-7xl mx-auto px-4 py-16">
