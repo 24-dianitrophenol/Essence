@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,15 +17,26 @@ export default function Contact() {
     setStatus('loading');
     
     try {
-      // Logic for sending email (e.g. via EmailJS or similar service)
-      console.log('Sending message to pureesscense@gmail.com:', formData);
+      await emailjs.send(
+        'service_7uodpdw',
+        'template_rxxmrxg',
+        {
+          name: formData.name,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          message: formData.message,
+          to_email: 'pureesscense@gmail.com'
+        },
+        '1oz4hW3PvkvFuNsNS'
+      );
       
-      // Simulate success for now
-      setTimeout(() => {
-        setStatus('success');
-        setFormData({ name: '', email: '', whatsapp: '', message: '' });
-      }, 1500);
+      setStatus('success');
+      setFormData({ name: '', email: '', whatsapp: '', message: '' });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setStatus('idle'), 5000);
     } catch (error) {
+      console.error('EmailJS Error:', error);
       setStatus('error');
     }
   };
@@ -130,6 +142,17 @@ export default function Contact() {
                 >
                   <div className="bg-green-500 text-white p-1 rounded-full">✓</div>
                   <span>Message sent! We'll reach out to your WhatsApp/Email soon.</span>
+                </motion.div>
+              )}
+
+              {status === 'error' && (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-red-50 text-red-700 p-4 rounded-2xl text-sm font-bold border border-red-100 flex items-center gap-3"
+                >
+                  <div className="bg-red-500 text-white p-1 rounded-full">✕</div>
+                  <span>Failed to send. Please try again or WhatsApp us directly.</span>
                 </motion.div>
               )}
               
