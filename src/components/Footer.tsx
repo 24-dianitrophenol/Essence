@@ -49,15 +49,6 @@ export default function Footer() {
             <li><Link to="/products" className="hover:text-[#f98203] transition-colors">Bedroom Products</Link></li>
           </ul>
         </div>
-        {/* Account */}
-        <div>
-          <h3 className="text-2xl font-bold mb-4">Account</h3>
-          <ul className="space-y-2 text-white/80">
-            <li><Link to="/login" className="hover:text-[#f98203] transition-colors">My Account</Link></li>
-            <li><Link to="/cart" className="hover:text-[#f98203] transition-colors">Shopping Cart</Link></li>
-            <li><Link to="/checkout" className="hover:text-[#f98203] transition-colors">Checkout</Link></li>
-          </ul>
-        </div>
         {/* Contact */}
         <div>
           <h3 className="text-2xl font-bold mb-4">Contact</h3>

@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    whatsapp: '',
+    message: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    
+    try {
+      // Logic for sending email (e.g. via EmailJS or similar service)
+      console.log('Sending message to pureesscense@gmail.com:', formData);
+      
+      // Simulate success for now
+      setTimeout(() => {
+        setStatus('success');
+        setFormData({ name: '', email: '', whatsapp: '', message: '' });
+      }, 1500);
+    } catch (error) {
+      setStatus('error');
+    }
+  };
+
   return (
     <div>
       {/* Breadcrumb Schema */}
@@ -92,38 +118,75 @@ export default function Contact() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-white p-6 sm:p-8 rounded-lg shadow-lg order-1 md:order-2"
+            className="bg-white p-6 sm:p-10 rounded-[2.5rem] shadow-2xl order-1 md:order-2 border border-orange-50"
           >
-            <h2 className="text-2xl font-semibold text-[#dd2581] mb-6">Get in Touch</h2>
-            <form className="space-y-4">
+            <h2 className="text-3xl font-bold text-[#dd2581] mb-8">Get in Touch</h2>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {status === 'success' && (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-green-50 text-green-700 p-4 rounded-2xl text-sm font-bold border border-green-100 flex items-center gap-3"
+                >
+                  <div className="bg-green-500 text-white p-1 rounded-full">✓</div>
+                  <span>Message sent! We'll reach out to your WhatsApp/Email soon.</span>
+                </motion.div>
+              )}
+              
               <div>
-                <label className="block text-gray-700 mb-2">Name</label>
+                <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">Full Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#dd2581]"
+                  required
+                  value={formData.name}
+                  onChange={e => setFormData({...formData, name: e.target.value})}
+                  className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium"
                   placeholder="Your name"
                 />
               </div>
-              <div>
-                <label className="block text-gray-700 mb-2">Email</label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#dd2581]"
-                  placeholder="Your email"
-                />
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">Email Address</label>
+                  <input
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={e => setFormData({...formData, email: e.target.value})}
+                    className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">WhatsApp Number</label>
+                  <input
+                    type="tel"
+                    required
+                    value={formData.whatsapp}
+                    onChange={e => setFormData({...formData, whatsapp: e.target.value})}
+                    className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium"
+                    placeholder="+1 (xxx) xxx-xxxx"
+                  />
+                </div>
               </div>
+
               <div>
-                <label className="block text-gray-700 mb-2">Message</label>
+                <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">Your Message</label>
                 <textarea
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#dd2581] h-32"
-                  placeholder="Your message"
+                  required
+                  value={formData.message}
+                  onChange={e => setFormData({...formData, message: e.target.value})}
+                  className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium h-40 resize-none"
+                  placeholder="How can we help you today?"
                 ></textarea>
               </div>
+
               <button
                 type="submit"
-                className="w-full bg-[#f98203] text-white py-2 rounded-md hover:bg-[#dd2581] transition-colors"
+                disabled={status === 'loading'}
+                className="w-full bg-[#f98203] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#dd2581] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl shadow-orange-100 disabled:opacity-50"
               >
-                Send Message
+                {status === 'loading' ? 'Sending Message...' : 'Send Message'}
               </button>
             </form>
           </motion.div>
