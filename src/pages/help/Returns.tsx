@@ -70,7 +70,7 @@ export default function Returns() {
               <div className="bg-[#f98203] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">1</div>
               <div>
                 <h3 className="font-semibold">Contact Customer Service</h3>
-                <p className="text-gray-600">WhatsApp us at +256 754 507 334 or email support@puressence.com</p>
+                <p className="text-gray-600">WhatsApp us at +1(204) 698-4791 or email support@puressence.com</p>
               </div>
             </div>
             <div className="flex items-start">

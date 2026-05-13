@@ -4,7 +4,6 @@ import { ShoppingCart, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { allProducts } from '../data/allProducts';
 import { useCart } from '../context/CartContext';
-import { customerReviews } from '../data/customerReviews';
 import { supabase, isConfigured } from '../utils/supabaseClient';
 
 const slides = [
@@ -464,56 +463,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section - Horizontal Slider */}
+      {/* Products For You Section */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-3xl font-bold text-[#f98203] mb-12 text-center"
-        >
-          What Customers Say
-        </motion.h2>
+        <div className="flex justify-center items-center gap-6 mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-800">Products For You</h2>
+          <Link
+            to="/products"
+            className="border border-[#dd2581] text-[#dd2581] px-3 py-1 rounded-full text-xs font-medium hover:bg-[#dd2581] hover:text-white transition-all duration-300"
+          >
+            View More
+          </Link>
+        </div>
+
         <div className="relative">
-          <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-[#dd2581] hover:text-white"
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white shadow-xl rounded-full p-3 hover:bg-[#dd2581] hover:text-white transition-all duration-300 border-2 border-gray-100"
             onClick={() => scrollCarousel(testimonialsRef, -1)}
             aria-label="Scroll left"
           >
-            &#8592;
-          </button>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+            </svg>
+          </motion.button>
+
           <div
             ref={testimonialsRef}
-            className="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4"
-            style={{ scrollSnapType: "x mandatory" }}
+            className="flex gap-3 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 px-10"
+            style={{ scrollSnapType: 'x mandatory' }}
           >
-            {customerReviews.map((t) => (
-              <motion.div
-                key={t.id}
-                className="min-w-[320px] max-w-sm bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center snap-center"
+            {allProducts.slice(0, 10).map((product) => (
+              <div
+                key={product.id}
+                className="w-[180px] sm:w-[220px] lg:w-[260px] min-w-[180px] sm:min-w-[220px] lg:min-w-[260px] bg-white rounded-xl shadow-lg transition-all duration-300 flex-shrink-0 border border-gray-100 flex flex-col snap-center hover:shadow-xl"
               >
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-20 h-20 object-cover rounded-full mb-4 border-4 border-[#dd2581]"
-                />
-                <h4 className="text-lg font-bold text-[#f98203] mb-1">{t.name}</h4>
-                <span className="text-gray-500 mb-2">{t.profession}</span>
-                <div className="flex gap-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className={`text-yellow-400 text-lg ${i < t.rating ? '' : 'opacity-30'}`}>★</span>
-                  ))}
+                <div className="relative p-3">
+                  <div className="relative bg-gray-50 rounded-lg overflow-hidden aspect-square flex items-center justify-center">
+                    <Link to={`/shop-detail/${product.id}`} className="w-full h-full flex items-center justify-center p-4">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-110"
+                      />
+                    </Link>
+                  </div>
                 </div>
-                <p className="text-gray-700 italic">"{t.comment}"</p>
-              </motion.div>
+
+                <div className="p-4 pt-0 flex-1 flex flex-col">
+                  <div className="mb-3 text-center">
+                    <Link to={`/shop-detail/${product.id}`} className="block">
+                      <h3 className="text-xs sm:text-sm font-semibold text-gray-800 hover:text-[#dd2581] transition-colors line-clamp-2 leading-tight h-10 flex items-center justify-center">
+                        {product.name}
+                      </h3>
+                    </Link>
+                    <div className="mt-2">
+                      <span className="text-sm sm:text-lg font-extrabold text-[#dd2581]">
+                        ${product.price.toFixed(2)}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-auto">
+                    <button
+                      onClick={() => handleAddToCart(product as any)}
+                      className={`w-full flex items-center justify-center gap-2 py-2.5 px-3 rounded-lg font-bold text-[10px] sm:text-xs tracking-wider transition-all duration-300 ${addedToCart[product.id]
+                          ? 'bg-green-600 text-white'
+                          : 'bg-[#dd2581] text-white hover:bg-[#f98203]'
+                        }`}
+                    >
+                      <ShoppingCart className="w-3.5 h-3.5" />
+                      <span className="uppercase">{addedToCart[product.id] ? 'ADDED!' : 'ADD TO CART'}</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
-          <button
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hover:bg-[#dd2581] hover:text-white"
+
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white shadow-xl rounded-full p-3 hover:bg-[#dd2581] hover:text-white transition-all duration-300 border-2 border-gray-100"
             onClick={() => scrollCarousel(testimonialsRef, 1)}
             aria-label="Scroll right"
           >
-            &#8594;
-          </button>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+            </svg>
+          </motion.button>
         </div>
       </section>
     </div>

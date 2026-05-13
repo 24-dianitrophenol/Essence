@@ -62,9 +62,9 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-bold mb-4">Contact</h3>
           <ul className="space-y-2 text-white/80">
-            <li>Address: 123 Beauty Street, Skincare City</li>
-            <li>Email: contact@puressence.com</li>
-            <li>Phone: +256 776 203 930</li>
+            <li>Address: Home, 1850 Kings Rd, Oak Bay, BC V8R 2P3</li>
+            <li>Email: pureesscense@gmail.com</li>
+            <li>Phone: +1(204) 698-4791</li>
           </ul>
           
           {/* Social Media Links */}
@@ -74,7 +74,7 @@ export default function Footer() {
               {[
                 { Icon: Twitter, href: "#", name: "Twitter" },
                 { Icon: Facebook, href: "#", name: "Facebook" },
-                { Icon: MessageCircle, href: "https://wa.me/256754507334", name: "WhatsApp" },
+                { Icon: MessageCircle, href: "https://wa.me/12046984791", name: "WhatsApp" },
                 { Icon: TikTokIcon, href: "#", name: "TikTok" }
               ].map(({ Icon, href, name }, idx) => (
                 <a

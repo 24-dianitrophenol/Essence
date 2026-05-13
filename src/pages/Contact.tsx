@@ -66,25 +66,22 @@ export default function Contact() {
                 <Mail className="h-6 w-6 text-[#f98203] mr-4" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">contact@puressence.com</p>
+                  <p className="text-gray-600">pureesscense@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-[#f98203] mr-4" />
                 <div>
-                  <h3 className="font-semibold">WhatsApp Contacts</h3>
-                  <p className="text-gray-600">
-                    Canada & USA: +(1204) 698-4791, +1 (778) 922-2041<br />
-                    Uganda: +256 776 203 930, +256 754 507 334<br />
-                    <em>All numbers are on WhatsApp</em>
-                  </p>
+                  <h3 className="font-semibold text-lg">WhatsApp Support</h3>
+                  <p className="text-gray-600 font-bold text-xl">+1(204) 698-4791</p>
+                  <p className="text-gray-500 text-sm italic">Available 24/7 for your beauty needs</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-[#f98203] mr-4" />
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600">123 Beauty Street<br />Skincare City, SC 12345</p>
+                  <p className="text-gray-600">Home, 1850 Kings Rd<br />Oak Bay, BC V8R 2P3</p>
                 </div>
               </div>
             </div>
