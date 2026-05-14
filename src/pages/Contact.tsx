@@ -54,12 +54,12 @@ export default function Contact() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://pureesssense.com/"
+              "item": "https://pureesscense.com/"
             }, {
               "@type": "ListItem",
               "position": 2,
               "name": "Contact Us",
-              "item": "https://pureesssense.com/contact"
+              "item": "https://pureesscense.com/contact"
             }]
           })
         }}
