@@ -26,7 +26,7 @@ export default function Navbar() {
   const [showCategoriesDropdown, setShowCategoriesDropdown] = useState(false);
   const location = useLocation();
   const { cartCount } = useCart();
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
 
   const isActive = (path: string) => {
     return location.pathname === (path === 'Home' ? '/' : `/${path.toLowerCase()}`);
@@ -121,6 +121,22 @@ export default function Navbar() {
                   </span>
                 )}
               </Link>
+              
+              {user ? (
+                <div className="flex items-center space-x-3 ml-2 border-l border-white/20 pl-4">
+                  <span className="text-white text-xs font-bold hidden lg:inline">Hi, {user.name?.split(' ')[0]}</span>
+                  <button onClick={logout} className="text-white hover:text-[#f98203] transition-colors p-2" title="Log Out">
+                    <X className="h-5 w-5" />
+                  </button>
+                </div>
+              ) : (
+                <Link 
+                  to="/login" 
+                  className="bg-white text-[#dd2581] px-4 py-2 rounded-full text-xs font-bold hover:bg-[#f98203] hover:text-white transition-all shadow-md ml-2"
+                >
+                  SIGN IN
+                </Link>
+              )}
             </div>
 
             {/* Mobile Navigation */}
@@ -244,6 +260,16 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </div>
+
+                {user && (
+                  <button
+                    onClick={() => { logout(); setIsOpen(false); }}
+                    className="w-full text-left text-white px-4 py-3 rounded-md text-lg hover:bg-[#f98203] transition-colors flex items-center space-x-3 border-t border-white/20 mt-4"
+                  >
+                    <X size={20} />
+                    <span>Log Out</span>
+                  </button>
+                )}
               </div>
             </motion.div>
           )}

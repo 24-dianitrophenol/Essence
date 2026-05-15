@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard';
-import { allProducts, getProductsByCategory } from '../data/allProducts';
+import { supabase, isConfigured } from '../utils/supabaseClient';
 import { useCart } from '../context/CartContext';
 import { Product } from '../types';
 
@@ -62,13 +62,52 @@ const categorySlides: Record<Category, { image: string }[]> = {
 };
 
 export default function Products() {
+  const [products, setProducts] = useState<Product[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<Category>('All');
   const [currentPromoSlide, setCurrentPromoSlide] = useState(0);
   const [sortBy, setSortBy] = useState('name');
   const [addedToCart, setAddedToCart] = useState<{ [key: string]: boolean }>({});
   const [wishlist, setWishlist] = useState<{ [key: string]: boolean }>({});
+  const [isLoading, setIsLoading] = useState(true);
   const { addToCart } = useCart();
+  
   const currentSlides = categorySlides[selectedCategory] ?? categorySlides['All'];
+
+  useEffect(() => {
+    if (!isConfigured) {
+      setIsLoading(false);
+      return;
+    }
+
+    fetchProducts();
+
+    // Subscribe to realtime changes
+    const productSubscription = supabase
+      .channel('public:products')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'products' }, (payload) => {
+        console.log('Change received!', payload);
+        fetchProducts(); // Refresh list on any change
+      })
+      .subscribe();
+
+    return () => {
+      productSubscription.unsubscribe();
+    };
+  }, []);
+
+  const fetchProducts = async () => {
+    setIsLoading(true);
+    const { data, error } = await supabase
+      .from('products')
+      .select('*');
+    
+    if (error) {
+      console.error('Error fetching products:', error);
+    } else {
+      setProducts(data || []);
+    }
+    setIsLoading(false);
+  };
 
   // Auto-slide for promo images
   useEffect(() => {
@@ -85,18 +124,12 @@ export default function Products() {
 
   // Filter products by category and exclude obvious test/placeholder data
   const filteredProducts = (selectedCategory === 'All'
-    ? allProducts
-    : getProductsByCategory(selectedCategory)
+    ? products
+    : products.filter(p => p.category === selectedCategory)
   ).filter(p => {
-    // A real product should have a non-placeholder image
     const hasRealImage = p.image && p.image.trim() !== '' && !p.image.toLowerCase().includes('placeholder') && !p.image.toLowerCase().includes('undefined');
-
-    // Test items often have names like "Category Item XX"
-    const isTestName = p.name.includes('Item ') || p.name.match(new RegExp(`${p.category} \\d+`, 'i'));
-
-    // Suspect very low prices
+    const isTestName = p.name.includes('Item ') || (p.category && p.name.match(new RegExp(`${p.category} \\d+`, 'i')));
     const hasRealisticPrice = p.price > 0.1;
-
     return hasRealImage && !isTestName && hasRealisticPrice;
   });
 
@@ -119,7 +152,7 @@ export default function Products() {
   };
 
   const handleAddToCart = (product: Product) => {
-    addToCart({ ...product, price: product.price, quantity: 1 });
+    addToCart({ ...product, quantity: 1 });
     setAddedToCart(prev => ({ ...prev, [product.id]: true }));
 
     // Reset button after 2 seconds
@@ -239,25 +272,33 @@ export default function Products() {
             </div>
 
             {/* Products Grid */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-              {sortedProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  id={product.id}
-                  name={product.name}
-                  price={product.price}
-                  image={product.image}
-                  category={product.category}
-                  onAddToCart={() => handleAddToCart(product)}
-                  onToggleWishlist={() => toggleWishlist(product.id)}
-                  isInWishlist={wishlist[product.id] || false}
-                  isAddedToCart={addedToCart[product.id] || false}
-                />
-              ))}
-            </div>
+            {isLoading ? (
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                {[...Array(8)].map((_, i) => (
+                  <div key={i} className="bg-gray-100 animate-pulse aspect-[3/4] rounded-lg"></div>
+                ))}
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                {sortedProducts.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    id={product.id}
+                    name={product.name}
+                    price={product.price}
+                    image={product.image}
+                    category={product.category}
+                    onAddToCart={() => handleAddToCart(product)}
+                    onToggleWishlist={() => toggleWishlist(product.id)}
+                    isInWishlist={wishlist[product.id] || false}
+                    isAddedToCart={addedToCart[product.id] || false}
+                  />
+                ))}
+              </div>
+            )}
 
             {/* No products message */}
-            {sortedProducts.length === 0 && (
+            {!isLoading && sortedProducts.length === 0 && (
               <div className="text-center py-12">
                 <p className="text-gray-500 text-base md:text-lg">No products found in this category.</p>
                 <button
@@ -273,4 +314,4 @@ export default function Products() {
       </div>
     </div>
   );
-}
+}

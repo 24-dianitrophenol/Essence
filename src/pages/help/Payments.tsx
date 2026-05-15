@@ -149,7 +149,7 @@ export default function Payments() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="https://wa.me/256754507334"
+              href="https://wa.me/12046984791"
               className="bg-white text-[#f98203] px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center"
             >
               WhatsApp Support

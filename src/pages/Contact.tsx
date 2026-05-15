@@ -1,8 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    whatsapp: '',
+    message: ''
+  });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    
+    try {
+      await emailjs.send(
+        'service_7uodpdw',
+        'template_rxxmrxg',
+        {
+          name: formData.name,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          message: formData.message,
+          to_email: 'pureesscense@gmail.com'
+        },
+        '1oz4hW3PvkvFuNsNS'
+      );
+      
+      setStatus('success');
+      setFormData({ name: '', email: '', whatsapp: '', message: '' });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setStatus('error');
+    }
+  };
+
   return (
     <div>
       {/* Breadcrumb Schema */}
@@ -16,12 +54,12 @@ export default function Contact() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://pureesssense.com/"
+              "item": "https://pureesscense.com/"
             }, {
               "@type": "ListItem",
               "position": 2,
               "name": "Contact Us",
-              "item": "https://pureesssense.com/contact"
+              "item": "https://pureesscense.com/contact"
             }]
           })
         }}
@@ -66,25 +104,22 @@ export default function Contact() {
                 <Mail className="h-6 w-6 text-[#f98203] mr-4" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">contact@puressence.com</p>
+                  <p className="text-gray-600">pureesscense@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-[#f98203] mr-4" />
                 <div>
-                  <h3 className="font-semibold">WhatsApp Contacts</h3>
-                  <p className="text-gray-600">
-                    Canada & USA: +(1204) 698-4791, +1 (778) 922-2041<br />
-                    Uganda: +256 776 203 930, +256 754 507 334<br />
-                    <em>All numbers are on WhatsApp</em>
-                  </p>
+                  <h3 className="font-semibold text-lg">WhatsApp Support</h3>
+                  <p className="text-gray-600 font-bold text-xl">+1(204) 698-4791</p>
+                  <p className="text-gray-500 text-sm italic">Available 24/7 for your beauty needs</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-[#f98203] mr-4" />
                 <div>
                   <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600">123 Beauty Street<br />Skincare City, SC 12345</p>
+                  <p className="text-gray-600">Home, 1850 Kings Rd<br />Oak Bay, BC V8R 2P3</p>
                 </div>
               </div>
             </div>
@@ -95,38 +130,86 @@ export default function Contact() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4 }}
-            className="bg-white p-6 sm:p-8 rounded-lg shadow-lg order-1 md:order-2"
+            className="bg-white p-6 sm:p-10 rounded-[2.5rem] shadow-2xl order-1 md:order-2 border border-orange-50"
           >
-            <h2 className="text-2xl font-semibold text-[#dd2581] mb-6">Get in Touch</h2>
-            <form className="space-y-4">
+            <h2 className="text-3xl font-bold text-[#dd2581] mb-8">Get in Touch</h2>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {status === 'success' && (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-green-50 text-green-700 p-4 rounded-2xl text-sm font-bold border border-green-100 flex items-center gap-3"
+                >
+                  <div className="bg-green-500 text-white p-1 rounded-full">✓</div>
+                  <span>Message sent! We'll reach out to your WhatsApp/Email soon.</span>
+                </motion.div>
+              )}
+
+              {status === 'error' && (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-red-50 text-red-700 p-4 rounded-2xl text-sm font-bold border border-red-100 flex items-center gap-3"
+                >
+                  <div className="bg-red-500 text-white p-1 rounded-full">✕</div>
+                  <span>Failed to send. Please try again or WhatsApp us directly.</span>
+                </motion.div>
+              )}
+              
               <div>
-                <label className="block text-gray-700 mb-2">Name</label>
+                <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">Full Name</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#dd2581]"
+                  required
+                  value={formData.name}
+                  onChange={e => setFormData({...formData, name: e.target.value})}
+                  className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium"
                   placeholder="Your name"
                 />
               </div>
-              <div>
-                <label className="block text-gray-700 mb-2">Email</label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#dd2581]"
-                  placeholder="Your email"
-                />
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">Email Address</label>
+                  <input
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={e => setFormData({...formData, email: e.target.value})}
+                    className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium"
+                    placeholder="Your email"
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">WhatsApp Number</label>
+                  <input
+                    type="tel"
+                    required
+                    value={formData.whatsapp}
+                    onChange={e => setFormData({...formData, whatsapp: e.target.value})}
+                    className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium"
+                    placeholder="+1 (xxx) xxx-xxxx"
+                  />
+                </div>
               </div>
+
               <div>
-                <label className="block text-gray-700 mb-2">Message</label>
+                <label className="block text-gray-700 font-bold mb-2 text-sm ml-1">Your Message</label>
                 <textarea
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#dd2581] h-32"
-                  placeholder="Your message"
+                  required
+                  value={formData.message}
+                  onChange={e => setFormData({...formData, message: e.target.value})}
+                  className="w-full px-6 py-4 bg-gray-50 border-none rounded-2xl focus:ring-4 focus:ring-orange-100 outline-none transition-all font-medium h-40 resize-none"
+                  placeholder="How can we help you today?"
                 ></textarea>
               </div>
+
               <button
                 type="submit"
-                className="w-full bg-[#f98203] text-white py-2 rounded-md hover:bg-[#dd2581] transition-colors"
+                disabled={status === 'loading'}
+                className="w-full bg-[#f98203] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#dd2581] hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl shadow-orange-100 disabled:opacity-50"
               >
-                Send Message
+                {status === 'loading' ? 'Sending Message...' : 'Send Message'}
               </button>
             </form>
           </motion.div>

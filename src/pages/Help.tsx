@@ -31,17 +31,17 @@ const contactMethods = [
     icon: <Phone className="w-6 h-6" />,
     title: "Call Us",
     description: "Available 24/7",
-    contact: "+256 754 507 334",
+    contact: "+1(204) 698-4791",
     bgColor: "bg-[#dd2581]",
-    link: "tel:+256754507334"
+    link: "tel:+12046984791"
   },
   {
     icon: <Mail className="w-6 h-6" />,
     title: "Email Us",
     description: "Response within 24 hours",
-    contact: "support@puressence.com",
+    contact: "pureesscense@gmail.com",
     bgColor: "bg-[#f98203]",
-    link: "mailto:support@puressence.com"
+    link: "mailto:pureesscense@gmail.com"
   },
   {
     icon: <MessageCircle className="w-6 h-6" />,
@@ -49,7 +49,7 @@ const contactMethods = [
     description: "Available 8am - 8pm",
     contact: "Start Chat",
     bgColor: "bg-[#dd2581]",
-    link: "https://wa.me/256754507334"
+    link: "https://wa.me/12046984791"
   }
 ];
 
